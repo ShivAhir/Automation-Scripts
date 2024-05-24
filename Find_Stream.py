@@ -2,7 +2,20 @@ import os
 import subprocess
 import json
 import time
+from collections import defaultdict
 
+# your directory containing the .ts files from which you want to find your desired stream
+directory = 'C:/Users/sahir/Documents/MPEG2-HD'
+listOfStreams = []
+codec_type = (input("Enter the desired codec type - Audio/Video/Subtitle: ")).lower().strip()
+if codec_type == 'audio':
+    codec_name = (input("Enter the desired codec_name (ac3/mp2): ")).lower().strip()
+elif codec_type == 'video':
+    resolution = (input("Enter the desired resolution (SD/HD): ")).upper().strip()
+    codec_name = (input("Enter the desired codec_name (mpeg2video/h264): ")).lower().strip()
+else:
+    codec_name = (input("Enter the desired codec_name (dvb_subtitle/dvb_teletext): ")).lower().strip()
+print(" ")
 
 def get_codec_info(file_path):
     try:
@@ -25,15 +38,16 @@ def get_codec_info(file_path):
         # extracting the codec names for each stream
         video_info = []
         for stream in info['streams']:
-            if 'codec_name' in stream and 'width' in stream and 'height' in stream and 'r_frame_rate':
-                video_info.append({
-                    'codec_type': stream['codec_type'],
-                    'codec_name': stream['codec_name'],
-                    'width': stream["width"],
-                    'height': stream["height"],
-                    'resolution': 'HD' if stream['width'] >= 1280 and stream['height'] >= 720 else 'SD',
-                    'frame_rate': stream['r_frame_rate']
-                })
+            if stream['codec_type'] == 'video':    
+                if 'codec_name' in stream and 'width' in stream and 'height' in stream and 'r_frame_rate' in stream:
+                    video_info.append({
+                        'codec_type': stream['codec_type'],
+                        'codec_name': stream['codec_name'],
+                        'width': stream["width"],
+                        'height': stream["height"],
+                        'resolution': 'HD' if stream['width'] >= 1280 and stream['height'] >= 720 else 'SD',
+                        'frame_rate': stream['r_frame_rate']
+                    })
             elif stream['codec_type'] == 'audio':
                 video_info.append({
                     'codec_type': stream['codec_type'],
@@ -50,26 +64,11 @@ def get_codec_info(file_path):
         print(f"An error occurred while processing file {file_path}: {e}")
         return None
 
-
-# your directory containing the .ts files from which you want to find your desired stream
-directory = 'C:/Users/sahir/Documents/MPEG2-HD'
-listOfStreams = []
-codec_type = (input("Enter the desired codec type - Audio/Video/Subtitle: ")).lower().strip()
-if codec_type == 'audio':
-    codec_name = (input("Enter the desired codec_name (ac3/mp2): ")).lower().strip()
-elif codec_type == 'video':
-    resolution = (input("Enter the desired resolution (SD/HD): ")).upper().strip()
-    codec_name = (input("Enter the desired codec_name (mpeg2video/h264): ")).lower().strip()
-else:
-    codec_name = (input("Enter the desired codec_name (dvb_subtitle/dvb_teletext): ")).lower().strip()
-
-print(" ")
 for filename in os.listdir(directory):
     if filename.endswith('.ts'):
         file_path = os.path.join(directory, filename)
         print(f"Processing file: {filename} on location: {directory}")
         video_info = get_codec_info(file_path)
-
         if video_info:
             for info in video_info:
                 if info['codec_type'] == 'audio':
@@ -95,12 +94,27 @@ for filename in os.listdir(directory):
                             })
         else:
             print("Codec information could not be retrieved.")
-time.sleep(1)
+
+def addNumberOfChannels(streams):
+    channel = defaultdict(int)
+    
+    for entry in streams:
+        key = tuple(sorted(entry.items()))
+        channel[key] += 1
+    result = []
+    for key, count in channel.items():
+        entry_dict = dict(key)
+        entry_dict['channel'] = count
+        result.append(entry_dict)
+    return result
+
+
 if listOfStreams:
     print(" ")
     print(" ")
     print("List of streams")
-    for stream in listOfStreams:
+    result = addNumberOfChannels(listOfStreams)
+    for stream in result:
         if codec_type == 'video':  
             if stream['resolution'] == resolution and stream['codec_name'] == codec_name:
                 print(stream)
