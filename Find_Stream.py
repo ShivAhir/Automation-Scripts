@@ -1,15 +1,15 @@
 import os
 import subprocess
 import json
-import time
 from collections import defaultdict
 
 # your directory containing the .ts files from which you want to find your desired stream
-directory = 'C:/Users/sahir/Documents/MPEG2-HD'
+directory = '/home/eng/storage/library/MPEG-2-SD'
 listOfStreams = []
 codec_type = (input("Enter the desired codec type - Audio/Video/Subtitle: ")).lower().strip()
 if codec_type == 'audio':
     codec_name = (input("Enter the desired codec_name (ac3/mp2): ")).lower().strip()
+    bits = int((input("Enter the desired bits(20): ")).strip())
 elif codec_type == 'video':
     resolution = (input("Enter the desired resolution (SD/HD): ")).upper().strip()
     codec_name = (input("Enter the desired codec_name (mpeg2video/h264): ")).lower().strip()
@@ -51,7 +51,8 @@ def get_codec_info(file_path):
             elif stream['codec_type'] == 'audio':
                 video_info.append({
                     'codec_type': stream['codec_type'],
-                    'codec_name': stream['codec_name']
+                    'codec_name': stream['codec_name'],
+                    'bits_per_sample': stream['bits_per_sample']
                 })
             elif stream['codec_type'] == 'subtitle':
                 video_info.append({
@@ -77,6 +78,7 @@ for filename in os.listdir(directory):
                                 'stream_name': filename,
                                 'codec_type': info['codec_type'],
                                 'codec_name': info['codec_name'],
+                                'bits_per_sample': info['bits_per_sample'],
                         })
                 elif info.get('codec_type') == 'video':
                     listOfStreams.append({
@@ -114,13 +116,17 @@ if listOfStreams:
     print(" ")
     print("List of streams")
     result = addNumberOfChannels(listOfStreams)
-    for stream in result:
-        if codec_type == 'video':  
-            if stream['resolution'] == resolution and stream['codec_name'] == codec_name:
-                print(stream)
-        elif codec_type == 'audio':
-            if stream['codec_name'] == codec_name:
-                print(stream)
-        else:
-            if stream['codec_name'] == codec_name:
-                print(stream)
+    if result:
+        for stream in result:
+            if codec_type == 'video':  
+                if stream['resolution'] == resolution and stream['codec_name'] == codec_name:
+                    print(stream)
+            elif codec_type == 'audio':
+                if 'bits_per_sample' in stream and (stream['bits_per_sample'] == bits):
+                    print(stream)
+            elif codec_type == 'subtitle':
+                if stream['codec_name'] == codec_name:
+                    print(stream)
+            
+    else:
+        print(" No streams found according to your requirement!") 
