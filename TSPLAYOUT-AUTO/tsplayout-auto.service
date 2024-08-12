@@ -1,0 +1,13 @@
+[Unit]
+Description=Automated TSPlayout Streaming Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /udata/home/mvx/tsplayout_auto.py
+Restart=always
+User=mvx
+Group=mvx
+
+[Install]
+WantedBy=multi-user.target
+
