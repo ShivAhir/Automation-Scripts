@@ -5,23 +5,8 @@ import time
 flag = True
 rebootCounter = 0
 
-check_lsblk_str = """
-NAME             MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
-sda                8:0    0 223.1G  0 disk
-├─sda1             8:1    0     2M  0 part
-├─sda2             8:2    0   256M  0 part
-├─sda3             8:3    0 222.7G  0 part
-│ ├─evertz-app1  252:0    0    32G  0 lvm
-│ ├─evertz-app2  252:1    0    32G  0 lvm  /
-│ └─evertz-udata 252:2    0 158.7G  0 lvm  /udata
-└─sda4             8:4    0    48M  0 part
-sdb                8:16   0 893.8G  0 disk
-"""
 
-def normalize_lsblk_output(output):
-    return '\n'.join(line.strip() for line in output.strip().splitlines())
-
-def is_server_online(hostname, port, timeout=5):
+def server_status(hostname, port, timeout=5):
     try:
         sock = socket.create_connection((hostname, port), timeout)
         sock.close()
@@ -32,12 +17,17 @@ def is_server_online(hostname, port, timeout=5):
 def wait_for_server(hostname, port, timeout=90, interval=5):
     start_time = time.time()
     while time.time() - start_time < timeout:
-        if is_server_online(hostname, port):
+        if server_status(hostname, port):
             return True
         time.sleep(interval)
     return False
 
+def check_sdb_parts(output):
+    lines = output.splitlines()
+    sdb_partitions = [line for line in lines if line.startswith('sdb')]
+    return len(sdb_partitions) > 1
 
+# this function will create the connection and perform the commands
 def ssh_connect_and_execute(hostname, port, username, password, commands):
     global flag, rebootCounter
     try:
@@ -58,23 +48,21 @@ def ssh_connect_and_execute(hostname, port, username, password, commands):
                 print(f"Error:\n{error}")
             
             if command == 'lsblk':
-                normalized_output = normalize_lsblk_output(output)
-                normalized_check_lsblk_str = normalize_lsblk_output(check_lsblk_str)
-                if normalized_output == normalized_check_lsblk_str:
-                    print('The lsblk output is the same as the check_lsblk_str value.')
-                else:
-                    print('The lsblk output is different from the check_lsblk_str value.')
+                if check_sdb_parts(output):
+                    print('sdb has partitions')
                     print('Saw this error after '+ str(rebootCounter) + 'reboots.')
                     flag = False
                     ssh_client.close()
                     print("Connection closed")
                     break
+                else:
+                    print('sda has partitions')
 
             if command == "sudo reboot":
                 print("Server is rebooting...")
                 ssh_client.close()
                 print("Connection closed. Waiting for the server to come back online...")
-                rebootCounter + 1
+                rebootCounter += 1
                 print("Reboot Counter" + str(rebootCounter))
                 time.sleep(3)
                 if wait_for_server(hostname, port):
@@ -97,10 +85,10 @@ def ssh_connect_and_execute(hostname, port, username, password, commands):
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    hostname = "172.16.177.179"
+    hostname = "172.16.177.179"     # the IP for whatever device you want to perform the reboot test on
     port = 22
-    username = "mvx"
-    password = "mvx"
+    username = "mvx"                # username for it
+    password = "mvx"                # the password for it   
     commands = [
         "lsblk",
         "sudo reboot",
@@ -108,5 +96,4 @@ if __name__ == "__main__":
     ]
 
     while flag:
-        # Connect to the server and execute the commands
         ssh_connect_and_execute(hostname, port, username, password, commands)
