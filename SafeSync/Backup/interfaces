@@ -8,58 +8,56 @@
 # configuration, but remain editable and may take effect later.
 
 # Ctrl 1
-auto ens3f0
-iface ens3f0 inet static
-  address 172.16.177.79
+auto ens5f0
+iface ens5f0 inet static
+  address 172.16.177.135
   netmask 255.255.255.0
   gateway 172.16.177.1
-  dns-nameservers 172.16.178.222
-  dns-serach mvlabnet.com	
-  up /opt/mvx/bin/mkrt rt_ens3f0
-  up ip route add default via 172.16.177.1 dev ens3f0 table rt_ens3f0
-  up ip rule add from 172.16.177.79/32 table rt_ens3f0
+  up /opt/mvx/bin/mkrt rt_ens5f0
+  up ip route add default via 172.16.177.1 dev ens5f0 table rt_ens5f0
+  up ip rule add from 172.16.177.135/32 table rt_ens5f0
 
 # Ctrl 2
-auto ens3f1
-iface ens3f1 inet static
-  address 172.16.176.79
+auto ens5f1
+iface ens5f1 inet static
+  address 172.16.178.135
   netmask 255.255.255.0
-  up /opt/mvx/bin/mkrt rt_ens3f1
-  up ip route add default via 172.16.176.1 dev ens3f1 table rt_ens3f1
-  up ip rule add from 172.16.176.79/32 table rt_ens3f1
+  up /opt/mvx/bin/mkrt rt_ens5f1
+  up ip route add default via 172.16.178.1 dev ens5f1 table rt_ens5f1
+  up ip rule add from 172.16.178.135/32 table rt_ens5f1
 
 # Data 1
-auto ens10f0
-iface ens10f0 inet static
-  address 10.0.3.100
+auto enp5s0
+iface enp5s0 inet static
+  address 10.10.179.135
   netmask 255.255.255.0
-  up /opt/mvx/bin/mkrt rt_ens10f0
-  up ip route add default via 10.0.3.1 dev ens10f0 table rt_ens10f0
-  up ip rule add from 10.0.3.100/32 table rt_ens10f0
+  up /opt/mvx/bin/mkrt rt_enp5s0
+  up ip route add default via 10.10.179.1 dev enp5s0 table rt_enp5s0
+  up ip rule add from 10.10.179.135/32 table rt_enp5s0
 
 # Data 2
-auto ens10f1
-iface ens10f1 inet static
-  address 10.0.4.100
+auto enp6s0
+iface enp6s0 inet static
+  address 10.0.3.100
   netmask 255.255.255.0
-  up /opt/mvx/bin/mkrt rt_ens10f1
-  up ip route add default via 10.0.4.1 dev ens10f1 table rt_ens10f1
-  up ip rule add from 10.0.4.100/32 table rt_ens10f1
+  up /opt/mvx/bin/mkrt rt_enp6s0
+  up ip route add default via 10.0.3.1 dev enp6s0 table rt_enp6s0
+  up ip rule add from 10.0.3.100/32 table rt_enp6s0
 
 # Data 3
-auto ens3f2
-iface ens3f2 inet static
-  address 10.0.5.100
+auto ens10f0
+iface ens10f0 inet static
+  address 20.20.177.135
   netmask 255.255.255.0
-  up /opt/mvx/bin/mkrt rt_ens3f2
-  up ip route add default via 10.0.5.1 dev ens3f2 table rt_ens3f2
-  up ip rule add from 10.0.5.100/32 table rt_ens3f2
+  up /opt/mvx/bin/mkrt rt_ens10f0
+  up ip route add default via 20.20.177.135 dev ens10f0 table rt_ens10f0
+  up ip rule add from 20.20.177.135/32 table rt_ens10f0
 
 # Data 4
-auto ens3f3
-iface ens3f3 inet static
-  address 10.10.179.79
+auto ens10f1
+iface ens10f1 inet static
+  address 21.21.177.135
   netmask 255.255.255.0
-  up /opt/mvx/bin/mkrt rt_ens3f3
-  up ip route add default via 10.10.179.1 dev ens3f3 table rt_ens3f3
-  up ip rule add from 10.10.179.79/32 table rt_ens3f3
+  up /opt/mvx/bin/mkrt rt_ens10f1
+  up ip route add default via 21.21.177.1 dev ens10f1 table rt_ens10f1
+  up ip rule add from 21.21.177.135/32 table rt_ens10f1
