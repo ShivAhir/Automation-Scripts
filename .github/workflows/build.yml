@@ -28,10 +28,11 @@ jobs:
 
     - name: Build executable
       run: |
+        cd SafeSync
         python setup.py build
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: executable
-        path: dist/your_main_script.exe
+        path: SafeSync/build/exe.win-amd64-3.9/  # Adjust this path based on your setup.py configuration
