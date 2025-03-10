@@ -15,6 +15,6 @@ setup(
     name="SafeSync",
     version="1.0",
     description="SafeSync Application",
-    options={"build_exe": {"build_exe": "SafeSync"}},
+    options={"build_exe": build_exe_options},
     executables=[Executable("SafeSync.py", base=base)],
 )

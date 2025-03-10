@@ -21,7 +21,7 @@ def create_ui(remotePaths, localPath):
         info = getInfo()
         deviceIP, deviceUsername, devicePassword = info if info is not None else (None, None, None)
         loadingLabel = tk.Label(backup_frame, text="Downloading, please wait...", fg="blue")
-        loadingLabel.grid(row=4, column=0, columnspan=2, pady=10)
+        loadingLabel.grid(row=5, column=0, columnspan=2, pady=10)
         
         def download():
             try:
@@ -89,10 +89,6 @@ def create_ui(remotePaths, localPath):
     container.grid_rowconfigure(1, weight=1)
     container.grid_columnconfigure(0, weight=1)
     
-    # backup_frame = tk.Frame(container)
-    # backup_frame.pack(fill='both', expand=True)
-    # debug_frame = tk.Frame(container)
-    # debug_frame.grid(row=0, column=0, sticky='nsew')
         
     backup_frame.grid_rowconfigure(0, weight=1)
     backup_frame.grid_rowconfigure(1, weight=1)
@@ -102,23 +98,25 @@ def create_ui(remotePaths, localPath):
     backup_frame.grid_columnconfigure(0, weight=1)
     backup_frame.grid_columnconfigure(1, weight=1)
     
+    tk.Label(backup_frame, text="----------     Author - Shiv Ahir     ----------").grid(row=0, column=0, columnspan=2, padx=10, pady=10, sticky='nsew')
+
     
-    tk.Label(backup_frame, text="Device IP Address:").grid(row=0, column=0, padx=10, pady=10,sticky='nsew')
+    tk.Label(backup_frame, text="Device IP Address:").grid(row=1, column=0, padx=10, pady=10,sticky='nsew')
     deviceIPEntry = tk.Entry(backup_frame, width=50)
-    deviceIPEntry.grid(row=0, column=1, padx=10, pady=10,sticky='nsew')
-    tk.Label(backup_frame, text="Device Username:").grid(row=1, column=0, padx=10, pady=10,sticky='nsew')
+    deviceIPEntry.grid(row=1, column=1, padx=10, pady=10,sticky='nsew')
+    tk.Label(backup_frame, text="Device Username:").grid(row=2, column=0, padx=10, pady=10,sticky='nsew')
     deviceUsernameEntry = tk.Entry(backup_frame, width=50)
-    deviceUsernameEntry.grid(row=1, column=1, padx=10, pady=10,sticky='nsew')
-    tk.Label(backup_frame, text="Device Password:").grid(row=2, column=0, padx=10, pady=10,sticky='nsew')
+    deviceUsernameEntry.grid(row=2, column=1, padx=10, pady=10,sticky='nsew')
+    tk.Label(backup_frame, text="Device Password:").grid(row=3, column=0, padx=10, pady=10,sticky='nsew')
     devicePasswordEntry = tk.Entry(backup_frame, width=50, show='*')
-    devicePasswordEntry.grid(row=2, column=1, padx=10, pady=10,sticky='nsew')
+    devicePasswordEntry.grid(row=3, column=1, padx=10, pady=10,sticky='nsew')
     
     # UI for backup Section
     backupBtn = tk.Button(backup_frame, text="Start Backup", command=startBackup)
-    backupBtn.grid(row=3, column=0, padx=10, pady=20, sticky='e')
+    backupBtn.grid(row=4, column=0, padx=10, pady=20, sticky='e')
     # UI for debugging Section
     debug_button = tk.Button(backup_frame, text="Debug", command=startDebug)
-    debug_button.grid(row=3, column=1, padx=10, pady=10, sticky='w')
+    debug_button.grid(row=4, column=1, padx=10, pady=10, sticky='w')
     
     tk.Label(debug_frame, text="Debugging Section").grid(row=0, column=0, padx=10, pady=10, sticky='nsew')
     debug_output = tk.Text(debug_frame, height=20, width=80)
