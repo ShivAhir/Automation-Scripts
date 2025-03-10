@@ -1,0 +1,17 @@
+stages:
+  - build
+  - package
+  - deploy
+
+build-exe:
+  stage: build
+  image: debian:latest  # Use a Debian-based Linux image
+  before_script:
+    - dpkg --add-architecture i386
+    - apt update && apt install -y wine64 wine32 python3 python3-pip
+    - pip3 install cx_Freeze
+  script:
+    - wine python3 setup.py build
+  artifacts:
+    paths:
+      - build/
