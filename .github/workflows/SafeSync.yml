@@ -26,7 +26,6 @@ jobs:
           pip install cx_Freeze
           pip install paramiko
           pip install scp
-          pip install os
           
 
       - name: Build executable
