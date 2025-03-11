@@ -12,9 +12,9 @@ if sys.platform == 'win32':
     base = "Win32GUI"
 
 setup(
-    name="SafeSync-trial",
+    name="SafeSync",
     version="1.0",
-    description="SafeSync Application-trial",
+    description="SafeSync Application",
     options={"build_exe": build_exe_options},
-    executables=[Executable("trial.py", base=base)],
+    executables=[Executable("SafeSync.py", base=base)],
 )
