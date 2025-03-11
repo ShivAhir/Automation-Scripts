@@ -26,7 +26,6 @@ jobs:
           pip install cx_Freeze
           pip install paramiko
           pip install scp
-          sudo apt-get install python3-tk
 
       - name: Build executable
         run: python SafeSync/setup.py build
