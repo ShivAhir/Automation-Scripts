@@ -1,4 +1,4 @@
-# minimal_tkinter_app.py
+
 import tkinter as tk
 
 root = tk.Tk()
