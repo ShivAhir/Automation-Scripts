@@ -28,7 +28,7 @@ jobs:
           pip install scp
 
       - name: Build executable
-        run: python SafeSync/setup.py build
+        run: python SafeSync/trial.py build
 
       - name: List build directory
         run: ls -R build/
