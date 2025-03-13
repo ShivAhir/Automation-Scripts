@@ -26,7 +26,10 @@ jobs:
           pip install cx_Freeze
           pip install paramiko
           pip install scp
+      - name: Verify Tkinter Installation
+        run: python -c "import tkinter; print('Tkinter is installed')"
 
+      
       - name: Build executable
         run: python SafeSync/setup.py build
 
