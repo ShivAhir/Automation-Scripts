@@ -8,8 +8,8 @@ build_exe_options = {
     "include_files": []
 }
 base = None # to hide the console
-if sys.platform == 'win32':
-    base = "Win32GUI"
+# if sys.platform == 'win32':
+    # base = "Win32GUI"
 
 setup(
     name="SafeSync",
