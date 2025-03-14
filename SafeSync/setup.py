@@ -7,21 +7,13 @@ build_exe_options = {
     "include_files": ['assets\Icon\SafeSync.ico']
 }
 base = None # to hide the console
-if sys.platform == 'win32':
-    base = "Win32GUI"
-executables = [
-    Executable(
-        script = "SafeSync.py",
-        base=base,
-        icon='assets\Icon\SafeSync.ico'
-    )
-]
-
+# if sys.platform == 'win32':
+    # base = "Win32GUI"
 
 setup(
     name="SafeSync",
     version="1.0",
     description="SafeSync Application",
     options={"build_exe": build_exe_options},
-    executables=executables,
+    executables=[Executable("SafeSync.py", base=base)],
 )

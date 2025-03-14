@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # from BackEnd_Backup_SafeSync import establishConnection, sshClient
 # import time
 
@@ -15,3 +16,13 @@
 # print(output)
 # if command == "systemctl --failed --no-legend | awk '{print $2}'":         
 #     print ("before remove escape:",output)
+=======
+
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Minimal Tkinter App")
+label = tk.Label(root, text="Hello, Tkinter!")
+label.pack()
+root.mainloop()
+>>>>>>> 7552ff881752157aed8cf1b4e4dfdf164dfec31e
