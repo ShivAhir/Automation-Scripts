@@ -130,3 +130,129 @@ vx@sVIP-01-1D-A8:~$
 [?2004l+IN24+OUT2+SM+MCR|+IN32+OUT2|+IN32+OUT2
 vx@sVIP-01-1D-A8:~$ 
 2025-03-10 11:21:27,638 - paramiko.transport - DEBUG - EOF in transport thread
+2025-03-10 14:34:20,589 - paramiko.transport - DEBUG - starting thread (client mode): 0x125d6510
+2025-03-10 14:34:20,590 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-03-10 14:34:20,599 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.7
+2025-03-10 14:34:20,599 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.6p1)
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - client lang: <none>
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - server lang: <none>
+2025-03-10 14:34:20,602 - paramiko.transport - DEBUG - kex follows: False
+2025-03-10 14:34:20,603 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-03-10 14:34:20,603 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-03-10 14:34:20,603 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-03-10 14:34:20,603 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-03-10 14:34:20,603 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-03-10 14:34:20,603 - paramiko.transport - DEBUG - Compression: none
+2025-03-10 14:34:20,603 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-03-10 14:34:20,615 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-03-10 14:34:20,615 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-03-10 14:34:20,615 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+2025-03-10 14:34:20,616 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for 172.16.176.143: b'3cfc07ef17d0157e87fdc66167c8eb19'
+2025-03-10 14:34:20,630 - paramiko.transport - DEBUG - userauth is OK
+2025-03-10 14:34:20,646 - paramiko.transport - INFO - Authentication (password) successful!
+2025-03-10 14:34:20,647 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-03-10 14:34:20,738 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-03-10 14:34:20,738 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-03-10 14:34:20,781 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-03-10 14:34:20,781 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-03-10 14:34:20,783 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-03-10 14:34:20,786 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-03-10 14:34:21,087 - root - DEBUG - Last login: Mon Mar 10 10:04:00 2025 from 10.44.21.72
+cat /version
+mvx@MVX-143129sMVX-143:~$ cat /version
+2.6.0-20250307-c078e19df-138
+mvx@MVX-143129sMVX-143:~$ 
+2025-03-10 14:34:21,389 - root - DEBUG - mvdb-get cardinfo.app.name
+Result: evMV-VIP100G
+mvx@MVX-143129sMVX-143:~$ 
+2025-03-10 14:34:21,691 - root - DEBUG - mvdb-get cardinfo.license.serial_num
+Result: 0000000000000001
+mvx@MVX-143129sMVX-143:~$ 
+2025-03-10 14:34:21,993 - root - DEBUG - mvdb-get cardinfo.license.mac_addr
+Result: 00:13:95:58:47:db
+mvx@MVX-143129sMVX-143:~$ 
+2025-03-10 14:34:22,294 - root - DEBUG - mvdb-get cardinfo.platform
+Result: X30
+mvx@MVX-143129sMVX-143:~$ 
+2025-03-10 14:34:22,595 - root - DEBUG - mvdb-get cardinfo.prod
+Result: ev670-X30-HW-V2
+mvx@MVX-143129sMVX-143:~$ 
+2025-03-10 14:34:23,899 - root - DEBUG - uptime
+ 14:34:23 up  4:24,  1 user,  load average: 3.71, 3.39, 3.44
+mvx@MVX-143129sMVX-143:~$ 
+2025-03-10 14:34:24,200 - root - DEBUG - license-decode /etc/mvx/vip/license.key evMV-VIP100G 00000000000000001 00:13:95:58:47:db
++IN64+OUT6+MCR
+mvx@MVX-143129sMVX-143:~$ 
+2025-03-10 14:34:24,201 - paramiko.transport - DEBUG - EOF in transport thread
+2025-03-10 14:34:45,854 - paramiko.transport - DEBUG - starting thread (client mode): 0x12644050
+2025-03-10 14:34:45,854 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-03-10 14:34:45,865 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.7
+2025-03-10 14:34:45,866 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.6p1)
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - client lang: <none>
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - server lang: <none>
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - kex follows: False
+2025-03-10 14:34:45,868 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-03-10 14:34:45,870 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-03-10 14:34:45,870 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-03-10 14:34:45,870 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-03-10 14:34:45,870 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-03-10 14:34:45,870 - paramiko.transport - DEBUG - Compression: none
+2025-03-10 14:34:45,870 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-03-10 14:34:45,885 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-03-10 14:34:45,885 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-03-10 14:34:45,886 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+2025-03-10 14:34:45,886 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for 172.16.177.135: b'13025ef27ce86c40ea6f3bf46f76513b'
+2025-03-10 14:34:45,888 - paramiko.transport - DEBUG - userauth is OK
+2025-03-10 14:34:45,904 - paramiko.transport - INFO - Authentication (password) successful!
+2025-03-10 14:34:45,904 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-03-10 14:34:45,917 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-03-10 14:34:45,917 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-03-10 14:34:45,961 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-03-10 14:34:45,961 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-03-10 14:34:45,964 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-03-10 14:34:45,967 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-03-10 14:34:46,268 - root - DEBUG - Last login: Mon Mar 10 14:10:07 2025 from 10.40.100.54
+cat /version
+mvx@mvx:~$ cat /version
+2.5.1-20250120-d43d71f68-173
+mvx@mvx:~$ 
+2025-03-10 14:34:46,569 - root - DEBUG - mvdb-get cardinfo.app.name
+Result: cVIP
+mvx@mvx:~$ 
+2025-03-10 14:34:46,870 - root - DEBUG - mvdb-get cardinfo.license.serial_num
+Result: 
+mvx@mvx:~$ 
+2025-03-10 14:34:47,172 - root - DEBUG - mvdb-get cardinfo.license.mac_addr
+Result: 0c:9d:92:5c:1c:c1
+mvx@mvx:~$ 
+2025-03-10 14:34:47,473 - root - DEBUG - mvdb-get cardinfo.platform
+Result: SW_ONLY
+mvx@mvx:~$ 
+2025-03-10 14:34:47,775 - root - DEBUG - mvdb-get cardinfo.prod
+Result: ASUS G3 SW
+mvx@mvx:~$ 
+2025-03-10 14:34:49,078 - root - DEBUG - uptime
+ 14:34:43 up 25 min,  2 users,  load average: 4.06, 3.96, 3.16
+mvx@mvx:~$ 
+2025-03-10 14:34:49,379 - root - DEBUG - license-decode /etc/mvx/vip-sw/license.key cVIP None 0c:9d:92:5c:1c:c11
++IN32+OUT8+MCR+DDP+PLURA+XS+NIELSEN
+mvx@mvx:~$ 
+2025-03-10 14:34:49,380 - paramiko.transport - DEBUG - EOF in transport thread

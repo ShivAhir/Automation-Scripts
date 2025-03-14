@@ -68,14 +68,19 @@ def create_ui(remotePaths, localPath):
         closeSSHConnection()
     
     def formatDebugInfo(debug_info):
+        
+        # Debug - general information section  
+        debug_output.insert(tk.END, " Card's General Information \n\n", ('bold', 'center'))
         for key, value in debug_info.items():
             debug_output.insert(tk.END, f"{key}: ", 'bold')
-            debug_output.insert(tk.END, f"{value}\n")
+            debug_output.insert(tk.END, f"{value}\n")          
     
             
     root = tk.Tk()
     root.title("SafeSync")
+    root.iconbitmap("assets/Icon/SafeSync.ico")
     
+
     container = tk.Frame(root)
     container.grid(row=0, column=0, sticky='nsew')
     
@@ -119,10 +124,11 @@ def create_ui(remotePaths, localPath):
     debug_button.grid(row=4, column=1, padx=10, pady=10, sticky='w')
     
     tk.Label(debug_frame, text="Debugging Section").grid(row=0, column=0, padx=10, pady=10, sticky='nsew')
-    debug_output = tk.Text(debug_frame, height=20, width=80)
+    debug_output = tk.Text(debug_frame, height=20, width=100, wrap='word')
     debug_output.grid(row=1, column=0, padx=10, pady=10, sticky='nsew')
     
     debug_output.tag_configure('bold', font=('Helvetica', 10, 'bold'))
+    debug_output.tag_configure('center', justify='center')
     
     debug_frame.grid_rowconfigure(1, weight=1)
     debug_frame.grid_columnconfigure(0, weight=1)
@@ -130,6 +136,7 @@ def create_ui(remotePaths, localPath):
     root.grid_rowconfigure(0, weight=1)
     root.grid_columnconfigure(0, weight=1)
     
+    deviceIPEntry.focus_set()
     root.mainloop()
 
 def main():
