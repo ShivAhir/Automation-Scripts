@@ -2,12 +2,13 @@ import tkinter as tk
 from tkinter import messagebox
 import os
 import threading
-from BackEnd_Backup_SafeSync import downloadFolder, establishConnection, closeSSHConnection
-from BackEnd_Debug_SafeSync import cardInfoD
+from Backend_Files.Backup import download, closeSSHConnection
+from Backend_Files.Debug import cardInfoD
+from Backend_Files.Upload import uploadFiles
 
 def create_ui(remotePaths, localPath):
     
-    def getInfo():
+    def getInfo(): # this is to get the device communication info 
         deviceIP = deviceIPEntry.get()
         deviceUsername = deviceUsernameEntry.get()
         devicePassword = devicePasswordEntry.get()
@@ -20,43 +21,24 @@ def create_ui(remotePaths, localPath):
     def startBackup():
         info = getInfo()
         deviceIP, deviceUsername, devicePassword = info if info is not None else (None, None, None)
-        loadingLabel = tk.Label(backup_frame, text="Downloading, please wait...", fg="blue")
-        loadingLabel.grid(row=5, column=0, columnspan=2, pady=10)
-        
-        def download():
-            try:
-                print("Establishing connection...")
-                establishConnection(deviceIP, deviceUsername, devicePassword)
-                print("Connection established.")
-                for remotePath in remotePaths:
-                    print(f"Downloading folder: {remotePath}")
-                    success = downloadFolder(remotePath, localPath)
-                    if not success:
-                        print(f"Failed to download folder: {remotePath}")
-                        messagebox.showerror("Error", f"Failed to download folder: {remotePath}")
-                        break
-                else:
-                    print(f"Successfully downloaded folders to {localPath}")
-                    messagebox.showinfo("Success", f"Successfully downloaded folders to {localPath}")
-            except Exception as e:
-                print(f"An error occurred: {e}")
-                messagebox.showerror("Error", f"An error occurred: {e}")
-            finally:
-                print("Closing connection...")
-                closeSSHConnection()
-                print("Connection closed.")
-                loadingLabel.destroy()
-        threading.Thread(target=download).start()
-        
+        if info:
+            loadingLabel = tk.Label(auth_info_frame, text="Downloading, please wait...", fg="blue")
+            loadingLabel.grid(row=5, column=0, columnspan=2, pady=10)
+            threading.Thread(target=download, args=(deviceIP, deviceUsername, devicePassword, remotePaths, localPath, loadingLabel)).start()
+
+    def startUpload():
+        info = getInfo()
+        deviceIP, deviceUsername, devicePassword = info if info is not None else (None, None, None)
+        if info:
+            loadingLabel = tk.Label(auth_info_frame, text="Uploading, please wait...", fg="blue")
+            loadingLabel.grid(row=5, column=0, columnspan=2, pady=10)
+            threading.Thread(target=uploadFiles, args=(deviceIP, deviceUsername, devicePassword, remotePaths, localPath, loadingLabel)).start()    
     
     def startDebug():
         if debug_frame.winfo_ismapped():
             debug_frame.pack_forget()
         else:
             debug_frame.pack(fill='both', expand=True)
-        displayCardInfoD()
-        
-    def displayCardInfoD():
         info = getInfo()
         if info is None:
             return
@@ -68,13 +50,15 @@ def create_ui(remotePaths, localPath):
         closeSSHConnection()
     
     def formatDebugInfo(debug_info):
-        
         # Debug - general information section  
-        debug_output.insert(tk.END, " Card's General Information \n\n", ('bold', 'center'))
+        debug_output.insert(tk.END, "\n Card's General Information \n\n", ('bold', 'center'))
         for key, value in debug_info.items():
             debug_output.insert(tk.END, f"{key}: ", 'bold')
-            debug_output.insert(tk.END, f"{value}\n")          
-    
+            debug_output.insert(tk.END, f"{value}\n")
+                  
+    def startDebugMore():
+        print('debug more was pressed')
+
             
     root = tk.Tk()
     root.title("SafeSync")
@@ -84,48 +68,64 @@ def create_ui(remotePaths, localPath):
     container = tk.Frame(root)
     container.grid(row=0, column=0, sticky='nsew')
     
-    backup_frame = tk.Frame(container)
-    backup_frame.grid(row=0, column=0, sticky='nsew')
+    auth_info_frame = tk.Frame(container)
+    auth_info_frame.grid(row=0, column=0, sticky='nsew')
+
+    actn_button_frame = tk.Frame(container)
+    actn_button_frame.grid(row=1, column=0, sticky='nsew')
 
     debug_frame = tk.Frame(container)
-    debug_frame.grid(row=1, column=0, sticky='nsew')
+    debug_frame.grid(row=2, column=0, sticky='nsew')
     
     container.grid_rowconfigure(0, weight=1)
     container.grid_rowconfigure(1, weight=1)
+    container.grid_rowconfigure(2, weight=1)
     container.grid_columnconfigure(0, weight=1)
     
         
-    backup_frame.grid_rowconfigure(0, weight=1)
-    backup_frame.grid_rowconfigure(1, weight=1)
-    backup_frame.grid_rowconfigure(2, weight=1)
-    backup_frame.grid_rowconfigure(3, weight=1)
-    backup_frame.grid_rowconfigure(4, weight=1)
-    backup_frame.grid_columnconfigure(0, weight=1)
-    backup_frame.grid_columnconfigure(1, weight=1)
+    auth_info_frame.grid_rowconfigure(0, weight=1)
+    auth_info_frame.grid_rowconfigure(1, weight=1)
+    auth_info_frame.grid_rowconfigure(2, weight=1)
+    auth_info_frame.grid_rowconfigure(3, weight=1)
+    auth_info_frame.grid_rowconfigure(4, weight=1)
+    auth_info_frame.grid_rowconfigure(5, weight=1)
+    auth_info_frame.grid_columnconfigure(0, weight=1)
+    auth_info_frame.grid_columnconfigure(1, weight=1)
+    auth_info_frame.grid_columnconfigure(2, weight=1)
+
+    actn_button_frame.grid_rowconfigure(0, weight=1)
+    actn_button_frame.grid_columnconfigure(0, weight=1)
+    actn_button_frame.grid_columnconfigure(1, weight=1)
+    actn_button_frame.grid_columnconfigure(2, weight=1)
     
-    tk.Label(backup_frame, text="----------     Author - Shiv Ahir     ----------").grid(row=0, column=0, columnspan=2, padx=10, pady=10, sticky='nsew')
+    tk.Label(auth_info_frame, text="----------     Author - Shiv Ahir     ----------").grid(row=0, column=1, pady=10, sticky='nsew')
 
     
-    tk.Label(backup_frame, text="Device IP Address:").grid(row=1, column=0, padx=10, pady=10,sticky='nsew')
-    deviceIPEntry = tk.Entry(backup_frame, width=50)
+    tk.Label(auth_info_frame, text="Device IP Address:").grid(row=1, column=0, padx=10, pady=10,sticky='nsew')
+    deviceIPEntry = tk.Entry(auth_info_frame, width=50)
     deviceIPEntry.grid(row=1, column=1, padx=10, pady=10,sticky='nsew')
-    tk.Label(backup_frame, text="Device Username:").grid(row=2, column=0, padx=10, pady=10,sticky='nsew')
-    deviceUsernameEntry = tk.Entry(backup_frame, width=50)
+    tk.Label(auth_info_frame, text="Device Username:").grid(row=2, column=0, padx=10, pady=10,sticky='nsew')
+    deviceUsernameEntry = tk.Entry(auth_info_frame, width=50)
     deviceUsernameEntry.grid(row=2, column=1, padx=10, pady=10,sticky='nsew')
-    tk.Label(backup_frame, text="Device Password:").grid(row=3, column=0, padx=10, pady=10,sticky='nsew')
-    devicePasswordEntry = tk.Entry(backup_frame, width=50, show='*')
+    tk.Label(auth_info_frame, text="Device Password:").grid(row=3, column=0, padx=10, pady=10,sticky='nsew')
+    devicePasswordEntry = tk.Entry(auth_info_frame, width=50, show='*')
     devicePasswordEntry.grid(row=3, column=1, padx=10, pady=10,sticky='nsew')
     
     # UI for backup Section
-    backupBtn = tk.Button(backup_frame, text="Start Backup", command=startBackup)
-    backupBtn.grid(row=4, column=0, padx=10, pady=20, sticky='e')
+    backupBtn = tk.Button(actn_button_frame, text="Start Backup", command=startBackup)
+    backupBtn.grid(row=0, column=0, padx=10, pady=20, sticky='e')
+    # Button for uploading backed up data to a card
+    uploadBtn = tk.Button(actn_button_frame, text="Start Upload", command=startUpload)
+    uploadBtn.grid(row=0, column=1, padx=10, pady=20)
     # UI for debugging Section
-    debug_button = tk.Button(backup_frame, text="Debug", command=startDebug)
-    debug_button.grid(row=4, column=1, padx=10, pady=10, sticky='w')
+    debug_button = tk.Button(actn_button_frame, text="Debug", command=startDebug)
+    debug_button.grid(row=0, column=2, padx=10, pady=10, sticky='w')
     
     tk.Label(debug_frame, text="Debugging Section").grid(row=0, column=0, padx=10, pady=10, sticky='nsew')
     debug_output = tk.Text(debug_frame, height=20, width=100, wrap='word')
     debug_output.grid(row=1, column=0, padx=10, pady=10, sticky='nsew')
+    debug_more_button = tk.Button(debug_frame, text="Debug More", command=startDebugMore)
+    debug_more_button.grid(row=2, column=0, padx=100, pady=10, sticky='nsew')
     
     debug_output.tag_configure('bold', font=('Helvetica', 10, 'bold'))
     debug_output.tag_configure('center', justify='center')
