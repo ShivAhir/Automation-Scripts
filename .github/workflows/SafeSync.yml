@@ -36,6 +36,12 @@ jobs:
       - name: List build directory
         run: ls -R build/
 
+      - name: Run the built executable
+        run: |
+          cd build/exe.win-amd64-3.10  # Adjust the path based on your build output
+          ./SafeSync.exe > output.log 2>&1 # Replace with the actual name of your executable
+        continue-on-error: true  # Continue even if this step fails
+
       - name: Upload executable as artifact
         uses: actions/upload-artifact@v4
         with:
