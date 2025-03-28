@@ -31,10 +31,10 @@ jobs:
 
       - name: Clear cache and temporary files
         run: |
-          if exist build rmdir /s /q build
-          if exist dist rmdir /s /q dist
-          for /d %%i in (*/__pycache__) do rmdir /s /q %%i
-      
+          if (Test-Path -Path build) { Remove-Item -Recurse -Force build }
+          if (Test-Path -Path dist) { Remove-Item -Recurse -Force dist }
+          Get-ChildItem -Path . -Recurse -Include __pycache__ | Remove-Item -Recurse -Force
+
       - name: Build executable
         run: python SafeSync/setup.py build
 
