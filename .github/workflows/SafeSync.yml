@@ -29,6 +29,11 @@ jobs:
       - name: Verify Tkinter Installation
         run: python -c "import tkinter; print('Tkinter is installed')"
 
+      - name: Clear cache and temporary files
+        run: |
+          if exist build rmdir /s /q build
+          if exist dist rmdir /s /q dist
+          for /d %%i in (*/__pycache__) do rmdir /s /q %%i
       
       - name: Build executable
         run: python SafeSync/setup.py build
