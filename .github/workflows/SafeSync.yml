@@ -47,3 +47,8 @@ jobs:
         with:
           name: built-executable
           path: build/
+      - name: Upload logs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: execution-logs
+          path: build/exe.win-amd64-3.10/output.log
