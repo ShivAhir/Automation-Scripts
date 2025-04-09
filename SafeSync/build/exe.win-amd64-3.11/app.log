@@ -1,0 +1,989 @@
+2025-04-03 12:16:10,729 - paramiko.transport - DEBUG - starting thread (client mode): 0x1862cb90
+2025-04-03 12:16:10,729 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-03 12:16:10,741 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-03 12:16:10,742 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-03 12:16:10,744 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-03 12:16:10,744 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - kex follows: False
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - Compression: none
+2025-04-03 12:16:10,752 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-03 12:16:10,771 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-03 12:16:10,771 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-03 12:16:10,771 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-03 12:16:10,771 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-03 12:16:10,771 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-03 12:16:10,771 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for 172.16.177.79: b'2c4e910932855ea0b27ab4c15eee0fc7'
+2025-04-03 12:16:10,820 - paramiko.transport - DEBUG - userauth is OK
+2025-04-03 12:16:10,920 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-03 12:16:10,920 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-03 12:16:10,988 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-03 12:16:10,989 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-03 12:16:11,031 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-03 12:16:11,031 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-03 12:16:11,033 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-03 12:16:11,036 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-03 12:16:11,036 - Backend_Files.logger_config - INFO - Connection established for backup.
+2025-04-03 12:16:11,036 - Backend_Files.logger_config - INFO - Downloading folder: /udata/etc/network
+2025-04-03 12:16:11,037 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-03 12:16:11,039 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-03 12:16:11,039 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-03 12:16:11,042 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-03 12:16:11,046 - paramiko.transport - DEBUG - [chan 1] EOF received (1)
+2025-04-03 12:16:11,046 - paramiko.transport - DEBUG - [chan 2] Max packet in: 32768 bytes
+2025-04-03 12:16:11,046 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-03 12:16:11,048 - paramiko.transport - DEBUG - [chan 2] Max packet out: 32768 bytes
+2025-04-03 12:16:11,048 - paramiko.transport - DEBUG - Secsh channel 2 opened.
+2025-04-03 12:16:11,077 - paramiko.transport - DEBUG - [chan 2] Sesch channel 2 request ok
+2025-04-03 12:16:11,083 - paramiko.transport - DEBUG - [chan 2] EOF received (2)
+2025-04-03 12:16:11,083 - Backend_Files.logger_config - INFO - Downloading 2 files from /udata/etc/network...
+2025-04-03 12:16:11,084 - paramiko.transport - DEBUG - [chan 2] EOF sent (2)
+2025-04-03 12:16:11,084 - paramiko.transport - DEBUG - [chan 3] Max packet in: 32768 bytes
+2025-04-03 12:16:11,131 - paramiko.transport - DEBUG - [chan 3] Max packet out: 32768 bytes
+2025-04-03 12:16:11,131 - paramiko.transport - DEBUG - Secsh channel 3 opened.
+2025-04-03 12:16:11,134 - paramiko.transport - DEBUG - [chan 3] Sesch channel 3 request ok
+2025-04-03 12:16:11,143 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\interfaces: 0.00%
+2025-04-03 12:16:11,145 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\interfaces: 100.00%
+2025-04-03 12:16:11,152 - paramiko.transport - DEBUG - [chan 3] EOF received (3)
+2025-04-03 12:16:11,153 - paramiko.transport - DEBUG - [chan 3] EOF sent (3)
+2025-04-03 12:16:11,153 - paramiko.transport - DEBUG - [chan 4] Max packet in: 32768 bytes
+2025-04-03 12:16:11,204 - paramiko.transport - DEBUG - [chan 4] Max packet out: 32768 bytes
+2025-04-03 12:16:11,204 - paramiko.transport - DEBUG - Secsh channel 4 opened.
+2025-04-03 12:16:11,206 - paramiko.transport - DEBUG - [chan 4] Sesch channel 4 request ok
+2025-04-03 12:16:11,216 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\interfaces.routes: 100.00%
+2025-04-03 12:16:11,221 - paramiko.transport - DEBUG - [chan 4] EOF received (4)
+2025-04-03 12:16:11,221 - paramiko.transport - DEBUG - [chan 4] EOF sent (4)
+2025-04-03 12:16:11,222 - Backend_Files.logger_config - INFO - 
+Successfully downloaded folder from /udata/etc/network to C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup
+2025-04-03 12:16:11,222 - Backend_Files.logger_config - INFO - Downloading folder: /udata/etc/mvx
+2025-04-03 12:16:11,223 - paramiko.transport - DEBUG - [chan 5] Max packet in: 32768 bytes
+2025-04-03 12:16:11,267 - paramiko.transport - DEBUG - [chan 5] Max packet out: 32768 bytes
+2025-04-03 12:16:11,267 - paramiko.transport - DEBUG - Secsh channel 5 opened.
+2025-04-03 12:16:11,271 - paramiko.transport - DEBUG - [chan 5] Sesch channel 5 request ok
+2025-04-03 12:16:11,275 - paramiko.transport - DEBUG - [chan 5] EOF received (5)
+2025-04-03 12:16:11,276 - paramiko.transport - DEBUG - [chan 6] Max packet in: 32768 bytes
+2025-04-03 12:16:11,276 - paramiko.transport - DEBUG - [chan 5] EOF sent (5)
+2025-04-03 12:16:11,277 - paramiko.transport - DEBUG - [chan 6] Max packet out: 32768 bytes
+2025-04-03 12:16:11,277 - paramiko.transport - DEBUG - Secsh channel 6 opened.
+2025-04-03 12:16:11,325 - paramiko.transport - DEBUG - [chan 6] Sesch channel 6 request ok
+2025-04-03 12:16:11,334 - paramiko.transport - DEBUG - [chan 6] EOF received (6)
+2025-04-03 12:16:11,334 - Backend_Files.logger_config - INFO - Downloading 77 files from /udata/etc/mvx...
+2025-04-03 12:16:11,335 - paramiko.transport - DEBUG - [chan 6] EOF sent (6)
+2025-04-03 12:16:11,336 - paramiko.transport - DEBUG - [chan 7] Max packet in: 32768 bytes
+2025-04-03 12:16:11,383 - paramiko.transport - DEBUG - [chan 7] Max packet out: 32768 bytes
+2025-04-03 12:16:11,383 - paramiko.transport - DEBUG - Secsh channel 7 opened.
+2025-04-03 12:16:11,386 - paramiko.transport - DEBUG - [chan 7] Sesch channel 7 request ok
+2025-04-03 12:16:11,395 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_1.json: 0.00%
+2025-04-03 12:16:11,397 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_1.json: 100.00%
+2025-04-03 12:16:11,405 - paramiko.transport - DEBUG - [chan 7] EOF received (7)
+2025-04-03 12:16:11,405 - paramiko.transport - DEBUG - [chan 7] EOF sent (7)
+2025-04-03 12:16:11,406 - paramiko.transport - DEBUG - [chan 8] Max packet in: 32768 bytes
+2025-04-03 12:16:11,455 - paramiko.transport - DEBUG - [chan 8] Max packet out: 32768 bytes
+2025-04-03 12:16:11,455 - paramiko.transport - DEBUG - Secsh channel 8 opened.
+2025-04-03 12:16:11,459 - paramiko.transport - DEBUG - [chan 8] Sesch channel 8 request ok
+2025-04-03 12:16:11,467 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_2.json: 0.00%
+2025-04-03 12:16:11,471 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_2.json: 71.49%
+2025-04-03 12:16:11,471 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_2.json: 100.00%
+2025-04-03 12:16:11,481 - paramiko.transport - DEBUG - [chan 8] EOF received (8)
+2025-04-03 12:16:11,481 - paramiko.transport - DEBUG - [chan 8] EOF sent (8)
+2025-04-03 12:16:11,482 - paramiko.transport - DEBUG - [chan 9] Max packet in: 32768 bytes
+2025-04-03 12:16:11,528 - paramiko.transport - DEBUG - [chan 9] Max packet out: 32768 bytes
+2025-04-03 12:16:11,528 - paramiko.transport - DEBUG - Secsh channel 9 opened.
+2025-04-03 12:16:11,531 - paramiko.transport - DEBUG - [chan 9] Sesch channel 9 request ok
+2025-04-03 12:16:11,542 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_3.json: 0.00%
+2025-04-03 12:16:11,545 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_3.json: 43.07%
+2025-04-03 12:16:11,545 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_3.json: 86.13%
+2025-04-03 12:16:11,545 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_3.json: 100.00%
+2025-04-03 12:16:11,555 - paramiko.transport - DEBUG - [chan 9] EOF received (9)
+2025-04-03 12:16:11,555 - paramiko.transport - DEBUG - [chan 9] EOF sent (9)
+2025-04-03 12:16:11,556 - paramiko.transport - DEBUG - [chan 10] Max packet in: 32768 bytes
+2025-04-03 12:16:11,604 - paramiko.transport - DEBUG - [chan 10] Max packet out: 32768 bytes
+2025-04-03 12:16:11,604 - paramiko.transport - DEBUG - Secsh channel 10 opened.
+2025-04-03 12:16:11,607 - paramiko.transport - DEBUG - [chan 10] Sesch channel 10 request ok
+2025-04-03 12:16:11,621 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_4.json: 0.00%
+2025-04-03 12:16:11,624 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layouts\layout_4.json: 100.00%
+2025-04-03 12:16:11,633 - paramiko.transport - DEBUG - [chan 10] EOF received (10)
+2025-04-03 12:16:11,633 - paramiko.transport - DEBUG - [chan 10] EOF sent (10)
+2025-04-03 12:16:11,635 - paramiko.transport - DEBUG - [chan 11] Max packet in: 32768 bytes
+2025-04-03 12:16:11,679 - paramiko.transport - DEBUG - [chan 11] Max packet out: 32768 bytes
+2025-04-03 12:16:11,680 - paramiko.transport - DEBUG - Secsh channel 11 opened.
+2025-04-03 12:16:11,683 - paramiko.transport - DEBUG - [chan 11] Sesch channel 11 request ok
+2025-04-03 12:16:11,693 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layout_store\layout_001.json: 0.00%
+2025-04-03 12:16:11,695 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\layout_store\layout_001.json: 100.00%
+2025-04-03 12:16:11,702 - paramiko.transport - DEBUG - [chan 11] EOF received (11)
+2025-04-03 12:16:11,702 - paramiko.transport - DEBUG - [chan 11] EOF sent (11)
+2025-04-03 12:16:11,703 - paramiko.transport - DEBUG - [chan 12] Max packet in: 32768 bytes
+2025-04-03 12:16:11,751 - paramiko.transport - DEBUG - [chan 12] Max packet out: 32768 bytes
+2025-04-03 12:16:11,752 - paramiko.transport - DEBUG - Secsh channel 12 opened.
+2025-04-03 12:16:11,754 - paramiko.transport - DEBUG - [chan 12] Sesch channel 12 request ok
+2025-04-03 12:16:11,764 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\default_font.eff: 0.00%
+2025-04-03 12:16:11,765 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\default_font.eff: 27.89%
+2025-04-03 12:16:11,765 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\default_font.eff: 55.79%
+2025-04-03 12:16:11,765 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\default_font.eff: 83.68%
+2025-04-03 12:16:11,766 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\default_font.eff: 100.00%
+2025-04-03 12:16:11,772 - paramiko.transport - DEBUG - [chan 12] EOF received (12)
+2025-04-03 12:16:11,772 - paramiko.transport - DEBUG - [chan 12] EOF sent (12)
+2025-04-03 12:16:11,773 - paramiko.transport - DEBUG - [chan 13] Max packet in: 32768 bytes
+2025-04-03 12:16:11,820 - paramiko.transport - DEBUG - [chan 13] Max packet out: 32768 bytes
+2025-04-03 12:16:11,820 - paramiko.transport - DEBUG - Secsh channel 13 opened.
+2025-04-03 12:16:11,822 - paramiko.transport - DEBUG - [chan 13] Sesch channel 13 request ok
+2025-04-03 12:16:11,832 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\default_font.sha256: 0.00%
+2025-04-03 12:16:11,834 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\default_font.sha256: 100.00%
+2025-04-03 12:16:11,840 - paramiko.transport - DEBUG - [chan 13] EOF received (13)
+2025-04-03 12:16:11,840 - paramiko.transport - DEBUG - [chan 13] EOF sent (13)
+2025-04-03 12:16:11,841 - paramiko.transport - DEBUG - [chan 14] Max packet in: 32768 bytes
+2025-04-03 12:16:11,888 - paramiko.transport - DEBUG - [chan 14] Max packet out: 32768 bytes
+2025-04-03 12:16:11,888 - paramiko.transport - DEBUG - Secsh channel 14 opened.
+2025-04-03 12:16:11,891 - paramiko.transport - DEBUG - [chan 14] Sesch channel 14 request ok
+2025-04-03 12:16:11,912 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_10.eff: 0.00%
+2025-04-03 12:16:11,913 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_10.eff: 27.89%
+2025-04-03 12:16:11,914 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_10.eff: 55.79%
+2025-04-03 12:16:11,914 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_10.eff: 83.68%
+2025-04-03 12:16:11,915 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_10.eff: 100.00%
+2025-04-03 12:16:11,922 - paramiko.transport - DEBUG - [chan 14] EOF received (14)
+2025-04-03 12:16:11,922 - paramiko.transport - DEBUG - [chan 14] EOF sent (14)
+2025-04-03 12:16:11,923 - paramiko.transport - DEBUG - [chan 15] Max packet in: 32768 bytes
+2025-04-03 12:16:11,972 - paramiko.transport - DEBUG - [chan 15] Max packet out: 32768 bytes
+2025-04-03 12:16:11,972 - paramiko.transport - DEBUG - Secsh channel 15 opened.
+2025-04-03 12:16:11,975 - paramiko.transport - DEBUG - [chan 15] Sesch channel 15 request ok
+2025-04-03 12:16:11,986 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_10.sha256: 0.00%
+2025-04-03 12:16:11,988 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_10.sha256: 100.00%
+2025-04-03 12:16:11,993 - paramiko.transport - DEBUG - [chan 15] EOF received (15)
+2025-04-03 12:16:11,993 - paramiko.transport - DEBUG - [chan 15] EOF sent (15)
+2025-04-03 12:16:11,994 - paramiko.transport - DEBUG - [chan 16] Max packet in: 32768 bytes
+2025-04-03 12:16:12,043 - paramiko.transport - DEBUG - [chan 16] Max packet out: 32768 bytes
+2025-04-03 12:16:12,043 - paramiko.transport - DEBUG - Secsh channel 16 opened.
+2025-04-03 12:16:12,046 - paramiko.transport - DEBUG - [chan 16] Sesch channel 16 request ok
+2025-04-03 12:16:12,057 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_1.eff: 0.00%
+2025-04-03 12:16:12,060 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_1.eff: 29.77%
+2025-04-03 12:16:12,060 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_1.eff: 59.54%
+2025-04-03 12:16:12,061 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_1.eff: 89.32%
+2025-04-03 12:16:12,061 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_1.eff: 100.00%
+2025-04-03 12:16:12,070 - paramiko.transport - DEBUG - [chan 16] EOF received (16)
+2025-04-03 12:16:12,070 - paramiko.transport - DEBUG - [chan 16] EOF sent (16)
+2025-04-03 12:16:12,071 - paramiko.transport - DEBUG - [chan 17] Max packet in: 32768 bytes
+2025-04-03 12:16:12,121 - paramiko.transport - DEBUG - [chan 17] Max packet out: 32768 bytes
+2025-04-03 12:16:12,121 - paramiko.transport - DEBUG - Secsh channel 17 opened.
+2025-04-03 12:16:12,123 - paramiko.transport - DEBUG - [chan 17] Sesch channel 17 request ok
+2025-04-03 12:16:12,133 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_1.sha256: 0.00%
+2025-04-03 12:16:12,135 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_1.sha256: 100.00%
+2025-04-03 12:16:12,141 - paramiko.transport - DEBUG - [chan 17] EOF received (17)
+2025-04-03 12:16:12,141 - paramiko.transport - DEBUG - [chan 17] EOF sent (17)
+2025-04-03 12:16:12,142 - paramiko.transport - DEBUG - [chan 18] Max packet in: 32768 bytes
+2025-04-03 12:16:12,194 - paramiko.transport - DEBUG - [chan 18] Max packet out: 32768 bytes
+2025-04-03 12:16:12,194 - paramiko.transport - DEBUG - Secsh channel 18 opened.
+2025-04-03 12:16:12,196 - paramiko.transport - DEBUG - [chan 18] Sesch channel 18 request ok
+2025-04-03 12:16:12,202 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_2.eff: 0.00%
+2025-04-03 12:16:12,204 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_2.eff: 25.92%
+2025-04-03 12:16:12,204 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_2.eff: 51.84%
+2025-04-03 12:16:12,205 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_2.eff: 77.76%
+2025-04-03 12:16:12,205 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_2.eff: 100.00%
+2025-04-03 12:16:12,212 - paramiko.transport - DEBUG - [chan 18] EOF received (18)
+2025-04-03 12:16:12,212 - paramiko.transport - DEBUG - [chan 18] EOF sent (18)
+2025-04-03 12:16:12,212 - paramiko.transport - DEBUG - [chan 19] Max packet in: 32768 bytes
+2025-04-03 12:16:12,260 - paramiko.transport - DEBUG - [chan 19] Max packet out: 32768 bytes
+2025-04-03 12:16:12,260 - paramiko.transport - DEBUG - Secsh channel 19 opened.
+2025-04-03 12:16:12,262 - paramiko.transport - DEBUG - [chan 19] Sesch channel 19 request ok
+2025-04-03 12:16:12,274 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_2.sha256: 0.00%
+2025-04-03 12:16:12,276 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_2.sha256: 100.00%
+2025-04-03 12:16:12,282 - paramiko.transport - DEBUG - [chan 19] EOF received (19)
+2025-04-03 12:16:12,282 - paramiko.transport - DEBUG - [chan 19] EOF sent (19)
+2025-04-03 12:16:12,282 - paramiko.transport - DEBUG - [chan 20] Max packet in: 32768 bytes
+2025-04-03 12:16:12,331 - paramiko.transport - DEBUG - [chan 20] Max packet out: 32768 bytes
+2025-04-03 12:16:12,332 - paramiko.transport - DEBUG - Secsh channel 20 opened.
+2025-04-03 12:16:12,335 - paramiko.transport - DEBUG - [chan 20] Sesch channel 20 request ok
+2025-04-03 12:16:12,341 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_3.eff: 0.00%
+2025-04-03 12:16:12,342 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_3.eff: 25.73%
+2025-04-03 12:16:12,342 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_3.eff: 51.45%
+2025-04-03 12:16:12,343 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_3.eff: 77.18%
+2025-04-03 12:16:12,343 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_3.eff: 100.00%
+2025-04-03 12:16:12,350 - paramiko.transport - DEBUG - [chan 20] EOF received (20)
+2025-04-03 12:16:12,350 - paramiko.transport - DEBUG - [chan 20] EOF sent (20)
+2025-04-03 12:16:12,351 - paramiko.transport - DEBUG - [chan 21] Max packet in: 32768 bytes
+2025-04-03 12:16:12,395 - paramiko.transport - DEBUG - [chan 21] Max packet out: 32768 bytes
+2025-04-03 12:16:12,396 - paramiko.transport - DEBUG - Secsh channel 21 opened.
+2025-04-03 12:16:12,398 - paramiko.transport - DEBUG - [chan 21] Sesch channel 21 request ok
+2025-04-03 12:16:12,406 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_3.sha256: 0.00%
+2025-04-03 12:16:12,408 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_3.sha256: 100.00%
+2025-04-03 12:16:12,414 - paramiko.transport - DEBUG - [chan 21] EOF received (21)
+2025-04-03 12:16:12,414 - paramiko.transport - DEBUG - [chan 21] EOF sent (21)
+2025-04-03 12:16:12,415 - paramiko.transport - DEBUG - [chan 22] Max packet in: 32768 bytes
+2025-04-03 12:16:12,464 - paramiko.transport - DEBUG - [chan 22] Max packet out: 32768 bytes
+2025-04-03 12:16:12,464 - paramiko.transport - DEBUG - Secsh channel 22 opened.
+2025-04-03 12:16:12,467 - paramiko.transport - DEBUG - [chan 22] Sesch channel 22 request ok
+2025-04-03 12:16:12,477 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_4.eff: 0.00%
+2025-04-03 12:16:12,479 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_4.eff: 24.85%
+2025-04-03 12:16:12,479 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_4.eff: 49.70%
+2025-04-03 12:16:12,481 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_4.eff: 74.55%
+2025-04-03 12:16:12,481 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_4.eff: 99.40%
+2025-04-03 12:16:12,481 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_4.eff: 100.00%
+2025-04-03 12:16:12,486 - paramiko.transport - DEBUG - [chan 22] EOF received (22)
+2025-04-03 12:16:12,486 - paramiko.transport - DEBUG - [chan 22] EOF sent (22)
+2025-04-03 12:16:12,487 - paramiko.transport - DEBUG - [chan 23] Max packet in: 32768 bytes
+2025-04-03 12:16:12,531 - paramiko.transport - DEBUG - [chan 23] Max packet out: 32768 bytes
+2025-04-03 12:16:12,532 - paramiko.transport - DEBUG - Secsh channel 23 opened.
+2025-04-03 12:16:12,535 - paramiko.transport - DEBUG - [chan 23] Sesch channel 23 request ok
+2025-04-03 12:16:12,541 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_4.sha256: 0.00%
+2025-04-03 12:16:12,543 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_4.sha256: 100.00%
+2025-04-03 12:16:12,549 - paramiko.transport - DEBUG - [chan 23] EOF received (23)
+2025-04-03 12:16:12,549 - paramiko.transport - DEBUG - [chan 23] EOF sent (23)
+2025-04-03 12:16:12,550 - paramiko.transport - DEBUG - [chan 24] Max packet in: 32768 bytes
+2025-04-03 12:16:12,599 - paramiko.transport - DEBUG - [chan 24] Max packet out: 32768 bytes
+2025-04-03 12:16:12,599 - paramiko.transport - DEBUG - Secsh channel 24 opened.
+2025-04-03 12:16:12,602 - paramiko.transport - DEBUG - [chan 24] Sesch channel 24 request ok
+2025-04-03 12:16:12,613 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_5.eff: 0.00%
+2025-04-03 12:16:12,615 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_5.eff: 27.90%
+2025-04-03 12:16:12,615 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_5.eff: 55.81%
+2025-04-03 12:16:12,615 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_5.eff: 83.71%
+2025-04-03 12:16:12,615 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_5.eff: 100.00%
+2025-04-03 12:16:12,623 - paramiko.transport - DEBUG - [chan 24] EOF received (24)
+2025-04-03 12:16:12,623 - paramiko.transport - DEBUG - [chan 24] EOF sent (24)
+2025-04-03 12:16:12,624 - paramiko.transport - DEBUG - [chan 25] Max packet in: 32768 bytes
+2025-04-03 12:16:12,668 - paramiko.transport - DEBUG - [chan 25] Max packet out: 32768 bytes
+2025-04-03 12:16:12,668 - paramiko.transport - DEBUG - Secsh channel 25 opened.
+2025-04-03 12:16:12,672 - paramiko.transport - DEBUG - [chan 25] Sesch channel 25 request ok
+2025-04-03 12:16:12,685 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_5.sha256: 0.00%
+2025-04-03 12:16:12,687 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_5.sha256: 100.00%
+2025-04-03 12:16:12,693 - paramiko.transport - DEBUG - [chan 25] EOF received (25)
+2025-04-03 12:16:12,693 - paramiko.transport - DEBUG - [chan 25] EOF sent (25)
+2025-04-03 12:16:12,694 - paramiko.transport - DEBUG - [chan 26] Max packet in: 32768 bytes
+2025-04-03 12:16:12,744 - paramiko.transport - DEBUG - [chan 26] Max packet out: 32768 bytes
+2025-04-03 12:16:12,744 - paramiko.transport - DEBUG - Secsh channel 26 opened.
+2025-04-03 12:16:12,747 - paramiko.transport - DEBUG - [chan 26] Sesch channel 26 request ok
+2025-04-03 12:16:12,760 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_6.eff: 0.00%
+2025-04-03 12:16:12,761 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_6.eff: 27.18%
+2025-04-03 12:16:12,762 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_6.eff: 54.36%
+2025-04-03 12:16:12,762 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_6.eff: 81.54%
+2025-04-03 12:16:12,763 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_6.eff: 100.00%
+2025-04-03 12:16:12,770 - paramiko.transport - DEBUG - [chan 26] EOF received (26)
+2025-04-03 12:16:12,770 - paramiko.transport - DEBUG - [chan 26] EOF sent (26)
+2025-04-03 12:16:12,771 - paramiko.transport - DEBUG - [chan 27] Max packet in: 32768 bytes
+2025-04-03 12:16:12,820 - paramiko.transport - DEBUG - [chan 27] Max packet out: 32768 bytes
+2025-04-03 12:16:12,820 - paramiko.transport - DEBUG - Secsh channel 27 opened.
+2025-04-03 12:16:12,823 - paramiko.transport - DEBUG - [chan 27] Sesch channel 27 request ok
+2025-04-03 12:16:12,837 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_6.sha256: 0.00%
+2025-04-03 12:16:12,839 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_6.sha256: 100.00%
+2025-04-03 12:16:12,846 - paramiko.transport - DEBUG - [chan 27] EOF received (27)
+2025-04-03 12:16:12,846 - paramiko.transport - DEBUG - [chan 27] EOF sent (27)
+2025-04-03 12:16:12,847 - paramiko.transport - DEBUG - [chan 28] Max packet in: 32768 bytes
+2025-04-03 12:16:12,896 - paramiko.transport - DEBUG - [chan 28] Max packet out: 32768 bytes
+2025-04-03 12:16:12,896 - paramiko.transport - DEBUG - Secsh channel 28 opened.
+2025-04-03 12:16:12,899 - paramiko.transport - DEBUG - [chan 28] Sesch channel 28 request ok
+2025-04-03 12:16:12,906 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_7.eff: 0.00%
+2025-04-03 12:16:12,907 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_7.eff: 33.28%
+2025-04-03 12:16:12,907 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_7.eff: 66.57%
+2025-04-03 12:16:12,908 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_7.eff: 99.85%
+2025-04-03 12:16:12,908 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_7.eff: 100.00%
+2025-04-03 12:16:12,915 - paramiko.transport - DEBUG - [chan 28] EOF received (28)
+2025-04-03 12:16:12,915 - paramiko.transport - DEBUG - [chan 28] EOF sent (28)
+2025-04-03 12:16:12,916 - paramiko.transport - DEBUG - [chan 29] Max packet in: 32768 bytes
+2025-04-03 12:16:12,959 - paramiko.transport - DEBUG - [chan 29] Max packet out: 32768 bytes
+2025-04-03 12:16:12,960 - paramiko.transport - DEBUG - Secsh channel 29 opened.
+2025-04-03 12:16:12,963 - paramiko.transport - DEBUG - [chan 29] Sesch channel 29 request ok
+2025-04-03 12:16:12,974 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_7.sha256: 0.00%
+2025-04-03 12:16:12,976 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_7.sha256: 100.00%
+2025-04-03 12:16:12,984 - paramiko.transport - DEBUG - [chan 29] EOF received (29)
+2025-04-03 12:16:12,984 - paramiko.transport - DEBUG - [chan 29] EOF sent (29)
+2025-04-03 12:16:12,985 - paramiko.transport - DEBUG - [chan 30] Max packet in: 32768 bytes
+2025-04-03 12:16:13,031 - paramiko.transport - DEBUG - [chan 30] Max packet out: 32768 bytes
+2025-04-03 12:16:13,032 - paramiko.transport - DEBUG - Secsh channel 30 opened.
+2025-04-03 12:16:13,035 - paramiko.transport - DEBUG - [chan 30] Sesch channel 30 request ok
+2025-04-03 12:16:13,045 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_8.eff: 0.00%
+2025-04-03 12:16:13,046 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_8.eff: 33.40%
+2025-04-03 12:16:13,047 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_8.eff: 66.80%
+2025-04-03 12:16:13,047 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_8.eff: 100.00%
+2025-04-03 12:16:13,053 - paramiko.transport - DEBUG - [chan 30] EOF received (30)
+2025-04-03 12:16:13,054 - paramiko.transport - DEBUG - [chan 30] EOF sent (30)
+2025-04-03 12:16:13,054 - paramiko.transport - DEBUG - [chan 31] Max packet in: 32768 bytes
+2025-04-03 12:16:13,100 - paramiko.transport - DEBUG - [chan 31] Max packet out: 32768 bytes
+2025-04-03 12:16:13,100 - paramiko.transport - DEBUG - Secsh channel 31 opened.
+2025-04-03 12:16:13,103 - paramiko.transport - DEBUG - [chan 31] Sesch channel 31 request ok
+2025-04-03 12:16:13,112 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_8.sha256: 0.00%
+2025-04-03 12:16:13,113 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_8.sha256: 100.00%
+2025-04-03 12:16:13,120 - paramiko.transport - DEBUG - [chan 31] EOF received (31)
+2025-04-03 12:16:13,120 - paramiko.transport - DEBUG - [chan 31] EOF sent (31)
+2025-04-03 12:16:13,120 - paramiko.transport - DEBUG - [chan 32] Max packet in: 32768 bytes
+2025-04-03 12:16:13,167 - paramiko.transport - DEBUG - [chan 32] Max packet out: 32768 bytes
+2025-04-03 12:16:13,167 - paramiko.transport - DEBUG - Secsh channel 32 opened.
+2025-04-03 12:16:13,170 - paramiko.transport - DEBUG - [chan 32] Sesch channel 32 request ok
+2025-04-03 12:16:13,182 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_9.eff: 0.00%
+2025-04-03 12:16:13,187 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_9.eff: 30.06%
+2025-04-03 12:16:13,187 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_9.eff: 60.12%
+2025-04-03 12:16:13,187 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_9.eff: 90.17%
+2025-04-03 12:16:13,187 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_9.eff: 100.00%
+2025-04-03 12:16:13,194 - paramiko.transport - DEBUG - [chan 32] EOF received (32)
+2025-04-03 12:16:13,194 - paramiko.transport - DEBUG - [chan 32] EOF sent (32)
+2025-04-03 12:16:13,195 - paramiko.transport - DEBUG - [chan 33] Max packet in: 32768 bytes
+2025-04-03 12:16:13,240 - paramiko.transport - DEBUG - [chan 33] Max packet out: 32768 bytes
+2025-04-03 12:16:13,240 - paramiko.transport - DEBUG - Secsh channel 33 opened.
+2025-04-03 12:16:13,243 - paramiko.transport - DEBUG - [chan 33] Sesch channel 33 request ok
+2025-04-03 12:16:13,250 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_9.sha256: 0.00%
+2025-04-03 12:16:13,252 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\resources\font_9.sha256: 100.00%
+2025-04-03 12:16:13,259 - paramiko.transport - DEBUG - [chan 33] EOF received (33)
+2025-04-03 12:16:13,259 - paramiko.transport - DEBUG - [chan 33] EOF sent (33)
+2025-04-03 12:16:13,260 - paramiko.transport - DEBUG - [chan 34] Max packet in: 32768 bytes
+2025-04-03 12:16:13,304 - paramiko.transport - DEBUG - [chan 34] Max packet out: 32768 bytes
+2025-04-03 12:16:13,304 - paramiko.transport - DEBUG - Secsh channel 34 opened.
+2025-04-03 12:16:13,307 - paramiko.transport - DEBUG - [chan 34] Sesch channel 34 request ok
+2025-04-03 12:16:13,320 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\var\fpga0-slot: 0.00%
+2025-04-03 12:16:13,322 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\var\fpga0-slot: 100.00%
+2025-04-03 12:16:13,326 - paramiko.transport - DEBUG - [chan 34] EOF received (34)
+2025-04-03 12:16:13,326 - paramiko.transport - DEBUG - [chan 34] EOF sent (34)
+2025-04-03 12:16:13,327 - paramiko.transport - DEBUG - [chan 35] Max packet in: 32768 bytes
+2025-04-03 12:16:13,376 - paramiko.transport - DEBUG - [chan 35] Max packet out: 32768 bytes
+2025-04-03 12:16:13,376 - paramiko.transport - DEBUG - Secsh channel 35 opened.
+2025-04-03 12:16:13,379 - paramiko.transport - DEBUG - [chan 35] Sesch channel 35 request ok
+2025-04-03 12:16:13,386 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\var\fpga1-slot: 0.00%
+2025-04-03 12:16:13,388 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\var\fpga1-slot: 100.00%
+2025-04-03 12:16:13,394 - paramiko.transport - DEBUG - [chan 35] EOF received (35)
+2025-04-03 12:16:13,394 - paramiko.transport - DEBUG - [chan 35] EOF sent (35)
+2025-04-03 12:16:13,395 - paramiko.transport - DEBUG - [chan 36] Max packet in: 32768 bytes
+2025-04-03 12:16:13,440 - paramiko.transport - DEBUG - [chan 36] Max packet out: 32768 bytes
+2025-04-03 12:16:13,440 - paramiko.transport - DEBUG - Secsh channel 36 opened.
+2025-04-03 12:16:13,443 - paramiko.transport - DEBUG - [chan 36] Sesch channel 36 request ok
+2025-04-03 12:16:13,455 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\var\video-proc-range: 0.00%
+2025-04-03 12:16:13,457 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\var\video-proc-range: 100.00%
+2025-04-03 12:16:13,465 - paramiko.transport - DEBUG - [chan 36] EOF received (36)
+2025-04-03 12:16:13,465 - paramiko.transport - DEBUG - [chan 36] EOF sent (36)
+2025-04-03 12:16:13,466 - paramiko.transport - DEBUG - [chan 37] Max packet in: 32768 bytes
+2025-04-03 12:16:13,512 - paramiko.transport - DEBUG - [chan 37] Max packet out: 32768 bytes
+2025-04-03 12:16:13,512 - paramiko.transport - DEBUG - Secsh channel 37 opened.
+2025-04-03 12:16:13,515 - paramiko.transport - DEBUG - [chan 37] Sesch channel 37 request ok
+2025-04-03 12:16:13,525 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\license.key: 0.00%
+2025-04-03 12:16:13,528 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\license.key: 100.00%
+2025-04-03 12:16:13,534 - paramiko.transport - DEBUG - [chan 37] EOF received (37)
+2025-04-03 12:16:13,534 - paramiko.transport - DEBUG - [chan 37] EOF sent (37)
+2025-04-03 12:16:13,536 - paramiko.transport - DEBUG - [chan 38] Max packet in: 32768 bytes
+2025-04-03 12:16:13,584 - paramiko.transport - DEBUG - [chan 38] Max packet out: 32768 bytes
+2025-04-03 12:16:13,584 - paramiko.transport - DEBUG - Secsh channel 38 opened.
+2025-04-03 12:16:13,587 - paramiko.transport - DEBUG - [chan 38] Sesch channel 38 request ok
+2025-04-03 12:16:13,598 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_10.json: 0.00%
+2025-04-03 12:16:13,601 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_10.json: 43.78%
+2025-04-03 12:16:13,601 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_10.json: 87.56%
+2025-04-03 12:16:13,601 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_10.json: 100.00%
+2025-04-03 12:16:13,612 - paramiko.transport - DEBUG - [chan 38] EOF received (38)
+2025-04-03 12:16:13,612 - paramiko.transport - DEBUG - [chan 38] EOF sent (38)
+2025-04-03 12:16:13,614 - paramiko.transport - DEBUG - [chan 39] Max packet in: 32768 bytes
+2025-04-03 12:16:13,664 - paramiko.transport - DEBUG - [chan 39] Max packet out: 32768 bytes
+2025-04-03 12:16:13,664 - paramiko.transport - DEBUG - Secsh channel 39 opened.
+2025-04-03 12:16:13,667 - paramiko.transport - DEBUG - [chan 39] Sesch channel 39 request ok
+2025-04-03 12:16:13,681 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_11.json: 0.00%
+2025-04-03 12:16:13,683 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_11.json: 43.76%
+2025-04-03 12:16:13,683 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_11.json: 87.52%
+2025-04-03 12:16:13,683 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_11.json: 100.00%
+2025-04-03 12:16:13,695 - paramiko.transport - DEBUG - [chan 39] EOF received (39)
+2025-04-03 12:16:13,695 - paramiko.transport - DEBUG - [chan 39] EOF sent (39)
+2025-04-03 12:16:13,696 - paramiko.transport - DEBUG - [chan 40] Max packet in: 32768 bytes
+2025-04-03 12:16:13,743 - paramiko.transport - DEBUG - [chan 40] Max packet out: 32768 bytes
+2025-04-03 12:16:13,743 - paramiko.transport - DEBUG - Secsh channel 40 opened.
+2025-04-03 12:16:13,747 - paramiko.transport - DEBUG - [chan 40] Sesch channel 40 request ok
+2025-04-03 12:16:13,765 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_12.json: 0.00%
+2025-04-03 12:16:13,767 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_12.json: 43.78%
+2025-04-03 12:16:13,768 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_12.json: 87.56%
+2025-04-03 12:16:13,768 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_12.json: 100.00%
+2025-04-03 12:16:13,778 - paramiko.transport - DEBUG - [chan 40] EOF received (40)
+2025-04-03 12:16:13,778 - paramiko.transport - DEBUG - [chan 40] EOF sent (40)
+2025-04-03 12:16:13,779 - paramiko.transport - DEBUG - [chan 41] Max packet in: 32768 bytes
+2025-04-03 12:16:13,827 - paramiko.transport - DEBUG - [chan 41] Max packet out: 32768 bytes
+2025-04-03 12:16:13,827 - paramiko.transport - DEBUG - Secsh channel 41 opened.
+2025-04-03 12:16:13,831 - paramiko.transport - DEBUG - [chan 41] Sesch channel 41 request ok
+2025-04-03 12:16:13,838 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_13.json: 0.00%
+2025-04-03 12:16:13,841 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_13.json: 43.78%
+2025-04-03 12:16:13,841 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_13.json: 87.56%
+2025-04-03 12:16:13,841 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_13.json: 100.00%
+2025-04-03 12:16:13,852 - paramiko.transport - DEBUG - [chan 41] EOF received (41)
+2025-04-03 12:16:13,852 - paramiko.transport - DEBUG - [chan 41] EOF sent (41)
+2025-04-03 12:16:13,853 - paramiko.transport - DEBUG - [chan 42] Max packet in: 32768 bytes
+2025-04-03 12:16:13,903 - paramiko.transport - DEBUG - [chan 42] Max packet out: 32768 bytes
+2025-04-03 12:16:13,903 - paramiko.transport - DEBUG - Secsh channel 42 opened.
+2025-04-03 12:16:13,906 - paramiko.transport - DEBUG - [chan 42] Sesch channel 42 request ok
+2025-04-03 12:16:13,918 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_14.json: 0.00%
+2025-04-03 12:16:13,921 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_14.json: 43.77%
+2025-04-03 12:16:13,921 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_14.json: 87.54%
+2025-04-03 12:16:13,921 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_14.json: 100.00%
+2025-04-03 12:16:13,931 - paramiko.transport - DEBUG - [chan 42] EOF received (42)
+2025-04-03 12:16:13,931 - paramiko.transport - DEBUG - [chan 42] EOF sent (42)
+2025-04-03 12:16:13,932 - paramiko.transport - DEBUG - [chan 43] Max packet in: 32768 bytes
+2025-04-03 12:16:13,980 - paramiko.transport - DEBUG - [chan 43] Max packet out: 32768 bytes
+2025-04-03 12:16:13,980 - paramiko.transport - DEBUG - Secsh channel 43 opened.
+2025-04-03 12:16:13,983 - paramiko.transport - DEBUG - [chan 43] Sesch channel 43 request ok
+2025-04-03 12:16:13,992 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_15.json: 0.00%
+2025-04-03 12:16:13,994 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_15.json: 43.78%
+2025-04-03 12:16:13,995 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_15.json: 87.56%
+2025-04-03 12:16:13,995 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_15.json: 100.00%
+2025-04-03 12:16:14,007 - paramiko.transport - DEBUG - [chan 43] EOF received (43)
+2025-04-03 12:16:14,007 - paramiko.transport - DEBUG - [chan 43] EOF sent (43)
+2025-04-03 12:16:14,008 - paramiko.transport - DEBUG - [chan 44] Max packet in: 32768 bytes
+2025-04-03 12:16:14,052 - paramiko.transport - DEBUG - [chan 44] Max packet out: 32768 bytes
+2025-04-03 12:16:14,052 - paramiko.transport - DEBUG - Secsh channel 44 opened.
+2025-04-03 12:16:14,056 - paramiko.transport - DEBUG - [chan 44] Sesch channel 44 request ok
+2025-04-03 12:16:14,064 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_16.json: 0.00%
+2025-04-03 12:16:14,067 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_16.json: 43.77%
+2025-04-03 12:16:14,067 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_16.json: 87.53%
+2025-04-03 12:16:14,067 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_16.json: 100.00%
+2025-04-03 12:16:14,078 - paramiko.transport - DEBUG - [chan 44] EOF received (44)
+2025-04-03 12:16:14,078 - paramiko.transport - DEBUG - [chan 44] EOF sent (44)
+2025-04-03 12:16:14,079 - paramiko.transport - DEBUG - [chan 45] Max packet in: 32768 bytes
+2025-04-03 12:16:14,127 - paramiko.transport - DEBUG - [chan 45] Max packet out: 32768 bytes
+2025-04-03 12:16:14,128 - paramiko.transport - DEBUG - Secsh channel 45 opened.
+2025-04-03 12:16:14,131 - paramiko.transport - DEBUG - [chan 45] Sesch channel 45 request ok
+2025-04-03 12:16:14,145 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_17.json: 0.00%
+2025-04-03 12:16:14,147 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_17.json: 43.76%
+2025-04-03 12:16:14,147 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_17.json: 87.52%
+2025-04-03 12:16:14,147 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_17.json: 100.00%
+2025-04-03 12:16:14,159 - paramiko.transport - DEBUG - [chan 45] EOF received (45)
+2025-04-03 12:16:14,159 - paramiko.transport - DEBUG - [chan 45] EOF sent (45)
+2025-04-03 12:16:14,160 - paramiko.transport - DEBUG - [chan 46] Max packet in: 32768 bytes
+2025-04-03 12:16:14,203 - paramiko.transport - DEBUG - [chan 46] Max packet out: 32768 bytes
+2025-04-03 12:16:14,204 - paramiko.transport - DEBUG - Secsh channel 46 opened.
+2025-04-03 12:16:14,207 - paramiko.transport - DEBUG - [chan 46] Sesch channel 46 request ok
+2025-04-03 12:16:14,217 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_18.json: 0.00%
+2025-04-03 12:16:14,220 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_18.json: 43.76%
+2025-04-03 12:16:14,220 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_18.json: 87.52%
+2025-04-03 12:16:14,221 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_18.json: 100.00%
+2025-04-03 12:16:14,234 - paramiko.transport - DEBUG - [chan 46] EOF received (46)
+2025-04-03 12:16:14,235 - paramiko.transport - DEBUG - [chan 46] EOF sent (46)
+2025-04-03 12:16:14,236 - paramiko.transport - DEBUG - [chan 47] Max packet in: 32768 bytes
+2025-04-03 12:16:14,284 - paramiko.transport - DEBUG - [chan 47] Max packet out: 32768 bytes
+2025-04-03 12:16:14,284 - paramiko.transport - DEBUG - Secsh channel 47 opened.
+2025-04-03 12:16:14,287 - paramiko.transport - DEBUG - [chan 47] Sesch channel 47 request ok
+2025-04-03 12:16:14,297 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_19.json: 0.00%
+2025-04-03 12:16:14,300 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_19.json: 43.76%
+2025-04-03 12:16:14,300 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_19.json: 87.52%
+2025-04-03 12:16:14,300 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_19.json: 100.00%
+2025-04-03 12:16:14,312 - paramiko.transport - DEBUG - [chan 47] EOF received (47)
+2025-04-03 12:16:14,312 - paramiko.transport - DEBUG - [chan 47] EOF sent (47)
+2025-04-03 12:16:14,313 - paramiko.transport - DEBUG - [chan 48] Max packet in: 32768 bytes
+2025-04-03 12:16:14,359 - paramiko.transport - DEBUG - [chan 48] Max packet out: 32768 bytes
+2025-04-03 12:16:14,359 - paramiko.transport - DEBUG - Secsh channel 48 opened.
+2025-04-03 12:16:14,362 - paramiko.transport - DEBUG - [chan 48] Sesch channel 48 request ok
+2025-04-03 12:16:14,373 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_1.json: 0.00%
+2025-04-03 12:16:14,376 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_1.json: 43.77%
+2025-04-03 12:16:14,376 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_1.json: 87.54%
+2025-04-03 12:16:14,376 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_1.json: 100.00%
+2025-04-03 12:16:14,386 - paramiko.transport - DEBUG - [chan 48] EOF received (48)
+2025-04-03 12:16:14,386 - paramiko.transport - DEBUG - [chan 48] EOF sent (48)
+2025-04-03 12:16:14,387 - paramiko.transport - DEBUG - [chan 49] Max packet in: 32768 bytes
+2025-04-03 12:16:14,435 - paramiko.transport - DEBUG - [chan 49] Max packet out: 32768 bytes
+2025-04-03 12:16:14,435 - paramiko.transport - DEBUG - Secsh channel 49 opened.
+2025-04-03 12:16:14,439 - paramiko.transport - DEBUG - [chan 49] Sesch channel 49 request ok
+2025-04-03 12:16:14,447 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_20.json: 0.00%
+2025-04-03 12:16:14,450 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_20.json: 43.76%
+2025-04-03 12:16:14,450 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_20.json: 87.52%
+2025-04-03 12:16:14,450 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_20.json: 100.00%
+2025-04-03 12:16:14,461 - paramiko.transport - DEBUG - [chan 49] EOF received (49)
+2025-04-03 12:16:14,461 - paramiko.transport - DEBUG - [chan 49] EOF sent (49)
+2025-04-03 12:16:14,461 - paramiko.transport - DEBUG - [chan 50] Max packet in: 32768 bytes
+2025-04-03 12:16:14,512 - paramiko.transport - DEBUG - [chan 50] Max packet out: 32768 bytes
+2025-04-03 12:16:14,512 - paramiko.transport - DEBUG - Secsh channel 50 opened.
+2025-04-03 12:16:14,514 - paramiko.transport - DEBUG - [chan 50] Sesch channel 50 request ok
+2025-04-03 12:16:14,522 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_21.json: 0.00%
+2025-04-03 12:16:14,523 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_21.json: 43.77%
+2025-04-03 12:16:14,524 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_21.json: 87.54%
+2025-04-03 12:16:14,524 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_21.json: 100.00%
+2025-04-03 12:16:14,536 - paramiko.transport - DEBUG - [chan 50] EOF received (50)
+2025-04-03 12:16:14,536 - paramiko.transport - DEBUG - [chan 50] EOF sent (50)
+2025-04-03 12:16:14,537 - paramiko.transport - DEBUG - [chan 51] Max packet in: 32768 bytes
+2025-04-03 12:16:14,584 - paramiko.transport - DEBUG - [chan 51] Max packet out: 32768 bytes
+2025-04-03 12:16:14,584 - paramiko.transport - DEBUG - Secsh channel 51 opened.
+2025-04-03 12:16:14,587 - paramiko.transport - DEBUG - [chan 51] Sesch channel 51 request ok
+2025-04-03 12:16:14,596 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_2.json: 0.00%
+2025-04-03 12:16:14,598 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_2.json: 43.78%
+2025-04-03 12:16:14,598 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_2.json: 87.55%
+2025-04-03 12:16:14,598 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_2.json: 100.00%
+2025-04-03 12:16:14,609 - paramiko.transport - DEBUG - [chan 51] EOF received (51)
+2025-04-03 12:16:14,609 - paramiko.transport - DEBUG - [chan 51] EOF sent (51)
+2025-04-03 12:16:14,610 - paramiko.transport - DEBUG - [chan 52] Max packet in: 32768 bytes
+2025-04-03 12:16:14,656 - paramiko.transport - DEBUG - [chan 52] Max packet out: 32768 bytes
+2025-04-03 12:16:14,656 - paramiko.transport - DEBUG - Secsh channel 52 opened.
+2025-04-03 12:16:14,659 - paramiko.transport - DEBUG - [chan 52] Sesch channel 52 request ok
+2025-04-03 12:16:14,669 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_3.json: 0.00%
+2025-04-03 12:16:14,672 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_3.json: 43.78%
+2025-04-03 12:16:14,672 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_3.json: 87.55%
+2025-04-03 12:16:14,672 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_3.json: 100.00%
+2025-04-03 12:16:14,683 - paramiko.transport - DEBUG - [chan 52] EOF received (52)
+2025-04-03 12:16:14,683 - paramiko.transport - DEBUG - [chan 52] EOF sent (52)
+2025-04-03 12:16:14,685 - paramiko.transport - DEBUG - [chan 53] Max packet in: 32768 bytes
+2025-04-03 12:16:14,728 - paramiko.transport - DEBUG - [chan 53] Max packet out: 32768 bytes
+2025-04-03 12:16:14,728 - paramiko.transport - DEBUG - Secsh channel 53 opened.
+2025-04-03 12:16:14,730 - paramiko.transport - DEBUG - [chan 53] Sesch channel 53 request ok
+2025-04-03 12:16:14,745 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_4.json: 0.00%
+2025-04-03 12:16:14,747 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_4.json: 43.77%
+2025-04-03 12:16:14,747 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_4.json: 87.55%
+2025-04-03 12:16:14,747 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_4.json: 100.00%
+2025-04-03 12:16:14,758 - paramiko.transport - DEBUG - [chan 53] EOF received (53)
+2025-04-03 12:16:14,759 - paramiko.transport - DEBUG - [chan 53] EOF sent (53)
+2025-04-03 12:16:14,759 - paramiko.transport - DEBUG - [chan 54] Max packet in: 32768 bytes
+2025-04-03 12:16:14,808 - paramiko.transport - DEBUG - [chan 54] Max packet out: 32768 bytes
+2025-04-03 12:16:14,808 - paramiko.transport - DEBUG - Secsh channel 54 opened.
+2025-04-03 12:16:14,811 - paramiko.transport - DEBUG - [chan 54] Sesch channel 54 request ok
+2025-04-03 12:16:14,824 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_5.json: 0.00%
+2025-04-03 12:16:14,827 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_5.json: 43.77%
+2025-04-03 12:16:14,827 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_5.json: 87.55%
+2025-04-03 12:16:14,827 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_5.json: 100.00%
+2025-04-03 12:16:14,837 - paramiko.transport - DEBUG - [chan 54] EOF received (54)
+2025-04-03 12:16:14,837 - paramiko.transport - DEBUG - [chan 54] EOF sent (54)
+2025-04-03 12:16:14,838 - paramiko.transport - DEBUG - [chan 55] Max packet in: 32768 bytes
+2025-04-03 12:16:14,888 - paramiko.transport - DEBUG - [chan 55] Max packet out: 32768 bytes
+2025-04-03 12:16:14,888 - paramiko.transport - DEBUG - Secsh channel 55 opened.
+2025-04-03 12:16:14,891 - paramiko.transport - DEBUG - [chan 55] Sesch channel 55 request ok
+2025-04-03 12:16:14,913 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_65.json: 0.00%
+2025-04-03 12:16:14,916 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_65.json: 43.85%
+2025-04-03 12:16:14,916 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_65.json: 87.69%
+2025-04-03 12:16:14,916 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_65.json: 100.00%
+2025-04-03 12:16:14,926 - paramiko.transport - DEBUG - [chan 55] EOF received (55)
+2025-04-03 12:16:14,926 - paramiko.transport - DEBUG - [chan 55] EOF sent (55)
+2025-04-03 12:16:14,927 - paramiko.transport - DEBUG - [chan 56] Max packet in: 32768 bytes
+2025-04-03 12:16:14,971 - paramiko.transport - DEBUG - [chan 56] Max packet out: 32768 bytes
+2025-04-03 12:16:14,971 - paramiko.transport - DEBUG - Secsh channel 56 opened.
+2025-04-03 12:16:14,975 - paramiko.transport - DEBUG - [chan 56] Sesch channel 56 request ok
+2025-04-03 12:16:14,986 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_66.json: 0.00%
+2025-04-03 12:16:14,989 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_66.json: 43.85%
+2025-04-03 12:16:14,989 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_66.json: 87.69%
+2025-04-03 12:16:14,989 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_66.json: 100.00%
+2025-04-03 12:16:14,999 - paramiko.transport - DEBUG - [chan 56] EOF received (56)
+2025-04-03 12:16:14,999 - paramiko.transport - DEBUG - [chan 56] EOF sent (56)
+2025-04-03 12:16:15,000 - paramiko.transport - DEBUG - [chan 57] Max packet in: 32768 bytes
+2025-04-03 12:16:15,048 - paramiko.transport - DEBUG - [chan 57] Max packet out: 32768 bytes
+2025-04-03 12:16:15,048 - paramiko.transport - DEBUG - Secsh channel 57 opened.
+2025-04-03 12:16:15,051 - paramiko.transport - DEBUG - [chan 57] Sesch channel 57 request ok
+2025-04-03 12:16:15,063 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_67.json: 0.00%
+2025-04-03 12:16:15,066 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_67.json: 43.85%
+2025-04-03 12:16:15,066 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_67.json: 87.69%
+2025-04-03 12:16:15,066 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_67.json: 100.00%
+2025-04-03 12:16:15,076 - paramiko.transport - DEBUG - [chan 57] EOF received (57)
+2025-04-03 12:16:15,076 - paramiko.transport - DEBUG - [chan 57] EOF sent (57)
+2025-04-03 12:16:15,077 - paramiko.transport - DEBUG - [chan 58] Max packet in: 32768 bytes
+2025-04-03 12:16:15,124 - paramiko.transport - DEBUG - [chan 58] Max packet out: 32768 bytes
+2025-04-03 12:16:15,124 - paramiko.transport - DEBUG - Secsh channel 58 opened.
+2025-04-03 12:16:15,127 - paramiko.transport - DEBUG - [chan 58] Sesch channel 58 request ok
+2025-04-03 12:16:15,134 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_68.json: 0.00%
+2025-04-03 12:16:15,137 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_68.json: 43.86%
+2025-04-03 12:16:15,137 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_68.json: 87.73%
+2025-04-03 12:16:15,137 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_68.json: 100.00%
+2025-04-03 12:16:15,147 - paramiko.transport - DEBUG - [chan 58] EOF received (58)
+2025-04-03 12:16:15,148 - paramiko.transport - DEBUG - [chan 58] EOF sent (58)
+2025-04-03 12:16:15,149 - paramiko.transport - DEBUG - [chan 59] Max packet in: 32768 bytes
+2025-04-03 12:16:15,196 - paramiko.transport - DEBUG - [chan 59] Max packet out: 32768 bytes
+2025-04-03 12:16:15,196 - paramiko.transport - DEBUG - Secsh channel 59 opened.
+2025-04-03 12:16:15,199 - paramiko.transport - DEBUG - [chan 59] Sesch channel 59 request ok
+2025-04-03 12:16:15,208 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_69.json: 0.00%
+2025-04-03 12:16:15,211 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_69.json: 43.86%
+2025-04-03 12:16:15,211 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_69.json: 87.73%
+2025-04-03 12:16:15,211 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_69.json: 100.00%
+2025-04-03 12:16:15,221 - paramiko.transport - DEBUG - [chan 59] EOF received (59)
+2025-04-03 12:16:15,221 - paramiko.transport - DEBUG - [chan 59] EOF sent (59)
+2025-04-03 12:16:15,222 - paramiko.transport - DEBUG - [chan 60] Max packet in: 32768 bytes
+2025-04-03 12:16:15,272 - paramiko.transport - DEBUG - [chan 60] Max packet out: 32768 bytes
+2025-04-03 12:16:15,272 - paramiko.transport - DEBUG - Secsh channel 60 opened.
+2025-04-03 12:16:15,275 - paramiko.transport - DEBUG - [chan 60] Sesch channel 60 request ok
+2025-04-03 12:16:15,285 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_6.json: 0.00%
+2025-04-03 12:16:15,288 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_6.json: 43.77%
+2025-04-03 12:16:15,288 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_6.json: 87.55%
+2025-04-03 12:16:15,288 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_6.json: 100.00%
+2025-04-03 12:16:15,299 - paramiko.transport - DEBUG - [chan 60] EOF received (60)
+2025-04-03 12:16:15,299 - paramiko.transport - DEBUG - [chan 60] EOF sent (60)
+2025-04-03 12:16:15,301 - paramiko.transport - DEBUG - [chan 61] Max packet in: 32768 bytes
+2025-04-03 12:16:15,351 - paramiko.transport - DEBUG - [chan 61] Max packet out: 32768 bytes
+2025-04-03 12:16:15,351 - paramiko.transport - DEBUG - Secsh channel 61 opened.
+2025-04-03 12:16:15,359 - paramiko.transport - DEBUG - [chan 61] Sesch channel 61 request ok
+2025-04-03 12:16:15,367 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_70.json: 0.00%
+2025-04-03 12:16:15,370 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_70.json: 43.86%
+2025-04-03 12:16:15,370 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_70.json: 87.73%
+2025-04-03 12:16:15,370 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_70.json: 100.00%
+2025-04-03 12:16:15,382 - paramiko.transport - DEBUG - [chan 61] EOF received (61)
+2025-04-03 12:16:15,382 - paramiko.transport - DEBUG - [chan 61] EOF sent (61)
+2025-04-03 12:16:15,383 - paramiko.transport - DEBUG - [chan 62] Max packet in: 32768 bytes
+2025-04-03 12:16:15,432 - paramiko.transport - DEBUG - [chan 62] Max packet out: 32768 bytes
+2025-04-03 12:16:15,432 - paramiko.transport - DEBUG - Secsh channel 62 opened.
+2025-04-03 12:16:15,435 - paramiko.transport - DEBUG - [chan 62] Sesch channel 62 request ok
+2025-04-03 12:16:15,446 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_71.json: 0.00%
+2025-04-03 12:16:15,449 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_71.json: 43.86%
+2025-04-03 12:16:15,449 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_71.json: 87.73%
+2025-04-03 12:16:15,449 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_71.json: 100.00%
+2025-04-03 12:16:15,461 - paramiko.transport - DEBUG - [chan 62] EOF received (62)
+2025-04-03 12:16:15,461 - paramiko.transport - DEBUG - [chan 62] EOF sent (62)
+2025-04-03 12:16:15,462 - paramiko.transport - DEBUG - [chan 63] Max packet in: 32768 bytes
+2025-04-03 12:16:15,512 - paramiko.transport - DEBUG - [chan 63] Max packet out: 32768 bytes
+2025-04-03 12:16:15,512 - paramiko.transport - DEBUG - Secsh channel 63 opened.
+2025-04-03 12:16:15,515 - paramiko.transport - DEBUG - [chan 63] Sesch channel 63 request ok
+2025-04-03 12:16:15,525 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_72.json: 0.00%
+2025-04-03 12:16:15,527 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_72.json: 43.86%
+2025-04-03 12:16:15,527 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_72.json: 87.73%
+2025-04-03 12:16:15,528 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_72.json: 100.00%
+2025-04-03 12:16:15,539 - paramiko.transport - DEBUG - [chan 63] EOF received (63)
+2025-04-03 12:16:15,539 - paramiko.transport - DEBUG - [chan 63] EOF sent (63)
+2025-04-03 12:16:15,540 - paramiko.transport - DEBUG - [chan 64] Max packet in: 32768 bytes
+2025-04-03 12:16:15,588 - paramiko.transport - DEBUG - [chan 64] Max packet out: 32768 bytes
+2025-04-03 12:16:15,588 - paramiko.transport - DEBUG - Secsh channel 64 opened.
+2025-04-03 12:16:15,591 - paramiko.transport - DEBUG - [chan 64] Sesch channel 64 request ok
+2025-04-03 12:16:15,603 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_73.json: 0.00%
+2025-04-03 12:16:15,605 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_73.json: 43.86%
+2025-04-03 12:16:15,606 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_73.json: 87.73%
+2025-04-03 12:16:15,606 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_73.json: 100.00%
+2025-04-03 12:16:15,616 - paramiko.transport - DEBUG - [chan 64] EOF received (64)
+2025-04-03 12:16:15,617 - paramiko.transport - DEBUG - [chan 64] EOF sent (64)
+2025-04-03 12:16:15,617 - paramiko.transport - DEBUG - [chan 65] Max packet in: 32768 bytes
+2025-04-03 12:16:15,668 - paramiko.transport - DEBUG - [chan 65] Max packet out: 32768 bytes
+2025-04-03 12:16:15,668 - paramiko.transport - DEBUG - Secsh channel 65 opened.
+2025-04-03 12:16:15,671 - paramiko.transport - DEBUG - [chan 65] Sesch channel 65 request ok
+2025-04-03 12:16:15,682 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_74.json: 0.00%
+2025-04-03 12:16:15,684 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_74.json: 43.85%
+2025-04-03 12:16:15,684 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_74.json: 87.70%
+2025-04-03 12:16:15,684 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_74.json: 100.00%
+2025-04-03 12:16:15,695 - paramiko.transport - DEBUG - [chan 65] EOF received (65)
+2025-04-03 12:16:15,695 - paramiko.transport - DEBUG - [chan 65] EOF sent (65)
+2025-04-03 12:16:15,696 - paramiko.transport - DEBUG - [chan 66] Max packet in: 32768 bytes
+2025-04-03 12:16:15,744 - paramiko.transport - DEBUG - [chan 66] Max packet out: 32768 bytes
+2025-04-03 12:16:15,744 - paramiko.transport - DEBUG - Secsh channel 66 opened.
+2025-04-03 12:16:15,747 - paramiko.transport - DEBUG - [chan 66] Sesch channel 66 request ok
+2025-04-03 12:16:15,756 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_75.json: 0.00%
+2025-04-03 12:16:15,760 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_75.json: 43.85%
+2025-04-03 12:16:15,760 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_75.json: 87.70%
+2025-04-03 12:16:15,760 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_75.json: 100.00%
+2025-04-03 12:16:15,770 - paramiko.transport - DEBUG - [chan 66] EOF received (66)
+2025-04-03 12:16:15,770 - paramiko.transport - DEBUG - [chan 66] EOF sent (66)
+2025-04-03 12:16:15,771 - paramiko.transport - DEBUG - [chan 67] Max packet in: 32768 bytes
+2025-04-03 12:16:15,819 - paramiko.transport - DEBUG - [chan 67] Max packet out: 32768 bytes
+2025-04-03 12:16:15,820 - paramiko.transport - DEBUG - Secsh channel 67 opened.
+2025-04-03 12:16:15,823 - paramiko.transport - DEBUG - [chan 67] Sesch channel 67 request ok
+2025-04-03 12:16:15,837 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_76.json: 0.00%
+2025-04-03 12:16:15,839 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_76.json: 43.85%
+2025-04-03 12:16:15,840 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_76.json: 87.69%
+2025-04-03 12:16:15,840 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_76.json: 100.00%
+2025-04-03 12:16:15,850 - paramiko.transport - DEBUG - [chan 67] EOF received (67)
+2025-04-03 12:16:15,850 - paramiko.transport - DEBUG - [chan 67] EOF sent (67)
+2025-04-03 12:16:15,851 - paramiko.transport - DEBUG - [chan 68] Max packet in: 32768 bytes
+2025-04-03 12:16:15,896 - paramiko.transport - DEBUG - [chan 68] Max packet out: 32768 bytes
+2025-04-03 12:16:15,896 - paramiko.transport - DEBUG - Secsh channel 68 opened.
+2025-04-03 12:16:15,900 - paramiko.transport - DEBUG - [chan 68] Sesch channel 68 request ok
+2025-04-03 12:16:15,907 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_77.json: 0.00%
+2025-04-03 12:16:15,909 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_77.json: 43.85%
+2025-04-03 12:16:15,909 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_77.json: 87.69%
+2025-04-03 12:16:15,909 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_77.json: 100.00%
+2025-04-03 12:16:15,920 - paramiko.transport - DEBUG - [chan 68] EOF received (68)
+2025-04-03 12:16:15,920 - paramiko.transport - DEBUG - [chan 68] EOF sent (68)
+2025-04-03 12:16:15,921 - paramiko.transport - DEBUG - [chan 69] Max packet in: 32768 bytes
+2025-04-03 12:16:15,968 - paramiko.transport - DEBUG - [chan 69] Max packet out: 32768 bytes
+2025-04-03 12:16:15,968 - paramiko.transport - DEBUG - Secsh channel 69 opened.
+2025-04-03 12:16:15,971 - paramiko.transport - DEBUG - [chan 69] Sesch channel 69 request ok
+2025-04-03 12:16:15,982 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_78.json: 0.00%
+2025-04-03 12:16:15,985 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_78.json: 43.85%
+2025-04-03 12:16:15,985 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_78.json: 87.69%
+2025-04-03 12:16:15,985 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_78.json: 100.00%
+2025-04-03 12:16:15,995 - paramiko.transport - DEBUG - [chan 69] EOF received (69)
+2025-04-03 12:16:15,995 - paramiko.transport - DEBUG - [chan 69] EOF sent (69)
+2025-04-03 12:16:15,996 - paramiko.transport - DEBUG - [chan 70] Max packet in: 32768 bytes
+2025-04-03 12:16:16,044 - paramiko.transport - DEBUG - [chan 70] Max packet out: 32768 bytes
+2025-04-03 12:16:16,044 - paramiko.transport - DEBUG - Secsh channel 70 opened.
+2025-04-03 12:16:16,047 - paramiko.transport - DEBUG - [chan 70] Sesch channel 70 request ok
+2025-04-03 12:16:16,053 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_79.json: 0.00%
+2025-04-03 12:16:16,056 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_79.json: 43.85%
+2025-04-03 12:16:16,056 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_79.json: 87.69%
+2025-04-03 12:16:16,056 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_79.json: 100.00%
+2025-04-03 12:16:16,066 - paramiko.transport - DEBUG - [chan 70] EOF received (70)
+2025-04-03 12:16:16,066 - paramiko.transport - DEBUG - [chan 70] EOF sent (70)
+2025-04-03 12:16:16,067 - paramiko.transport - DEBUG - [chan 71] Max packet in: 32768 bytes
+2025-04-03 12:16:16,116 - paramiko.transport - DEBUG - [chan 71] Max packet out: 32768 bytes
+2025-04-03 12:16:16,116 - paramiko.transport - DEBUG - Secsh channel 71 opened.
+2025-04-03 12:16:16,120 - paramiko.transport - DEBUG - [chan 71] Sesch channel 71 request ok
+2025-04-03 12:16:16,131 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_7.json: 0.00%
+2025-04-03 12:16:16,134 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_7.json: 43.77%
+2025-04-03 12:16:16,134 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_7.json: 87.54%
+2025-04-03 12:16:16,134 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_7.json: 100.00%
+2025-04-03 12:16:16,145 - paramiko.transport - DEBUG - [chan 71] EOF received (71)
+2025-04-03 12:16:16,145 - paramiko.transport - DEBUG - [chan 71] EOF sent (71)
+2025-04-03 12:16:16,146 - paramiko.transport - DEBUG - [chan 72] Max packet in: 32768 bytes
+2025-04-03 12:16:16,192 - paramiko.transport - DEBUG - [chan 72] Max packet out: 32768 bytes
+2025-04-03 12:16:16,192 - paramiko.transport - DEBUG - Secsh channel 72 opened.
+2025-04-03 12:16:16,195 - paramiko.transport - DEBUG - [chan 72] Sesch channel 72 request ok
+2025-04-03 12:16:16,208 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_80.json: 0.00%
+2025-04-03 12:16:16,211 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_80.json: 43.86%
+2025-04-03 12:16:16,211 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_80.json: 87.73%
+2025-04-03 12:16:16,211 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_80.json: 100.00%
+2025-04-03 12:16:16,221 - paramiko.transport - DEBUG - [chan 72] EOF received (72)
+2025-04-03 12:16:16,221 - paramiko.transport - DEBUG - [chan 72] EOF sent (72)
+2025-04-03 12:16:16,222 - paramiko.transport - DEBUG - [chan 73] Max packet in: 32768 bytes
+2025-04-03 12:16:16,268 - paramiko.transport - DEBUG - [chan 73] Max packet out: 32768 bytes
+2025-04-03 12:16:16,268 - paramiko.transport - DEBUG - Secsh channel 73 opened.
+2025-04-03 12:16:16,271 - paramiko.transport - DEBUG - [chan 73] Sesch channel 73 request ok
+2025-04-03 12:16:16,289 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_81.json: 0.00%
+2025-04-03 12:16:16,292 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_81.json: 43.86%
+2025-04-03 12:16:16,292 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_81.json: 87.73%
+2025-04-03 12:16:16,292 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_81.json: 100.00%
+2025-04-03 12:16:16,302 - paramiko.transport - DEBUG - [chan 73] EOF received (73)
+2025-04-03 12:16:16,302 - paramiko.transport - DEBUG - [chan 73] EOF sent (73)
+2025-04-03 12:16:16,303 - paramiko.transport - DEBUG - [chan 74] Max packet in: 32768 bytes
+2025-04-03 12:16:16,348 - paramiko.transport - DEBUG - [chan 74] Max packet out: 32768 bytes
+2025-04-03 12:16:16,348 - paramiko.transport - DEBUG - Secsh channel 74 opened.
+2025-04-03 12:16:16,351 - paramiko.transport - DEBUG - [chan 74] Sesch channel 74 request ok
+2025-04-03 12:16:16,366 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_82.json: 0.00%
+2025-04-03 12:16:16,368 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_82.json: 43.86%
+2025-04-03 12:16:16,368 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_82.json: 87.73%
+2025-04-03 12:16:16,369 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_82.json: 100.00%
+2025-04-03 12:16:16,378 - paramiko.transport - DEBUG - [chan 74] EOF received (74)
+2025-04-03 12:16:16,379 - paramiko.transport - DEBUG - [chan 74] EOF sent (74)
+2025-04-03 12:16:16,380 - paramiko.transport - DEBUG - [chan 75] Max packet in: 32768 bytes
+2025-04-03 12:16:16,426 - paramiko.transport - DEBUG - [chan 75] Max packet out: 32768 bytes
+2025-04-03 12:16:16,426 - paramiko.transport - DEBUG - Secsh channel 75 opened.
+2025-04-03 12:16:16,432 - paramiko.transport - DEBUG - [chan 75] Sesch channel 75 request ok
+2025-04-03 12:16:16,438 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_83.json: 0.00%
+2025-04-03 12:16:16,441 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_83.json: 43.86%
+2025-04-03 12:16:16,444 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_83.json: 87.73%
+2025-04-03 12:16:16,444 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_83.json: 100.00%
+2025-04-03 12:16:16,461 - paramiko.transport - DEBUG - [chan 75] EOF received (75)
+2025-04-03 12:16:16,461 - paramiko.transport - DEBUG - [chan 75] EOF sent (75)
+2025-04-03 12:16:16,462 - paramiko.transport - DEBUG - [chan 76] Max packet in: 32768 bytes
+2025-04-03 12:16:16,507 - paramiko.transport - DEBUG - [chan 76] Max packet out: 32768 bytes
+2025-04-03 12:16:16,507 - paramiko.transport - DEBUG - Secsh channel 76 opened.
+2025-04-03 12:16:16,511 - paramiko.transport - DEBUG - [chan 76] Sesch channel 76 request ok
+2025-04-03 12:16:16,523 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_84.json: 0.00%
+2025-04-03 12:16:16,526 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_84.json: 43.86%
+2025-04-03 12:16:16,526 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_84.json: 87.73%
+2025-04-03 12:16:16,526 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_84.json: 100.00%
+2025-04-03 12:16:16,537 - paramiko.transport - DEBUG - [chan 76] EOF received (76)
+2025-04-03 12:16:16,537 - paramiko.transport - DEBUG - [chan 76] EOF sent (76)
+2025-04-03 12:16:16,538 - paramiko.transport - DEBUG - [chan 77] Max packet in: 32768 bytes
+2025-04-03 12:16:16,584 - paramiko.transport - DEBUG - [chan 77] Max packet out: 32768 bytes
+2025-04-03 12:16:16,584 - paramiko.transport - DEBUG - Secsh channel 77 opened.
+2025-04-03 12:16:16,587 - paramiko.transport - DEBUG - [chan 77] Sesch channel 77 request ok
+2025-04-03 12:16:16,594 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_85.json: 0.00%
+2025-04-03 12:16:16,597 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_85.json: 43.86%
+2025-04-03 12:16:16,597 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_85.json: 87.73%
+2025-04-03 12:16:16,597 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_85.json: 100.00%
+2025-04-03 12:16:16,607 - paramiko.transport - DEBUG - [chan 77] EOF received (77)
+2025-04-03 12:16:16,607 - paramiko.transport - DEBUG - [chan 77] EOF sent (77)
+2025-04-03 12:16:16,608 - paramiko.transport - DEBUG - [chan 78] Max packet in: 32768 bytes
+2025-04-03 12:16:16,656 - paramiko.transport - DEBUG - [chan 78] Max packet out: 32768 bytes
+2025-04-03 12:16:16,656 - paramiko.transport - DEBUG - Secsh channel 78 opened.
+2025-04-03 12:16:16,659 - paramiko.transport - DEBUG - [chan 78] Sesch channel 78 request ok
+2025-04-03 12:16:16,671 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_86.json: 0.00%
+2025-04-03 12:16:16,674 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_86.json: 43.86%
+2025-04-03 12:16:16,674 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_86.json: 87.73%
+2025-04-03 12:16:16,674 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_86.json: 100.00%
+2025-04-03 12:16:16,686 - paramiko.transport - DEBUG - [chan 78] EOF received (78)
+2025-04-03 12:16:16,686 - paramiko.transport - DEBUG - [chan 78] EOF sent (78)
+2025-04-03 12:16:16,687 - paramiko.transport - DEBUG - [chan 79] Max packet in: 32768 bytes
+2025-04-03 12:16:16,736 - paramiko.transport - DEBUG - [chan 79] Max packet out: 32768 bytes
+2025-04-03 12:16:16,736 - paramiko.transport - DEBUG - Secsh channel 79 opened.
+2025-04-03 12:16:16,739 - paramiko.transport - DEBUG - [chan 79] Sesch channel 79 request ok
+2025-04-03 12:16:16,753 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_87.json: 0.00%
+2025-04-03 12:16:16,756 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_87.json: 43.86%
+2025-04-03 12:16:16,756 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_87.json: 87.73%
+2025-04-03 12:16:16,756 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_87.json: 100.00%
+2025-04-03 12:16:16,767 - paramiko.transport - DEBUG - [chan 79] EOF received (79)
+2025-04-03 12:16:16,767 - paramiko.transport - DEBUG - [chan 79] EOF sent (79)
+2025-04-03 12:16:16,768 - paramiko.transport - DEBUG - [chan 80] Max packet in: 32768 bytes
+2025-04-03 12:16:16,815 - paramiko.transport - DEBUG - [chan 80] Max packet out: 32768 bytes
+2025-04-03 12:16:16,815 - paramiko.transport - DEBUG - Secsh channel 80 opened.
+2025-04-03 12:16:16,819 - paramiko.transport - DEBUG - [chan 80] Sesch channel 80 request ok
+2025-04-03 12:16:16,829 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_88.json: 0.00%
+2025-04-03 12:16:16,832 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_88.json: 43.86%
+2025-04-03 12:16:16,832 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_88.json: 87.73%
+2025-04-03 12:16:16,832 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_88.json: 100.00%
+2025-04-03 12:16:16,843 - paramiko.transport - DEBUG - [chan 80] EOF received (80)
+2025-04-03 12:16:16,843 - paramiko.transport - DEBUG - [chan 80] EOF sent (80)
+2025-04-03 12:16:16,845 - paramiko.transport - DEBUG - [chan 81] Max packet in: 32768 bytes
+2025-04-03 12:16:16,891 - paramiko.transport - DEBUG - [chan 81] Max packet out: 32768 bytes
+2025-04-03 12:16:16,892 - paramiko.transport - DEBUG - Secsh channel 81 opened.
+2025-04-03 12:16:16,895 - paramiko.transport - DEBUG - [chan 81] Sesch channel 81 request ok
+2025-04-03 12:16:16,908 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_8.json: 0.00%
+2025-04-03 12:16:16,910 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_8.json: 43.77%
+2025-04-03 12:16:16,911 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_8.json: 87.54%
+2025-04-03 12:16:16,911 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_8.json: 100.00%
+2025-04-03 12:16:16,922 - paramiko.transport - DEBUG - [chan 81] EOF received (81)
+2025-04-03 12:16:16,922 - paramiko.transport - DEBUG - [chan 81] EOF sent (81)
+2025-04-03 12:16:16,923 - paramiko.transport - DEBUG - [chan 82] Max packet in: 32768 bytes
+2025-04-03 12:16:16,971 - paramiko.transport - DEBUG - [chan 82] Max packet out: 32768 bytes
+2025-04-03 12:16:16,972 - paramiko.transport - DEBUG - Secsh channel 82 opened.
+2025-04-03 12:16:16,975 - paramiko.transport - DEBUG - [chan 82] Sesch channel 82 request ok
+2025-04-03 12:16:16,985 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_9.json: 0.00%
+2025-04-03 12:16:16,988 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_9.json: 43.77%
+2025-04-03 12:16:16,988 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_9.json: 87.54%
+2025-04-03 12:16:16,988 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\input_9.json: 100.00%
+2025-04-03 12:16:16,999 - paramiko.transport - DEBUG - [chan 82] EOF received (82)
+2025-04-03 12:16:16,999 - paramiko.transport - DEBUG - [chan 82] EOF sent (82)
+2025-04-03 12:16:17,000 - paramiko.transport - DEBUG - [chan 83] Max packet in: 32768 bytes
+2025-04-03 12:16:17,047 - paramiko.transport - DEBUG - [chan 83] Max packet out: 32768 bytes
+2025-04-03 12:16:17,047 - paramiko.transport - DEBUG - Secsh channel 83 opened.
+2025-04-03 12:16:17,050 - paramiko.transport - DEBUG - [chan 83] Sesch channel 83 request ok
+2025-04-03 12:16:17,062 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\settings.json: 0.00%
+2025-04-03 12:16:17,064 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\settings.json: 64.11%
+2025-04-03 12:16:17,064 - Backend_Files.logger_config - INFO - Transferring C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup\vip-svr\mvdb\version_6\settings.json: 100.00%
+2025-04-03 12:16:17,078 - paramiko.transport - DEBUG - [chan 83] EOF received (83)
+2025-04-03 12:16:17,078 - paramiko.transport - DEBUG - [chan 83] EOF sent (83)
+2025-04-03 12:16:17,079 - Backend_Files.logger_config - INFO - 
+Successfully downloaded folder from /udata/etc/mvx to C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup
+2025-04-03 12:16:17,079 - Backend_Files.logger_config - INFO - Successfully downloaded folders to C:\Users\sahir\Documents\Scripts\Test Automation\Automation-Scripts\SafeSync\build\exe.win-amd64-3.11\Backup
+2025-04-03 12:16:18,542 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-03 12:16:18,543 - Backend_Files.logger_config - INFO - Connection closed for backup.
+2025-04-03 12:18:28,213 - paramiko.transport - DEBUG - starting thread (client mode): 0x1862c9d0
+2025-04-03 12:18:28,214 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-03 12:18:28,227 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-03 12:18:28,227 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-03 12:18:28,231 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-03 12:18:28,231 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-03 12:18:28,231 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-03 12:18:28,231 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-03 12:18:28,231 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-03 12:18:28,231 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-03 12:18:28,231 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-03 12:18:28,231 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-03 12:18:28,231 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - kex follows: False
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - Compression: none
+2025-04-03 12:18:28,232 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-03 12:18:28,246 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-03 12:18:28,246 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-03 12:18:28,246 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-03 12:18:28,246 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-03 12:18:28,247 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-03 12:18:28,296 - paramiko.transport - DEBUG - userauth is OK
+2025-04-03 12:18:28,347 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-03 12:18:28,347 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-03 12:18:28,407 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-03 12:18:28,407 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-03 12:18:28,448 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-03 12:18:28,448 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-03 12:18:28,450 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-03 12:18:28,453 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-03 12:18:28,453 - Backend_Files.logger_config - INFO - Connection established for debug.
+2025-04-03 12:18:28,453 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-03 12:18:28,455 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-03 12:18:28,455 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-03 12:18:28,458 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-03 12:18:28,460 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-03 12:18:28,562 - Backend_Files.logger_config - DEBUG - Last login: Thu Apr  3 12:18:29 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@sVIP-01-1D-A8:~$ cat /version
+[?2004l3.0.0-20241220-ffd0ac246-92
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:28,663 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: sVIP
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:28,764 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:28,865 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 5c:ba:2c:01:1d:a8
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:28,966 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:28,966 - Backend_Files.logger_config - INFO - Fomatted results in debug
+2025-04-03 12:18:29,067 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:29,168 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:29,168 - Backend_Files.logger_config - INFO - Fomatted results in debug
+2025-04-03 12:18:29,269 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:29,370 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:29,370 - Backend_Files.logger_config - INFO - Fomatted results in debug
+2025-04-03 12:18:29,673 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:29,673 - Backend_Files.logger_config - INFO - Fomatted results in debug
+2025-04-03 12:18:29,775 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 12:18:31 up 7 days, 20:31,  5 users,  load average: 12.28, 11.04, 10.59
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:29,876 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:29,876 - Backend_Files.logger_config - INFO - Fomatted results in debug
+2025-04-03 12:18:29,977 - Backend_Files.logger_config - DEBUG - systemctl --failed --no-legend | awk '{print $2}'
+[?2004linsite-probe-enable.service
+lldpd-config.service
+logrotate.service
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:30,078 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-03 12:18:30,078 - Backend_Files.logger_config - INFO - Fomatted results in debug
+2025-04-03 12:18:30,078 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-03 12:21:25,942 - paramiko.transport - DEBUG - starting thread (client mode): 0x18690ed0
+2025-04-03 12:21:25,942 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-03 12:21:25,959 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-03 12:21:25,960 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - kex follows: False
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-03 12:21:25,962 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-03 12:21:25,963 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-03 12:21:25,963 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-03 12:21:25,963 - paramiko.transport - DEBUG - Compression: none
+2025-04-03 12:21:25,963 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-03 12:21:25,979 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-03 12:21:25,979 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-03 12:21:25,979 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-03 12:21:25,979 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-03 12:21:25,980 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-03 12:21:26,023 - paramiko.transport - DEBUG - userauth is OK
+2025-04-03 12:21:26,074 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-03 12:21:26,074 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-03 12:21:26,122 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-03 12:21:26,122 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-03 12:21:26,162 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-03 12:21:26,162 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-03 12:21:26,165 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-03 12:21:26,169 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-03 12:21:26,169 - Backend_Files.logger_config - INFO - Connection established in debug more.
+2025-04-03 12:21:26,169 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-03 12:21:26,172 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-03 12:21:26,172 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-03 12:21:26,174 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-03 12:21:26,177 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-03 12:21:26,781 - root - DEBUG - [?2004lApr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/resource-svr.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/set-cpu-latency.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/snmpobj.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/src-mgr.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/sw-io-mgr.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/system-monitor.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/umd-protocols.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/unic.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/vgpo-client.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/video-mon.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/video-win-mgr.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 logrotate[1839925]: error: stat of /var/log/webeasy-json.log failed: No such file or directory
+Apr 03 00:00:00 sVIP-01-1D-A8 systemd[1]: logrotate.service: Failed with result 'exit-code'.
+Apr 03 00:00:00 sVIP-01-1D-A8 systemd[1]: Failed to start Rotate log files.
+2025-04-03 12:28:18,088 - paramiko.transport - DEBUG - EOF in transport thread

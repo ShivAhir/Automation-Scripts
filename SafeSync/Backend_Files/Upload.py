@@ -1,7 +1,7 @@
 from tkinter import messagebox
 from Backend_Files.Backup import closeSSHConnection, downloadFolder
 from Backend_Files.Connection import establishConnection
-
+from Backend_Files.logger_config import logger
 
 
 def uploadFiles(deviceIP, deviceUsername, devicePassword, remotePaths, localPath, loadingLabel):
