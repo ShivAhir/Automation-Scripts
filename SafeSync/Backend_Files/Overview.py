@@ -5,9 +5,7 @@ from Backend_Files.Connection import establishConnection, sshClient
 from Backend_Files.logger_config import logger
 
 failedServices = set()
-
 ansiEscape = re.compile(r'\x1b\[.*?m')
-
 results = {}
 commands = ['cat /version', 
             'mvdb-get cardinfo.app.name', 
@@ -31,28 +29,6 @@ formattedCommands = {
     "systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'": 'Failed Services',
 }
 
-# def readMultiLines(out): # function to read multiline outputs and sends it as a list
-#     global failedServices
-#     lines = out.split('\n')
-#     capturing = False
-#     services = []
-#     for line in lines:
-#         if "systemctl list-units --state=failed --no-legend --plain | awk " in line:
-#             capturing = True
-#             continue
-#         if capturing and line.strip().endswith(':~$'):
-#             capturing = False
-#             break
-#         if capturing:
-#             # services.append(line.strip())
-#             # failedServices.add(line.strip())\
-#             service_name = line.strip()
-#             logger.info(f'This is inside readMultiLines function - {service_name}')
-#             if service_name and service_name not in services:
-#                 services.append(service_name)
-#                 failedServices.add(service_name)
-#     return ','.join(services)
-
 def readMultiLines(out):  # Function to read multiline outputs and send them as a list
     global failedServices
     lines = out.split('\n') 
@@ -65,7 +41,6 @@ def readMultiLines(out):  # Function to read multiline outputs and send them as 
                 services.append(service_name)
                 failedServices.add(service_name)
     return ','.join(services)
-
 
 def remove_escape_sequences(output):
     ansi_escape = re.compile(r'\x1b\[.*?[@-~]')
@@ -117,15 +92,13 @@ def runCommand(command, channel,password=None):
         results[command] = formattedOutput(output, command)
     else: 
         channel.send(f'{command}\n')
-        time.sleep(0.1)
+        time.sleep(0.2)
         output = channel.recv(65535).decode('utf-8')
         logger.debug(output)
         output = remove_escape_sequences(output)
         results[command] = formattedOutput(output, command)
 
-
-
-def cardInfoD(info):
+def cardInfoD(info, root):
     global results
     results = {}
     deviceIP, deviceUsername, devicePassword = info if info is not None else (None, None, None)
@@ -136,7 +109,7 @@ def cardInfoD(info):
     except Exception as e:
         logger.error(f"An error occurred: {e}")
         print(f"An error occurred: {e}")
-        messagebox.showerror("Error", f"An error occurred: {e}")
+        messagebox.showerror("Error", f"An error occurred: {e}", parent=root)
         return None
     
     if not sshClient.get_transport() or not sshClient.get_transport().is_active():

@@ -16,7 +16,7 @@ def formatted_output(output):
     return '\n'.join(out)
 
 
-def detail_debug(info):
+def detail_debug(info, root):
     deviceIP, deviceUsername, devicePassword = info if info is not None else (None, None, None)
     try:
         establishConnection(deviceIP, deviceUsername, devicePassword)
@@ -25,7 +25,7 @@ def detail_debug(info):
     except Exception as e:
         logger.error(f"An error occurred: {e} in detailed debug")
         print(f"An error occurred: {e} in detailed debug")
-        messagebox.showerror("Error", f"An error occurred: {e}")
+        messagebox.showerror("Error", f"An error occurred: {e}", parent=root)
         return None
     
     if not sshClient.get_transport() or not sshClient.get_transport().is_active():

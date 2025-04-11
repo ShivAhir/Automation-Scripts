@@ -1,12 +1,12 @@
-from cx_Freeze import setup, Executable # type: ignore
+from cx_Freeze import setup, Executable  # type: ignore
 import sys
 
 build_exe_options = {
     "packages": ["os", "tkinter", "paramiko", "scp"],
     "excludes": [],
-    "include_files": [("assets\Icon\SafeSync.ico","assets\Icon\SafeSync.ico")]
+    "include_files": [(r"assets\Icon\SafeSync.ico", r"assets\Icon\SafeSync.ico")]
 }
-base = None # to hide the console
+base = None  # to hide the console
 if sys.platform == 'win32':
     base = "Win32GUI"
     icon_path = "assets\Icon\SafeSync.ico"
