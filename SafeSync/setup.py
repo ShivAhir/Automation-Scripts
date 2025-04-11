@@ -4,12 +4,12 @@ import sys
 build_exe_options = {
     "packages": ["os", "tkinter", "paramiko", "scp"],
     "excludes": [],
-    "include_files": [("assets/Icon/SafeSync.ico", "assets/Icon/SafeSync.ico")]
+    "include_files": [("SafeSync/assets/Icon/SafeSync.ico", "SafeSync/assets/Icon/SafeSync.ico")]
 }
 base = None  # to hide the console
 if sys.platform == 'win32':
     base = "Win32GUI"
-    icon_path = "assets/Icon/SafeSync.ico"
+    icon_path = "SafeSync/assets/Icon/SafeSync.ico"
 
 setup(
     name="SafeSync",
