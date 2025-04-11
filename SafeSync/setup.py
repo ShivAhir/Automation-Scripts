@@ -9,7 +9,7 @@ build_exe_options = {
 base = None  # to hide the console
 if sys.platform == 'win32':
     base = "Win32GUI"
-    icon_path = "assets\Icon\SafeSync.ico"
+    icon_path = "assets/Icon/SafeSync.ico"
 
 setup(
     name="SafeSync",
