@@ -1,0 +1,1233 @@
+2025-04-14 09:46:35,329 - paramiko.transport - DEBUG - starting thread (client mode): 0xb3204d10
+2025-04-14 09:46:35,329 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 09:46:35,340 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 09:46:35,340 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 09:46:35,343 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 09:46:35,344 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 09:46:35,353 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 09:46:35,354 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 09:46:35,354 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 09:46:35,354 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 09:46:35,354 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 09:46:35,370 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 09:46:35,371 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 09:46:35,371 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 09:46:35,371 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 09:46:35,371 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 09:46:35,371 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for 172.16.177.79: b'b7dbc4111604d29199311a7528a2053a'
+2025-04-14 09:46:35,416 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 09:46:35,502 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 09:46:35,503 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 09:46:35,697 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 09:46:35,697 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 09:46:35,739 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 09:46:35,739 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 09:46:35,741 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 09:46:35,745 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 09:46:35,745 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 09:46:35,762 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 09:46:35,764 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 09:46:35,764 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 09:46:35,767 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 09:46:35,770 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 09:46:35,971 - Backend_Files.logger_config - DEBUG - Last login: Mon Apr 14 09:46:41 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@sVIP-01-1D-A8:~$ cat /version
+[?2004l3.0.0-20250408-e78d58c5d-188
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:36,172 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: sVIP
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:36,374 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:36,575 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 5c:ba:2c:01:1d:a8
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:36,676 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:36,676 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 09:46:36,878 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:36,878 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 09:46:37,079 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:37,085 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 09:46:37,288 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 09:46:37,489 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 09:46:43 up 4 days, 22:50,  2 users,  load average: 7.36, 7.83, 7.91
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:37,489 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 09:46:37,690 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+lldpd-config.service
+logrotate.service
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:37,690 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+lldpd-config.service
+logrotate.service
+mvx@sVIP-01-1D-A8:~$ 
+2025-04-14 09:46:37,690 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 09:46:37,690 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-14 09:46:37,690 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-14 09:46:37,690 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,lldpd-config.service,logrotate.service
+2025-04-14 09:46:37,690 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 09:46:37,690 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-14 09:46:37,690 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-14 09:46:37,691 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 09:46:37,691 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-14 09:46:37,691 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-14 09:46:37,691 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 10:14:16,577 - paramiko.transport - DEBUG - starting thread (client mode): 0xb3207850
+2025-04-14 10:14:16,578 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 10:14:16,587 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 10:14:16,587 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 10:14:16,590 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 10:14:16,590 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 10:14:16,590 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 10:14:16,590 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 10:14:16,590 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 10:14:16,590 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 10:14:16,590 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 10:14:16,591 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 10:14:16,607 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 10:14:16,607 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 10:14:16,607 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 10:14:16,608 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 10:14:16,608 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 10:14:16,655 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 10:14:16,742 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 10:14:16,742 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 10:14:16,808 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 10:14:16,808 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 10:14:16,850 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 10:14:16,851 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 10:14:16,853 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 10:14:16,856 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 10:14:16,856 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 10:14:16,856 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 10:14:16,873 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 10:14:16,876 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 10:14:16,876 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 10:14:16,879 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 10:14:16,881 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 10:14:16,904 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 10:14:16,904 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 10:14:16,904 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 10:14:16,953 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 10:14:16,953 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 10:14:17,082 - Backend_Files.logger_config - DEBUG - Last login: Mon Apr 14 10:14:23 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@sVIP-01-1D-A8:~$ cat /version
+[?2004l3.0.0-20250408-e78d58c5d-188
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:17,283 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: sVIP
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:17,484 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:17,684 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 5c:ba:2c:01:1d:a8
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:17,786 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:17,786 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 10:14:17,987 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:17,987 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 10:14:18,188 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:18,188 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 10:14:18,390 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 10:14:18,592 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 10:14:24 up 4 days, 23:18,  3 users,  load average: 7.23, 7.93, 8.04
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:18,592 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+lldpd-config.service
+logrotate.service
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+lldpd-config.service
+logrotate.service
+mvx@sVIP-01-1D-A8:~$ 
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,lldpd-config.service,logrotate.service
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-14 10:14:18,794 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 10:14:18,795 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-14 10:14:18,795 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-14 10:14:18,795 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 10:15:11,459 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-14 10:15:33,995 - Backend_Files.logger_config - INFO - Connection established in enable_coredump.
+2025-04-14 10:15:33,997 - Backend_Files.logger_config - ERROR - SSH connection is not established for enable coredump.
+2025-04-14 10:15:39,391 - Backend_Files.logger_config - INFO - Connection established in enable_coredump.
+2025-04-14 10:15:39,391 - Backend_Files.logger_config - ERROR - SSH connection is not established for enable coredump.
+2025-04-14 10:15:49,075 - Backend_Files.logger_config - INFO - Connection established in enable_coredump.
+2025-04-14 10:15:49,076 - Backend_Files.logger_config - ERROR - SSH connection is not established for enable coredump.
+2025-04-14 10:15:56,601 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 10:15:56,619 - Backend_Files.logger_config - ERROR - SSH connection is not established for overview.
+2025-04-14 10:16:19,057 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 10:16:19,076 - Backend_Files.logger_config - ERROR - SSH connection is not established for overview.
+2025-04-14 12:43:11,109 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 12:43:11,133 - Backend_Files.logger_config - ERROR - SSH connection is not established for overview.
+2025-04-14 14:07:27,712 - paramiko.transport - DEBUG - starting thread (client mode): 0x31b24a10
+2025-04-14 14:07:27,713 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:07:27,727 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:07:27,727 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:07:27,731 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:07:27,731 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:07:27,731 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:07:27,731 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:07:27,731 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:07:27,731 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:07:27,731 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:07:27,731 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:07:27,732 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:07:27,962 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:07:27,962 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:07:27,964 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:07:27,964 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:07:27,964 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for 172.16.176.146: b'be2e3e1d2028c337f630d690a24b172a'
+2025-04-14 14:07:27,965 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:07:28,004 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:07:28,172 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:07:28,172 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:07:28,224 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:07:28,224 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:07:28,276 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:07:28,276 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:07:28,278 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:07:28,280 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:07:28,280 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 14:07:28,315 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:07:28,317 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:07:28,318 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:07:28,321 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:07:28,324 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:07:28,525 - Backend_Files.logger_config - DEBUG - cat /version
+Last login: Mon Apr 14 14:07:28 2025 from 10.40.1.33
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ cat /version
+[?2004l3.1.0-20250414-ffabfaae2-1
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:28,727 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: evVIP-J2K
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:28,928 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:29,129 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 00:13:95:3a:22:50
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:29,230 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-j2k/license.key evVIP-J2K 0000000000000001 00:13:95:3a:22:50
+[?2004l+IN32+OUT2+MCR
+vx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:29,230 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:29,431 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: X30
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:29,431 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:29,632 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: ev670-X30-HW
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:29,632 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:29,834 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:30,036 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 14:07:29 up  1:55,  6 users,  load average: 6.47, 7.11, 7.03
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:30,036 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+insite-probe.service
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+insite-probe.service
+mvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,insite-probe.service
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:07:30,237 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:36,715 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-14 14:07:53,339 - paramiko.transport - DEBUG - starting thread (client mode): 0x91e94a10
+2025-04-14 14:07:53,340 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:07:53,359 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:07:53,360 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:07:53,362 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:07:53,363 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:07:53,364 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:07:53,383 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:07:53,384 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:07:53,384 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:07:53,384 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:07:53,384 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:07:53,384 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for 172.16.176.146: b'be2e3e1d2028c337f630d690a24b172a'
+2025-04-14 14:07:53,429 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:07:53,514 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:07:53,515 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:07:53,580 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:07:53,580 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:07:53,621 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:07:53,621 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:07:53,840 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:07:53,843 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:07:53,844 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 14:07:53,865 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:07:53,867 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:07:53,868 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:07:53,874 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:07:53,877 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:07:54,078 - Backend_Files.logger_config - DEBUG - cat /version
+Last login: Mon Apr 14 14:07:53 2025 from 10.40.1.33
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ cat /version
+[?2004l3.1.0-20250414-ffabfaae2-1
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:54,279 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: evVIP-J2K
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:54,480 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:54,682 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 00:13:95:3a:22:50
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:54,783 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-j2k/license.key evVIP-J2K 0000000000000001 00:13:95:3a:22:50
+[?2004l+IN32+OUT2+MCR
+vx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:54,783 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:54,984 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: X30
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:54,984 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:55,186 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: ev670-X30-HW
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:55,186 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:55,388 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:55,590 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 14:07:55 up  1:55,  6 users,  load average: 6.78, 7.08, 7.02
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:55,590 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:07:55,791 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+insite-probe.service
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:55,791 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+insite-probe.service
+mvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:07:55,791 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:07:55,791 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:07:55,791 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,insite-probe.service
+2025-04-14 14:07:55,792 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:07:55,792 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:07:55,792 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:07:55,792 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:07:55,792 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:11,453 - paramiko.transport - DEBUG - starting thread (client mode): 0x91e94850
+2025-04-14 14:08:11,453 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:08:11,469 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:08:11,469 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:08:11,472 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:08:11,473 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:08:11,486 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:11,486 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:08:11,486 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:08:11,486 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:11,486 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:08:11,533 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:08:11,621 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:08:11,622 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:08:11,682 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:08:11,682 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:08:11,724 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:08:11,724 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:08:11,727 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:11,731 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:11,731 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 14:08:11,741 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 14:08:11,768 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:08:11,773 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:08:11,773 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:08:11,777 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:11,778 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 14:08:11,779 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:11,779 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:11,780 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:11,981 - Backend_Files.logger_config - DEBUG - Last login: Mon Apr 14 14:08:11 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ cat /version
+[?2004l3.1.0-20250414-ffabfaae2-1
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:12,081 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:12,081 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:12,182 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: evVIP-J2K
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:12,383 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:12,585 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 00:13:95:3a:22:50
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:12,686 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-j2k/license.key evVIP-J2K 0000000000000001 00:13:95:3a:22:50
+[?2004l+IN32+OUT2+MCR
+vx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:12,686 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:12,887 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: X30
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:12,887 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:13,089 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: ev670-X30-HW
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:13,089 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:13,291 - Backend_Files.logger_config - INFO - Overview: Manufacturer pattern not found in output
+2025-04-14 14:08:13,291 - Backend_Files.logger_config - ERROR - Desired output not found for command: sudo dmidecode -t 0x0002
+2025-04-14 14:08:13,291 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:13,492 - Backend_Files.logger_config - DEBUG - uptime
+uptime
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+
+Handle 0x0002, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: congatec
+	Product Name: TS175
+	Version: B.0
+	Serial Number: 000005045105
+	Asset Tag:  
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis:  
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
+
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:13,492 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:13,693 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+insite-probe.service
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:13,693 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+insite-probe.service
+mvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:13,693 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:13,693 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:13,693 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,insite-probe.service
+2025-04-14 14:08:13,693 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:13,694 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:13,694 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:13,694 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:13,694 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:14,604 - paramiko.transport - DEBUG - starting thread (client mode): 0x91eeb110
+2025-04-14 14:08:14,604 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:08:14,631 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:08:14,631 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:08:14,634 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:08:14,634 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:08:14,634 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:08:14,634 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:14,634 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:14,634 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:14,634 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:08:14,635 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:08:14,648 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:14,649 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:08:14,649 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:08:14,649 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:14,649 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:08:14,692 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:08:14,778 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:08:14,778 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:08:14,824 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:08:14,824 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:08:14,866 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:08:14,866 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:08:14,871 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:14,875 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:14,875 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 14:08:14,875 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 14:08:14,895 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:08:14,898 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:08:14,898 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:08:14,902 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:14,905 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:14,924 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 14:08:14,925 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:14,925 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:14,972 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:14,972 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:15,107 - Backend_Files.logger_config - DEBUG - Last login: Mon Apr 14 14:08:14 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ cat /version
+[?2004l3.1.0-20250414-ffabfaae2-1
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:15,308 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: evVIP-J2K
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:15,509 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:15,710 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 00:13:95:3a:22:50
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:15,811 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-j2k/license.key evVIP-J2K 0000000000000001 00:13:95:3a:22:50
+[?2004l+IN32+OUT2+MCR
+vx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:15,811 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:16,012 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: X30
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:16,012 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:16,213 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: ev670-X30-HW
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:16,213 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:16,415 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:16,616 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 14:08:16 up  1:55,  6 users,  load average: 7.00, 7.10, 7.02
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:16,616 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:16,818 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+insite-probe.service
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:16,818 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+insite-probe.service
+mvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:16,818 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:16,818 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:16,818 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,insite-probe.service
+2025-04-14 14:08:16,818 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:16,818 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:16,819 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:16,819 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:16,819 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:17,783 - paramiko.transport - DEBUG - starting thread (client mode): 0x91f01610
+2025-04-14 14:08:17,783 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:08:17,800 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:08:17,800 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:08:17,804 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:08:17,805 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:08:17,816 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:17,816 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:08:17,817 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:08:17,817 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:17,817 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:08:17,861 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:08:18,030 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:08:18,030 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:08:18,081 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:08:18,081 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:08:18,123 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:08:18,123 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:08:18,126 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:18,129 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:18,130 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 14:08:18,130 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 14:08:18,151 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:08:18,153 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:08:18,153 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:08:18,157 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:18,160 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:18,184 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 14:08:18,184 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:18,185 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:18,231 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:18,231 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:18,361 - Backend_Files.logger_config - DEBUG - Last login: Mon Apr 14 14:08:18 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ cat /version
+[?2004l3.1.0-20250414-ffabfaae2-1
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:18,562 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: evVIP-J2K
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:18,764 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:18,965 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 00:13:95:3a:22:50
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:19,066 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-j2k/license.key evVIP-J2K 0000000000000001 00:13:95:3a:22:50
+[?2004l+IN32+OUT2+MCR
+
+2025-04-14 14:08:19,066 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:19,268 - Backend_Files.logger_config - DEBUG - [?2004hmvx@evVIP-J2K-3A-22-50:~$ mvdb-get cardinfo.platform
+[?2004lResult: X30
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:19,268 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:19,469 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: ev670-X30-HW
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:19,469 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:19,671 - Backend_Files.logger_config - INFO - Overview: Manufacturer pattern not found in output
+2025-04-14 14:08:19,671 - Backend_Files.logger_config - ERROR - Desired output not found for command: sudo dmidecode -t 0x0002
+2025-04-14 14:08:19,671 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:19,872 - Backend_Files.logger_config - DEBUG - # dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+
+Handle 0x0002, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: congatec
+	Product Name: TS175
+	Version: B.0
+	Serial Number: 000005045105
+	Asset Tag:  
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis:  
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
+
+uptime
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ uptime
+[?2004l 14:08:19 up  1:55,  6 users,  load average: 8.44, 7.40, 7.12
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:19,872 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:20,073 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+insite-probe.service
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:20,073 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+insite-probe.service
+mvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:20,073 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:20,073 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:20,073 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,insite-probe.service
+2025-04-14 14:08:20,074 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:20,074 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:20,074 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:20,074 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:20,074 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:20,603 - paramiko.transport - DEBUG - starting thread (client mode): 0x91f03550
+2025-04-14 14:08:20,603 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:08:20,635 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:08:20,635 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:08:20,640 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:08:20,641 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:08:20,642 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:08:20,642 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:08:20,654 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:20,654 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:08:20,655 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:08:20,655 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:20,655 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:08:20,701 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:08:20,871 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:08:20,871 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:08:20,923 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:08:20,923 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:08:20,966 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:08:20,966 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:08:20,970 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:20,978 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:20,979 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 14:08:20,979 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 14:08:21,002 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:08:21,006 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:08:21,006 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:08:21,009 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:21,011 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:21,031 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 14:08:21,031 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:21,032 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:21,081 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:21,081 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:21,212 - Backend_Files.logger_config - DEBUG - Last login: Mon Apr 14 14:08:21 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ cat /version
+[?2004l3.1.0-20250414-ffabfaae2-1
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:21,414 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: evVIP-J2K
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:21,615 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:21,816 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 00:13:95:3a:22:50
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:21,917 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-j2k/license.key evVIP-J2K 0000000000000001 00:13:95:3a:22:50
+[?2004l+IN32+OUT2+MCR
+vx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:21,917 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:22,118 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: X30
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:22,118 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:22,319 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: ev670-X30-HW
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:22,319 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:22,522 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:22,723 - Backend_Files.logger_config - DEBUG - [?2004hmvx@evVIP-J2K-3A-22-50:~$ uptime
+[?2004l 14:08:22 up  1:55,  6 users,  load average: 8.44, 7.40, 7.12
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:22,723 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:22,924 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+insite-probe.service
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:22,924 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+insite-probe.service
+mvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:22,924 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:22,924 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:22,924 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,insite-probe.service
+2025-04-14 14:08:22,924 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:22,924 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:22,925 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:22,925 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:22,925 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:22,934 - paramiko.transport - DEBUG - starting thread (client mode): 0x91f14e10
+2025-04-14 14:08:22,934 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:08:22,960 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:08:22,960 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:08:23,171 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:08:23,172 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:08:23,172 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:08:23,172 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:23,172 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:23,172 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:23,172 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:23,172 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:08:23,172 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:08:23,173 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:08:23,174 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:08:23,184 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:23,185 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:08:23,185 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:08:23,185 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:23,185 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:08:23,230 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:08:23,314 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:08:23,315 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:08:23,359 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:08:23,359 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:08:23,401 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:08:23,401 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:08:23,403 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:23,405 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:23,405 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 14:08:23,405 - Backend_Files.logger_config - INFO - Connection established in detailed debug.
+2025-04-14 14:08:23,405 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:08:23,407 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:08:23,407 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:08:23,411 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:23,414 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:23,450 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 14:08:23,450 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:23,450 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:23,618 - root - DEBUG - Apr 14 12:12:28 localhost systemd[1]: insite-probe.service: Failed with result 'exit-code'.
+Apr 14 12:12:28 localhost systemd[1]: Failed to start "Probe for collecting Ubuntu probe data".
+2025-04-14 14:08:23,757 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:23,757 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:23,820 - root - DEBUG - Apr 14 12:12:28 localhost insite-probe-enable[605]: Job for insite-probe.service failed because the control process exited with error code.
+Apr 14 12:12:28 localhost systemd[1]: insite-probe-enable.service: Failed with result 'exit-code'.
+Apr 14 12:12:28 localhost systemd[1]: Failed to start Renable insite probe after firmware upgrade.
+2025-04-14 14:08:26,872 - paramiko.transport - DEBUG - starting thread (client mode): 0x91f15350
+2025-04-14 14:08:26,873 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:08:26,896 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:08:26,896 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:08:26,899 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:08:26,899 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:08:26,899 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:08:26,899 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:26,899 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:26,899 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:26,899 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:08:26,900 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:08:26,915 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:26,915 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:08:26,915 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:08:26,915 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:26,915 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:08:26,961 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:08:27,129 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:08:27,129 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:08:27,183 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:08:27,183 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:08:27,225 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:08:27,225 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:08:27,227 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:27,230 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:27,230 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 14:08:27,231 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 14:08:27,250 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:08:27,255 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:08:27,255 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:08:27,258 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:27,263 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:27,279 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 14:08:27,280 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:27,280 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:27,327 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:27,327 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:27,466 - Backend_Files.logger_config - DEBUG - Last login: Mon Apr 14 14:08:27 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ cat /version
+[?2004l3.1.0-20250414-ffabfaae2-1
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:27,667 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: evVIP-J2K
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:27,868 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:28,069 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 00:13:95:3a:22:50
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:28,170 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-j2k/license.key evVIP-J2K 0000000000000001 00:13:95:3a:22:50
+[?2004l+IN32+OUT2+MCR
+vx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:28,170 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:28,371 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: X30
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:28,371 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:28,573 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: ev670-X30-HW
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:28,573 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:28,775 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:28,977 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 14:08:28 up  1:56,  6 users,  load average: 8.86, 7.53, 7.16
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:28,977 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:29,178 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+insite-probe.service
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:29,178 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+insite-probe.service
+mvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:29,178 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:29,178 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:29,178 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,insite-probe.service
+2025-04-14 14:08:29,178 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:29,178 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:29,178 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:29,178 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:29,179 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:30,468 - paramiko.transport - DEBUG - starting thread (client mode): 0x91f16d10
+2025-04-14 14:08:30,468 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:08:30,486 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:08:30,486 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:08:30,489 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:08:30,499 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:30,500 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:08:30,500 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:08:30,500 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:30,500 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:08:30,545 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:08:30,631 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:08:30,632 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:08:30,679 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:08:30,679 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:08:30,721 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:08:30,721 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:08:30,723 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:30,726 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:30,727 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 14:08:30,727 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 14:08:30,749 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:08:30,751 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:08:30,752 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:08:30,757 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:30,760 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:30,775 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 14:08:30,776 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:30,776 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:30,824 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:30,825 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:30,961 - Backend_Files.logger_config - DEBUG - Last login: Mon Apr 14 14:08:30 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ cat /version
+[?2004l3.1.0-20250414-ffabfaae2-1
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:31,162 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: evVIP-J2K
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:31,364 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:31,565 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 00:13:95:3a:22:50
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:31,667 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-j2k/license.key evVIP-J2K 0000000000000001 00:13:95:3a:22:50
+[?2004l+IN32+OUT2+MCR
+vx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:31,667 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:31,868 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: X30
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:31,868 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:32,070 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: ev670-X30-HW
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:32,070 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:32,273 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:32,474 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 14:08:32 up  1:56,  6 users,  load average: 8.86, 7.53, 7.16
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:32,474 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+insite-probe.service
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+insite-probe.service
+mvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,insite-probe.service
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:08:32,675 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:08:32,682 - paramiko.transport - DEBUG - starting thread (client mode): 0x91f1d190
+2025-04-14 14:08:32,682 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:08:32,700 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:08:32,700 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:08:32,703 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:08:32,715 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:32,715 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:08:32,715 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:08:32,715 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:08:32,715 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:08:32,761 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:08:32,846 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:08:32,847 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:08:32,913 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:08:32,913 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:08:32,957 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:08:32,957 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:08:32,961 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:32,963 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:08:32,963 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 14:08:32,964 - Backend_Files.logger_config - INFO - Connection established in detailed debug.
+2025-04-14 14:08:32,964 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:08:32,965 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:08:32,966 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:08:32,971 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:32,975 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:08:33,011 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 14:08:33,012 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:33,012 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:08:33,176 - root - DEBUG - Apr 14 12:12:28 localhost systemd[1]: insite-probe.service: Failed with result 'exit-code'.
+Apr 14 12:12:28 localhost systemd[1]: Failed to start "Probe for collecting Ubuntu probe data".
+2025-04-14 14:08:33,271 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:33,271 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:08:33,378 - root - DEBUG - Apr 14 12:12:28 localhost insite-probe-enable[605]: Job for insite-probe.service failed because the control process exited with error code.
+Apr 14 12:12:28 localhost systemd[1]: insite-probe-enable.service: Failed with result 'exit-code'.
+Apr 14 12:12:28 localhost systemd[1]: Failed to start Renable insite probe after firmware upgrade.
+2025-04-14 14:47:37,045 - paramiko.transport - DEBUG - starting thread (client mode): 0x91f1e110
+2025-04-14 14:47:37,047 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-14 14:47:37,062 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-14 14:47:37,062 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-14 14:47:37,065 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - kex follows: False
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-14 14:47:37,066 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-14 14:47:37,067 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-14 14:47:37,067 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-14 14:47:37,067 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-14 14:47:37,067 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-14 14:47:37,067 - paramiko.transport - DEBUG - Compression: none
+2025-04-14 14:47:37,067 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-14 14:47:37,080 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:47:37,080 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-14 14:47:37,081 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-14 14:47:37,081 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-14 14:47:37,081 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-14 14:47:37,126 - paramiko.transport - DEBUG - userauth is OK
+2025-04-14 14:47:37,296 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-14 14:47:37,297 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-14 14:47:37,356 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-14 14:47:37,356 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-14 14:47:37,399 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-14 14:47:37,399 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-14 14:47:37,402 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:47:37,405 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-14 14:47:37,405 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-14 14:47:37,406 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-14 14:47:37,438 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-14 14:47:37,441 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-14 14:47:37,441 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-14 14:47:37,448 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:47:37,449 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-14 14:47:37,450 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:47:37,450 - paramiko.transport - DEBUG - Ignoring message for dead channel 0
+2025-04-14 14:47:37,451 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-14 14:47:37,497 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:47:37,497 - paramiko.transport - DEBUG - Ignoring message for dead channel 1
+2025-04-14 14:47:37,652 - Backend_Files.logger_config - DEBUG - Last login: Mon Apr 14 14:47:37 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ cat /version
+[?2004l3.1.0-20250414-ffabfaae2-1
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:37,853 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: evVIP-J2K
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:38,055 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:38,255 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 00:13:95:3a:22:50
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:38,356 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-j2k/license.key evVIP-J2K 0000000000000001 00:13:95:3a:22:50
+[?2004l+IN32+OUT2+MCR
+vx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:38,356 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:47:38,557 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: X30
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:38,557 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:47:38,758 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: ev670-X30-HW
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:38,758 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:47:38,960 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:47:39,162 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 14:47:39 up  2:35,  4 users,  load average: 9.52, 9.48, 8.57
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:39,162 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:47:39,363 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+insite-probe.service
+[?2004hmvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:39,363 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+insite-probe.service
+mvx@evVIP-J2K-3A-22-50:~$ 
+2025-04-14 14:47:39,363 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:47:39,363 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:47:39,363 - Backend_Files.logger_config - INFO - This is the output of readMultiLines insite-probe-enable.service,insite-probe.service
+2025-04-14 14:47:39,364 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:47:39,364 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:47:39,364 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-14 14:47:39,364 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe.service
+2025-04-14 14:47:39,364 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-14 14:47:48,240 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-14 14:47:48,242 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-14 14:47:48,242 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-14 14:47:48,242 - paramiko.transport - DEBUG - EOF in transport thread

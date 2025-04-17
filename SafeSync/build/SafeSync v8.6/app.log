@@ -1,0 +1,1529 @@
+2025-04-15 14:23:44,200 - paramiko.transport - DEBUG - starting thread (client mode): 0x703d5510
+2025-04-15 14:23:44,200 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:23:44,215 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:23:44,215 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:23:44,218 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:23:44,218 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:23:44,227 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:23:44,228 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:23:44,228 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:23:44,228 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:23:44,228 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:23:44,228 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:23:44,228 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:23:44,240 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:23:44,240 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:23:44,241 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:23:44,241 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:23:44,241 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for 172.16.177.79: b'7df818581b432da5e0e1320eb8920db4'
+2025-04-15 14:23:44,241 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:23:44,288 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:23:44,337 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:23:44,373 - paramiko.transport - DEBUG - starting thread (client mode): 0x7042eed0
+2025-04-15 14:23:44,374 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:23:44,393 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:23:44,393 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:23:44,394 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:23:44,394 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:23:44,399 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:23:44,399 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:23:44,399 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:23:44,399 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:23:44,399 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:23:44,399 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:23:44,399 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:23:44,399 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:23:44,399 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:23:44,400 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:23:44,410 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:23:44,411 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:23:44,411 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:23:44,411 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:23:44,411 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:23:44,459 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:23:44,509 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:23:44,515 - Backend_Files.logger_config - INFO - Connection established for backup.
+2025-04-15 14:23:44,532 - Backend_Files.logger_config - INFO - Downloading folder: /udata/etc/network
+2025-04-15 14:23:44,533 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-15 14:23:44,570 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:23:44,570 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:23:44,611 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-15 14:23:44,612 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-15 14:23:44,615 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:23:44,621 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2025-04-15 14:23:44,621 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-04-15 14:23:44,621 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2025-04-15 14:23:44,668 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2025-04-15 14:23:44,668 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2025-04-15 14:23:44,671 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2025-04-15 14:23:44,677 - paramiko.transport - DEBUG - [chan 1] EOF received (1)
+2025-04-15 14:23:44,677 - Backend_Files.logger_config - INFO - Downloading 2 files from /udata/etc/network...
+2025-04-15 14:23:44,678 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2025-04-15 14:23:44,678 - paramiko.transport - DEBUG - [chan 2] Max packet in: 32768 bytes
+2025-04-15 14:23:44,723 - paramiko.transport - DEBUG - [chan 2] Max packet out: 32768 bytes
+2025-04-15 14:23:44,723 - paramiko.transport - DEBUG - Secsh channel 2 opened.
+2025-04-15 14:23:44,727 - paramiko.transport - DEBUG - [chan 2] Sesch channel 2 request ok
+2025-04-15 14:23:44,737 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\interfaces: 0.00%
+2025-04-15 14:23:44,740 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\interfaces: 100.00%
+2025-04-15 14:23:44,746 - paramiko.transport - DEBUG - [chan 2] EOF received (2)
+2025-04-15 14:23:44,746 - paramiko.transport - DEBUG - [chan 2] EOF sent (2)
+2025-04-15 14:23:44,747 - paramiko.transport - DEBUG - [chan 3] Max packet in: 32768 bytes
+2025-04-15 14:23:44,791 - paramiko.transport - DEBUG - [chan 3] Max packet out: 32768 bytes
+2025-04-15 14:23:44,791 - paramiko.transport - DEBUG - Secsh channel 3 opened.
+2025-04-15 14:23:44,794 - paramiko.transport - DEBUG - [chan 3] Sesch channel 3 request ok
+2025-04-15 14:23:44,805 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\interfaces.routes: 100.00%
+2025-04-15 14:23:44,811 - paramiko.transport - DEBUG - [chan 3] EOF received (3)
+2025-04-15 14:23:44,811 - paramiko.transport - DEBUG - [chan 3] EOF sent (3)
+2025-04-15 14:23:44,812 - Backend_Files.logger_config - INFO - 
+Successfully downloaded folder from /udata/etc/network to C:/Users/sahir/Documents/bckup trial
+2025-04-15 14:23:44,812 - Backend_Files.logger_config - INFO - Downloading folder: /udata/etc/mvx
+2025-04-15 14:23:44,812 - paramiko.transport - DEBUG - [chan 4] Max packet in: 32768 bytes
+2025-04-15 14:23:44,855 - paramiko.transport - DEBUG - [chan 4] Max packet out: 32768 bytes
+2025-04-15 14:23:44,855 - paramiko.transport - DEBUG - Secsh channel 4 opened.
+2025-04-15 14:23:44,859 - paramiko.transport - DEBUG - [chan 4] Sesch channel 4 request ok
+2025-04-15 14:23:44,863 - paramiko.transport - DEBUG - [chan 4] EOF received (4)
+2025-04-15 14:23:44,863 - paramiko.transport - DEBUG - [chan 5] Max packet in: 32768 bytes
+2025-04-15 14:23:44,863 - paramiko.transport - DEBUG - [chan 4] EOF sent (4)
+2025-04-15 14:23:44,865 - paramiko.transport - DEBUG - [chan 5] Max packet out: 32768 bytes
+2025-04-15 14:23:44,865 - paramiko.transport - DEBUG - Secsh channel 5 opened.
+2025-04-15 14:23:44,912 - paramiko.transport - DEBUG - [chan 5] Sesch channel 5 request ok
+2025-04-15 14:23:44,920 - paramiko.transport - DEBUG - [chan 5] EOF received (5)
+2025-04-15 14:23:44,921 - Backend_Files.logger_config - INFO - Downloading 70 files from /udata/etc/mvx...
+2025-04-15 14:23:44,921 - paramiko.transport - DEBUG - [chan 5] EOF sent (5)
+2025-04-15 14:23:44,922 - paramiko.transport - DEBUG - [chan 6] Max packet in: 32768 bytes
+2025-04-15 14:23:44,967 - paramiko.transport - DEBUG - [chan 6] Max packet out: 32768 bytes
+2025-04-15 14:23:44,967 - paramiko.transport - DEBUG - Secsh channel 6 opened.
+2025-04-15 14:23:44,971 - paramiko.transport - DEBUG - [chan 6] Sesch channel 6 request ok
+2025-04-15 14:23:44,976 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_1.json: 0.00%
+2025-04-15 14:23:44,979 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_1.json: 100.00%
+2025-04-15 14:23:44,986 - paramiko.transport - DEBUG - [chan 6] EOF received (6)
+2025-04-15 14:23:44,986 - paramiko.transport - DEBUG - [chan 6] EOF sent (6)
+2025-04-15 14:23:44,988 - paramiko.transport - DEBUG - [chan 7] Max packet in: 32768 bytes
+2025-04-15 14:23:45,033 - paramiko.transport - DEBUG - [chan 7] Max packet out: 32768 bytes
+2025-04-15 14:23:45,033 - paramiko.transport - DEBUG - Secsh channel 7 opened.
+2025-04-15 14:23:45,037 - paramiko.transport - DEBUG - [chan 7] Sesch channel 7 request ok
+2025-04-15 14:23:45,042 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_2.json: 0.00%
+2025-04-15 14:23:45,045 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_2.json: 71.49%
+2025-04-15 14:23:45,045 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_2.json: 100.00%
+2025-04-15 14:23:45,055 - paramiko.transport - DEBUG - [chan 7] EOF received (7)
+2025-04-15 14:23:45,055 - paramiko.transport - DEBUG - [chan 7] EOF sent (7)
+2025-04-15 14:23:45,056 - paramiko.transport - DEBUG - [chan 8] Max packet in: 32768 bytes
+2025-04-15 14:23:45,099 - paramiko.transport - DEBUG - [chan 8] Max packet out: 32768 bytes
+2025-04-15 14:23:45,099 - paramiko.transport - DEBUG - Secsh channel 8 opened.
+2025-04-15 14:23:45,103 - paramiko.transport - DEBUG - [chan 8] Sesch channel 8 request ok
+2025-04-15 14:23:45,114 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_3.json: 0.00%
+2025-04-15 14:23:45,117 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_3.json: 43.07%
+2025-04-15 14:23:45,117 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_3.json: 86.13%
+2025-04-15 14:23:45,117 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_3.json: 100.00%
+2025-04-15 14:23:45,128 - paramiko.transport - DEBUG - [chan 8] EOF received (8)
+2025-04-15 14:23:45,128 - paramiko.transport - DEBUG - [chan 8] EOF sent (8)
+2025-04-15 14:23:45,129 - paramiko.transport - DEBUG - [chan 9] Max packet in: 32768 bytes
+2025-04-15 14:23:45,175 - paramiko.transport - DEBUG - [chan 9] Max packet out: 32768 bytes
+2025-04-15 14:23:45,175 - paramiko.transport - DEBUG - Secsh channel 9 opened.
+2025-04-15 14:23:45,178 - paramiko.transport - DEBUG - [chan 9] Sesch channel 9 request ok
+2025-04-15 14:23:45,189 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_4.json: 0.00%
+2025-04-15 14:23:45,192 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layouts\layout_4.json: 100.00%
+2025-04-15 14:23:45,200 - paramiko.transport - DEBUG - [chan 9] EOF received (9)
+2025-04-15 14:23:45,200 - paramiko.transport - DEBUG - [chan 9] EOF sent (9)
+2025-04-15 14:23:45,201 - paramiko.transport - DEBUG - [chan 10] Max packet in: 32768 bytes
+2025-04-15 14:23:45,247 - paramiko.transport - DEBUG - [chan 10] Max packet out: 32768 bytes
+2025-04-15 14:23:45,247 - paramiko.transport - DEBUG - Secsh channel 10 opened.
+2025-04-15 14:23:45,250 - paramiko.transport - DEBUG - [chan 10] Sesch channel 10 request ok
+2025-04-15 14:23:45,260 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layout_store\layout_001.json: 0.00%
+2025-04-15 14:23:45,262 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\layout_store\layout_001.json: 100.00%
+2025-04-15 14:23:45,268 - paramiko.transport - DEBUG - [chan 10] EOF received (10)
+2025-04-15 14:23:45,268 - paramiko.transport - DEBUG - [chan 10] EOF sent (10)
+2025-04-15 14:23:45,270 - paramiko.transport - DEBUG - [chan 11] Max packet in: 32768 bytes
+2025-04-15 14:23:45,316 - paramiko.transport - DEBUG - [chan 11] Max packet out: 32768 bytes
+2025-04-15 14:23:45,316 - paramiko.transport - DEBUG - Secsh channel 11 opened.
+2025-04-15 14:23:45,321 - paramiko.transport - DEBUG - [chan 11] Sesch channel 11 request ok
+2025-04-15 14:23:45,329 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\default_font.eff: 0.00%
+2025-04-15 14:23:45,331 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\default_font.eff: 27.18%
+2025-04-15 14:23:45,331 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\default_font.eff: 54.36%
+2025-04-15 14:23:45,331 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\default_font.eff: 81.54%
+2025-04-15 14:23:45,333 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\default_font.eff: 100.00%
+2025-04-15 14:23:45,340 - paramiko.transport - DEBUG - [chan 11] EOF received (11)
+2025-04-15 14:23:45,341 - paramiko.transport - DEBUG - [chan 11] EOF sent (11)
+2025-04-15 14:23:45,342 - paramiko.transport - DEBUG - [chan 12] Max packet in: 32768 bytes
+2025-04-15 14:23:45,387 - paramiko.transport - DEBUG - [chan 12] Max packet out: 32768 bytes
+2025-04-15 14:23:45,387 - paramiko.transport - DEBUG - Secsh channel 12 opened.
+2025-04-15 14:23:45,390 - paramiko.transport - DEBUG - [chan 12] Sesch channel 12 request ok
+2025-04-15 14:23:45,401 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\default_font.sha256: 0.00%
+2025-04-15 14:23:45,403 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\default_font.sha256: 100.00%
+2025-04-15 14:23:45,409 - paramiko.transport - DEBUG - [chan 12] EOF received (12)
+2025-04-15 14:23:45,409 - paramiko.transport - DEBUG - [chan 12] EOF sent (12)
+2025-04-15 14:23:45,411 - paramiko.transport - DEBUG - [chan 13] Max packet in: 32768 bytes
+2025-04-15 14:23:45,459 - paramiko.transport - DEBUG - [chan 13] Max packet out: 32768 bytes
+2025-04-15 14:23:45,459 - paramiko.transport - DEBUG - Secsh channel 13 opened.
+2025-04-15 14:23:45,462 - paramiko.transport - DEBUG - [chan 13] Sesch channel 13 request ok
+2025-04-15 14:23:45,472 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_10.eff: 0.00%
+2025-04-15 14:23:45,474 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_10.eff: 27.89%
+2025-04-15 14:23:45,474 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_10.eff: 55.79%
+2025-04-15 14:23:45,475 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_10.eff: 83.68%
+2025-04-15 14:23:45,475 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_10.eff: 100.00%
+2025-04-15 14:23:45,481 - paramiko.transport - DEBUG - [chan 13] EOF received (13)
+2025-04-15 14:23:45,481 - paramiko.transport - DEBUG - [chan 13] EOF sent (13)
+2025-04-15 14:23:45,482 - paramiko.transport - DEBUG - [chan 14] Max packet in: 32768 bytes
+2025-04-15 14:23:45,527 - paramiko.transport - DEBUG - [chan 14] Max packet out: 32768 bytes
+2025-04-15 14:23:45,527 - paramiko.transport - DEBUG - Secsh channel 14 opened.
+2025-04-15 14:23:45,530 - paramiko.transport - DEBUG - [chan 14] Sesch channel 14 request ok
+2025-04-15 14:23:45,536 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_10.sha256: 0.00%
+2025-04-15 14:23:45,538 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_10.sha256: 100.00%
+2025-04-15 14:23:45,543 - paramiko.transport - DEBUG - [chan 14] EOF received (14)
+2025-04-15 14:23:45,543 - paramiko.transport - DEBUG - [chan 14] EOF sent (14)
+2025-04-15 14:23:45,544 - paramiko.transport - DEBUG - [chan 15] Max packet in: 32768 bytes
+2025-04-15 14:23:45,587 - paramiko.transport - DEBUG - [chan 15] Max packet out: 32768 bytes
+2025-04-15 14:23:45,587 - paramiko.transport - DEBUG - Secsh channel 15 opened.
+2025-04-15 14:23:45,590 - paramiko.transport - DEBUG - [chan 15] Sesch channel 15 request ok
+2025-04-15 14:23:45,600 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_4.eff: 0.00%
+2025-04-15 14:23:45,603 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_4.eff: 24.85%
+2025-04-15 14:23:45,603 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_4.eff: 49.70%
+2025-04-15 14:23:45,604 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_4.eff: 74.55%
+2025-04-15 14:23:45,604 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_4.eff: 99.40%
+2025-04-15 14:23:45,604 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_4.eff: 100.00%
+2025-04-15 14:23:45,610 - paramiko.transport - DEBUG - [chan 15] EOF received (15)
+2025-04-15 14:23:45,610 - paramiko.transport - DEBUG - [chan 15] EOF sent (15)
+2025-04-15 14:23:45,612 - paramiko.transport - DEBUG - [chan 16] Max packet in: 32768 bytes
+2025-04-15 14:23:45,655 - paramiko.transport - DEBUG - [chan 16] Max packet out: 32768 bytes
+2025-04-15 14:23:45,655 - paramiko.transport - DEBUG - Secsh channel 16 opened.
+2025-04-15 14:23:45,659 - paramiko.transport - DEBUG - [chan 16] Sesch channel 16 request ok
+2025-04-15 14:23:45,669 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_4.sha256: 0.00%
+2025-04-15 14:23:45,671 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_4.sha256: 100.00%
+2025-04-15 14:23:45,678 - paramiko.transport - DEBUG - [chan 16] EOF received (16)
+2025-04-15 14:23:45,678 - paramiko.transport - DEBUG - [chan 16] EOF sent (16)
+2025-04-15 14:23:45,678 - paramiko.transport - DEBUG - [chan 17] Max packet in: 32768 bytes
+2025-04-15 14:23:45,723 - paramiko.transport - DEBUG - [chan 17] Max packet out: 32768 bytes
+2025-04-15 14:23:45,723 - paramiko.transport - DEBUG - Secsh channel 17 opened.
+2025-04-15 14:23:45,726 - paramiko.transport - DEBUG - [chan 17] Sesch channel 17 request ok
+2025-04-15 14:23:45,736 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_5.eff: 0.00%
+2025-04-15 14:23:45,738 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_5.eff: 27.90%
+2025-04-15 14:23:45,739 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_5.eff: 55.81%
+2025-04-15 14:23:45,739 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_5.eff: 83.71%
+2025-04-15 14:23:45,739 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_5.eff: 100.00%
+2025-04-15 14:23:45,745 - paramiko.transport - DEBUG - [chan 17] EOF received (17)
+2025-04-15 14:23:45,746 - paramiko.transport - DEBUG - [chan 17] EOF sent (17)
+2025-04-15 14:23:45,747 - paramiko.transport - DEBUG - [chan 18] Max packet in: 32768 bytes
+2025-04-15 14:23:45,792 - paramiko.transport - DEBUG - [chan 18] Max packet out: 32768 bytes
+2025-04-15 14:23:45,792 - paramiko.transport - DEBUG - Secsh channel 18 opened.
+2025-04-15 14:23:45,795 - paramiko.transport - DEBUG - [chan 18] Sesch channel 18 request ok
+2025-04-15 14:23:45,805 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_5.sha256: 0.00%
+2025-04-15 14:23:45,807 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_5.sha256: 100.00%
+2025-04-15 14:23:45,813 - paramiko.transport - DEBUG - [chan 18] EOF received (18)
+2025-04-15 14:23:45,813 - paramiko.transport - DEBUG - [chan 18] EOF sent (18)
+2025-04-15 14:23:45,816 - paramiko.transport - DEBUG - [chan 19] Max packet in: 32768 bytes
+2025-04-15 14:23:45,859 - paramiko.transport - DEBUG - [chan 19] Max packet out: 32768 bytes
+2025-04-15 14:23:45,860 - paramiko.transport - DEBUG - Secsh channel 19 opened.
+2025-04-15 14:23:45,862 - paramiko.transport - DEBUG - [chan 19] Sesch channel 19 request ok
+2025-04-15 14:23:45,873 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_6.eff: 0.00%
+2025-04-15 14:23:45,874 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_6.eff: 27.18%
+2025-04-15 14:23:45,875 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_6.eff: 54.36%
+2025-04-15 14:23:45,876 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_6.eff: 81.54%
+2025-04-15 14:23:45,876 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_6.eff: 100.00%
+2025-04-15 14:23:45,881 - paramiko.transport - DEBUG - [chan 19] EOF received (19)
+2025-04-15 14:23:45,881 - paramiko.transport - DEBUG - [chan 19] EOF sent (19)
+2025-04-15 14:23:45,883 - paramiko.transport - DEBUG - [chan 20] Max packet in: 32768 bytes
+2025-04-15 14:23:45,927 - paramiko.transport - DEBUG - [chan 20] Max packet out: 32768 bytes
+2025-04-15 14:23:45,928 - paramiko.transport - DEBUG - Secsh channel 20 opened.
+2025-04-15 14:23:45,931 - paramiko.transport - DEBUG - [chan 20] Sesch channel 20 request ok
+2025-04-15 14:23:45,938 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_6.sha256: 0.00%
+2025-04-15 14:23:45,940 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_6.sha256: 100.00%
+2025-04-15 14:23:45,946 - paramiko.transport - DEBUG - [chan 20] EOF received (20)
+2025-04-15 14:23:45,946 - paramiko.transport - DEBUG - [chan 20] EOF sent (20)
+2025-04-15 14:23:45,947 - paramiko.transport - DEBUG - [chan 21] Max packet in: 32768 bytes
+2025-04-15 14:23:45,996 - paramiko.transport - DEBUG - [chan 21] Max packet out: 32768 bytes
+2025-04-15 14:23:45,996 - paramiko.transport - DEBUG - Secsh channel 21 opened.
+2025-04-15 14:23:45,999 - paramiko.transport - DEBUG - [chan 21] Sesch channel 21 request ok
+2025-04-15 14:23:46,012 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_7.eff: 0.00%
+2025-04-15 14:23:46,014 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_7.eff: 33.28%
+2025-04-15 14:23:46,014 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_7.eff: 66.57%
+2025-04-15 14:23:46,015 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_7.eff: 99.85%
+2025-04-15 14:23:46,015 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_7.eff: 100.00%
+2025-04-15 14:23:46,021 - paramiko.transport - DEBUG - [chan 21] EOF received (21)
+2025-04-15 14:23:46,021 - paramiko.transport - DEBUG - [chan 21] EOF sent (21)
+2025-04-15 14:23:46,022 - paramiko.transport - DEBUG - [chan 22] Max packet in: 32768 bytes
+2025-04-15 14:23:46,067 - paramiko.transport - DEBUG - [chan 22] Max packet out: 32768 bytes
+2025-04-15 14:23:46,068 - paramiko.transport - DEBUG - Secsh channel 22 opened.
+2025-04-15 14:23:46,071 - paramiko.transport - DEBUG - [chan 22] Sesch channel 22 request ok
+2025-04-15 14:23:46,079 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_7.sha256: 0.00%
+2025-04-15 14:23:46,081 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_7.sha256: 100.00%
+2025-04-15 14:23:46,089 - paramiko.transport - DEBUG - [chan 22] EOF received (22)
+2025-04-15 14:23:46,089 - paramiko.transport - DEBUG - [chan 22] EOF sent (22)
+2025-04-15 14:23:46,090 - paramiko.transport - DEBUG - [chan 23] Max packet in: 32768 bytes
+2025-04-15 14:23:46,135 - paramiko.transport - DEBUG - [chan 23] Max packet out: 32768 bytes
+2025-04-15 14:23:46,135 - paramiko.transport - DEBUG - Secsh channel 23 opened.
+2025-04-15 14:23:46,138 - paramiko.transport - DEBUG - [chan 23] Sesch channel 23 request ok
+2025-04-15 14:23:46,144 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_8.eff: 0.00%
+2025-04-15 14:23:46,146 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_8.eff: 33.40%
+2025-04-15 14:23:46,146 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_8.eff: 66.80%
+2025-04-15 14:23:46,147 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_8.eff: 100.00%
+2025-04-15 14:23:46,154 - paramiko.transport - DEBUG - [chan 23] EOF received (23)
+2025-04-15 14:23:46,154 - paramiko.transport - DEBUG - [chan 23] EOF sent (23)
+2025-04-15 14:23:46,155 - paramiko.transport - DEBUG - [chan 24] Max packet in: 32768 bytes
+2025-04-15 14:23:46,199 - paramiko.transport - DEBUG - [chan 24] Max packet out: 32768 bytes
+2025-04-15 14:23:46,199 - paramiko.transport - DEBUG - Secsh channel 24 opened.
+2025-04-15 14:23:46,202 - paramiko.transport - DEBUG - [chan 24] Sesch channel 24 request ok
+2025-04-15 14:23:46,216 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_8.sha256: 0.00%
+2025-04-15 14:23:46,218 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\resources\font_8.sha256: 100.00%
+2025-04-15 14:23:46,225 - paramiko.transport - DEBUG - [chan 24] EOF received (24)
+2025-04-15 14:23:46,225 - paramiko.transport - DEBUG - [chan 24] EOF sent (24)
+2025-04-15 14:23:46,226 - paramiko.transport - DEBUG - [chan 25] Max packet in: 32768 bytes
+2025-04-15 14:23:46,272 - paramiko.transport - DEBUG - [chan 25] Max packet out: 32768 bytes
+2025-04-15 14:23:46,272 - paramiko.transport - DEBUG - Secsh channel 25 opened.
+2025-04-15 14:23:46,275 - paramiko.transport - DEBUG - [chan 25] Sesch channel 25 request ok
+2025-04-15 14:23:46,285 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\var\fpga0-slot: 0.00%
+2025-04-15 14:23:46,287 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\var\fpga0-slot: 100.00%
+2025-04-15 14:23:46,292 - paramiko.transport - DEBUG - [chan 25] EOF received (25)
+2025-04-15 14:23:46,292 - paramiko.transport - DEBUG - [chan 25] EOF sent (25)
+2025-04-15 14:23:46,293 - paramiko.transport - DEBUG - [chan 26] Max packet in: 32768 bytes
+2025-04-15 14:23:46,336 - paramiko.transport - DEBUG - [chan 26] Max packet out: 32768 bytes
+2025-04-15 14:23:46,336 - paramiko.transport - DEBUG - Secsh channel 26 opened.
+2025-04-15 14:23:46,338 - paramiko.transport - DEBUG - [chan 26] Sesch channel 26 request ok
+2025-04-15 14:23:46,351 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\var\fpga1-slot: 0.00%
+2025-04-15 14:23:46,353 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\var\fpga1-slot: 100.00%
+2025-04-15 14:23:46,358 - paramiko.transport - DEBUG - [chan 26] EOF received (26)
+2025-04-15 14:23:46,358 - paramiko.transport - DEBUG - [chan 26] EOF sent (26)
+2025-04-15 14:23:46,359 - paramiko.transport - DEBUG - [chan 27] Max packet in: 32768 bytes
+2025-04-15 14:23:46,404 - paramiko.transport - DEBUG - [chan 27] Max packet out: 32768 bytes
+2025-04-15 14:23:46,404 - paramiko.transport - DEBUG - Secsh channel 27 opened.
+2025-04-15 14:23:46,407 - paramiko.transport - DEBUG - [chan 27] Sesch channel 27 request ok
+2025-04-15 14:23:46,415 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\var\video-proc-range: 0.00%
+2025-04-15 14:23:46,416 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\var\video-proc-range: 100.00%
+2025-04-15 14:23:46,420 - paramiko.transport - DEBUG - [chan 27] EOF received (27)
+2025-04-15 14:23:46,421 - paramiko.transport - DEBUG - [chan 27] EOF sent (27)
+2025-04-15 14:23:46,422 - paramiko.transport - DEBUG - [chan 28] Max packet in: 32768 bytes
+2025-04-15 14:23:46,467 - paramiko.transport - DEBUG - [chan 28] Max packet out: 32768 bytes
+2025-04-15 14:23:46,467 - paramiko.transport - DEBUG - Secsh channel 28 opened.
+2025-04-15 14:23:46,470 - paramiko.transport - DEBUG - [chan 28] Sesch channel 28 request ok
+2025-04-15 14:23:46,477 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\license.key: 0.00%
+2025-04-15 14:23:46,479 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\license.key: 100.00%
+2025-04-15 14:23:46,485 - paramiko.transport - DEBUG - [chan 28] EOF received (28)
+2025-04-15 14:23:46,485 - paramiko.transport - DEBUG - [chan 28] EOF sent (28)
+2025-04-15 14:23:46,486 - paramiko.transport - DEBUG - [chan 29] Max packet in: 32768 bytes
+2025-04-15 14:23:46,531 - paramiko.transport - DEBUG - [chan 29] Max packet out: 32768 bytes
+2025-04-15 14:23:46,532 - paramiko.transport - DEBUG - Secsh channel 29 opened.
+2025-04-15 14:23:46,534 - paramiko.transport - DEBUG - [chan 29] Sesch channel 29 request ok
+2025-04-15 14:23:46,543 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_10.json: 0.00%
+2025-04-15 14:23:46,546 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_10.json: 43.78%
+2025-04-15 14:23:46,547 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_10.json: 87.56%
+2025-04-15 14:23:46,547 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_10.json: 100.00%
+2025-04-15 14:23:46,557 - paramiko.transport - DEBUG - [chan 29] EOF received (29)
+2025-04-15 14:23:46,557 - paramiko.transport - DEBUG - [chan 29] EOF sent (29)
+2025-04-15 14:23:46,558 - paramiko.transport - DEBUG - [chan 30] Max packet in: 32768 bytes
+2025-04-15 14:23:46,603 - paramiko.transport - DEBUG - [chan 30] Max packet out: 32768 bytes
+2025-04-15 14:23:46,604 - paramiko.transport - DEBUG - Secsh channel 30 opened.
+2025-04-15 14:23:46,607 - paramiko.transport - DEBUG - [chan 30] Sesch channel 30 request ok
+2025-04-15 14:23:46,618 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_11.json: 0.00%
+2025-04-15 14:23:46,620 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_11.json: 43.76%
+2025-04-15 14:23:46,621 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_11.json: 87.52%
+2025-04-15 14:23:46,621 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_11.json: 100.00%
+2025-04-15 14:23:46,631 - paramiko.transport - DEBUG - [chan 30] EOF received (30)
+2025-04-15 14:23:46,631 - paramiko.transport - DEBUG - [chan 30] EOF sent (30)
+2025-04-15 14:23:46,640 - paramiko.transport - DEBUG - [chan 31] Max packet in: 32768 bytes
+2025-04-15 14:23:46,675 - paramiko.transport - DEBUG - [chan 31] Max packet out: 32768 bytes
+2025-04-15 14:23:46,675 - paramiko.transport - DEBUG - Secsh channel 31 opened.
+2025-04-15 14:23:46,679 - paramiko.transport - DEBUG - [chan 31] Sesch channel 31 request ok
+2025-04-15 14:23:46,688 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_12.json: 0.00%
+2025-04-15 14:23:46,691 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_12.json: 43.78%
+2025-04-15 14:23:46,691 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_12.json: 87.56%
+2025-04-15 14:23:46,691 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_12.json: 100.00%
+2025-04-15 14:23:46,702 - paramiko.transport - DEBUG - [chan 31] EOF received (31)
+2025-04-15 14:23:46,702 - paramiko.transport - DEBUG - [chan 31] EOF sent (31)
+2025-04-15 14:23:46,703 - paramiko.transport - DEBUG - [chan 32] Max packet in: 32768 bytes
+2025-04-15 14:23:46,747 - paramiko.transport - DEBUG - [chan 32] Max packet out: 32768 bytes
+2025-04-15 14:23:46,747 - paramiko.transport - DEBUG - Secsh channel 32 opened.
+2025-04-15 14:23:46,751 - paramiko.transport - DEBUG - [chan 32] Sesch channel 32 request ok
+2025-04-15 14:23:46,756 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_13.json: 0.00%
+2025-04-15 14:23:46,759 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_13.json: 43.78%
+2025-04-15 14:23:46,759 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_13.json: 87.56%
+2025-04-15 14:23:46,759 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_13.json: 100.00%
+2025-04-15 14:23:46,769 - paramiko.transport - DEBUG - [chan 32] EOF received (32)
+2025-04-15 14:23:46,769 - paramiko.transport - DEBUG - [chan 32] EOF sent (32)
+2025-04-15 14:23:46,770 - paramiko.transport - DEBUG - [chan 33] Max packet in: 32768 bytes
+2025-04-15 14:23:46,815 - paramiko.transport - DEBUG - [chan 33] Max packet out: 32768 bytes
+2025-04-15 14:23:46,815 - paramiko.transport - DEBUG - Secsh channel 33 opened.
+2025-04-15 14:23:46,819 - paramiko.transport - DEBUG - [chan 33] Sesch channel 33 request ok
+2025-04-15 14:23:46,830 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_14.json: 0.00%
+2025-04-15 14:23:46,833 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_14.json: 43.77%
+2025-04-15 14:23:46,833 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_14.json: 87.54%
+2025-04-15 14:23:46,833 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_14.json: 100.00%
+2025-04-15 14:23:46,844 - paramiko.transport - DEBUG - [chan 33] EOF received (33)
+2025-04-15 14:23:46,844 - paramiko.transport - DEBUG - [chan 33] EOF sent (33)
+2025-04-15 14:23:46,845 - paramiko.transport - DEBUG - [chan 34] Max packet in: 32768 bytes
+2025-04-15 14:23:46,891 - paramiko.transport - DEBUG - [chan 34] Max packet out: 32768 bytes
+2025-04-15 14:23:46,891 - paramiko.transport - DEBUG - Secsh channel 34 opened.
+2025-04-15 14:23:46,896 - paramiko.transport - DEBUG - [chan 34] Sesch channel 34 request ok
+2025-04-15 14:23:46,906 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_15.json: 0.00%
+2025-04-15 14:23:46,909 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_15.json: 43.78%
+2025-04-15 14:23:46,909 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_15.json: 87.56%
+2025-04-15 14:23:46,909 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_15.json: 100.00%
+2025-04-15 14:23:46,919 - paramiko.transport - DEBUG - [chan 34] EOF received (34)
+2025-04-15 14:23:46,919 - paramiko.transport - DEBUG - [chan 34] EOF sent (34)
+2025-04-15 14:23:46,920 - paramiko.transport - DEBUG - [chan 35] Max packet in: 32768 bytes
+2025-04-15 14:23:46,967 - paramiko.transport - DEBUG - [chan 35] Max packet out: 32768 bytes
+2025-04-15 14:23:46,967 - paramiko.transport - DEBUG - Secsh channel 35 opened.
+2025-04-15 14:23:46,970 - paramiko.transport - DEBUG - [chan 35] Sesch channel 35 request ok
+2025-04-15 14:23:46,978 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_16.json: 0.00%
+2025-04-15 14:23:46,981 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_16.json: 43.78%
+2025-04-15 14:23:46,981 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_16.json: 87.55%
+2025-04-15 14:23:46,981 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_16.json: 100.00%
+2025-04-15 14:23:46,991 - paramiko.transport - DEBUG - [chan 35] EOF received (35)
+2025-04-15 14:23:46,991 - paramiko.transport - DEBUG - [chan 35] EOF sent (35)
+2025-04-15 14:23:46,992 - paramiko.transport - DEBUG - [chan 36] Max packet in: 32768 bytes
+2025-04-15 14:23:47,035 - paramiko.transport - DEBUG - [chan 36] Max packet out: 32768 bytes
+2025-04-15 14:23:47,035 - paramiko.transport - DEBUG - Secsh channel 36 opened.
+2025-04-15 14:23:47,039 - paramiko.transport - DEBUG - [chan 36] Sesch channel 36 request ok
+2025-04-15 14:23:47,047 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_17.json: 0.00%
+2025-04-15 14:23:47,050 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_17.json: 43.76%
+2025-04-15 14:23:47,050 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_17.json: 87.52%
+2025-04-15 14:23:47,050 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_17.json: 100.00%
+2025-04-15 14:23:47,061 - paramiko.transport - DEBUG - [chan 36] EOF received (36)
+2025-04-15 14:23:47,061 - paramiko.transport - DEBUG - [chan 36] EOF sent (36)
+2025-04-15 14:23:47,062 - paramiko.transport - DEBUG - [chan 37] Max packet in: 32768 bytes
+2025-04-15 14:23:47,107 - paramiko.transport - DEBUG - [chan 37] Max packet out: 32768 bytes
+2025-04-15 14:23:47,107 - paramiko.transport - DEBUG - Secsh channel 37 opened.
+2025-04-15 14:23:47,110 - paramiko.transport - DEBUG - [chan 37] Sesch channel 37 request ok
+2025-04-15 14:23:47,123 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_18.json: 0.00%
+2025-04-15 14:23:47,126 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_18.json: 43.76%
+2025-04-15 14:23:47,126 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_18.json: 87.52%
+2025-04-15 14:23:47,126 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_18.json: 100.00%
+2025-04-15 14:23:47,136 - paramiko.transport - DEBUG - [chan 37] EOF received (37)
+2025-04-15 14:23:47,137 - paramiko.transport - DEBUG - [chan 37] EOF sent (37)
+2025-04-15 14:23:47,138 - paramiko.transport - DEBUG - [chan 38] Max packet in: 32768 bytes
+2025-04-15 14:23:47,187 - paramiko.transport - DEBUG - [chan 38] Max packet out: 32768 bytes
+2025-04-15 14:23:47,187 - paramiko.transport - DEBUG - Secsh channel 38 opened.
+2025-04-15 14:23:47,191 - paramiko.transport - DEBUG - [chan 38] Sesch channel 38 request ok
+2025-04-15 14:23:47,196 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_19.json: 0.00%
+2025-04-15 14:23:47,199 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_19.json: 43.76%
+2025-04-15 14:23:47,199 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_19.json: 87.52%
+2025-04-15 14:23:47,200 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_19.json: 100.00%
+2025-04-15 14:23:47,209 - paramiko.transport - DEBUG - [chan 38] EOF received (38)
+2025-04-15 14:23:47,209 - paramiko.transport - DEBUG - [chan 38] EOF sent (38)
+2025-04-15 14:23:47,210 - paramiko.transport - DEBUG - [chan 39] Max packet in: 32768 bytes
+2025-04-15 14:23:47,255 - paramiko.transport - DEBUG - [chan 39] Max packet out: 32768 bytes
+2025-04-15 14:23:47,255 - paramiko.transport - DEBUG - Secsh channel 39 opened.
+2025-04-15 14:23:47,259 - paramiko.transport - DEBUG - [chan 39] Sesch channel 39 request ok
+2025-04-15 14:23:47,265 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_1.json: 0.00%
+2025-04-15 14:23:47,269 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_1.json: 43.76%
+2025-04-15 14:23:47,269 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_1.json: 87.51%
+2025-04-15 14:23:47,269 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_1.json: 100.00%
+2025-04-15 14:23:47,279 - paramiko.transport - DEBUG - [chan 39] EOF received (39)
+2025-04-15 14:23:47,279 - paramiko.transport - DEBUG - [chan 39] EOF sent (39)
+2025-04-15 14:23:47,280 - paramiko.transport - DEBUG - [chan 40] Max packet in: 32768 bytes
+2025-04-15 14:23:47,328 - paramiko.transport - DEBUG - [chan 40] Max packet out: 32768 bytes
+2025-04-15 14:23:47,328 - paramiko.transport - DEBUG - Secsh channel 40 opened.
+2025-04-15 14:23:47,331 - paramiko.transport - DEBUG - [chan 40] Sesch channel 40 request ok
+2025-04-15 14:23:47,341 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_20.json: 0.00%
+2025-04-15 14:23:47,343 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_20.json: 43.76%
+2025-04-15 14:23:47,343 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_20.json: 87.52%
+2025-04-15 14:23:47,344 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_20.json: 100.00%
+2025-04-15 14:23:47,354 - paramiko.transport - DEBUG - [chan 40] EOF received (40)
+2025-04-15 14:23:47,354 - paramiko.transport - DEBUG - [chan 40] EOF sent (40)
+2025-04-15 14:23:47,354 - paramiko.transport - DEBUG - [chan 41] Max packet in: 32768 bytes
+2025-04-15 14:23:47,399 - paramiko.transport - DEBUG - [chan 41] Max packet out: 32768 bytes
+2025-04-15 14:23:47,399 - paramiko.transport - DEBUG - Secsh channel 41 opened.
+2025-04-15 14:23:47,403 - paramiko.transport - DEBUG - [chan 41] Sesch channel 41 request ok
+2025-04-15 14:23:47,407 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_21.json: 0.00%
+2025-04-15 14:23:47,410 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_21.json: 43.77%
+2025-04-15 14:23:47,410 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_21.json: 87.54%
+2025-04-15 14:23:47,410 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_21.json: 100.00%
+2025-04-15 14:23:47,420 - paramiko.transport - DEBUG - [chan 41] EOF received (41)
+2025-04-15 14:23:47,420 - paramiko.transport - DEBUG - [chan 41] EOF sent (41)
+2025-04-15 14:23:47,421 - paramiko.transport - DEBUG - [chan 42] Max packet in: 32768 bytes
+2025-04-15 14:23:47,467 - paramiko.transport - DEBUG - [chan 42] Max packet out: 32768 bytes
+2025-04-15 14:23:47,467 - paramiko.transport - DEBUG - Secsh channel 42 opened.
+2025-04-15 14:23:47,471 - paramiko.transport - DEBUG - [chan 42] Sesch channel 42 request ok
+2025-04-15 14:23:47,480 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_22.json: 0.00%
+2025-04-15 14:23:47,484 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_22.json: 43.78%
+2025-04-15 14:23:47,484 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_22.json: 87.55%
+2025-04-15 14:23:47,484 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_22.json: 100.00%
+2025-04-15 14:23:47,494 - paramiko.transport - DEBUG - [chan 42] EOF received (42)
+2025-04-15 14:23:47,494 - paramiko.transport - DEBUG - [chan 42] EOF sent (42)
+2025-04-15 14:23:47,495 - paramiko.transport - DEBUG - [chan 43] Max packet in: 32768 bytes
+2025-04-15 14:23:47,539 - paramiko.transport - DEBUG - [chan 43] Max packet out: 32768 bytes
+2025-04-15 14:23:47,539 - paramiko.transport - DEBUG - Secsh channel 43 opened.
+2025-04-15 14:23:47,543 - paramiko.transport - DEBUG - [chan 43] Sesch channel 43 request ok
+2025-04-15 14:23:47,554 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_2.json: 0.00%
+2025-04-15 14:23:47,557 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_2.json: 43.78%
+2025-04-15 14:23:47,557 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_2.json: 87.55%
+2025-04-15 14:23:47,557 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_2.json: 100.00%
+2025-04-15 14:23:47,569 - paramiko.transport - DEBUG - [chan 43] EOF received (43)
+2025-04-15 14:23:47,569 - paramiko.transport - DEBUG - [chan 43] EOF sent (43)
+2025-04-15 14:23:47,569 - paramiko.transport - DEBUG - [chan 44] Max packet in: 32768 bytes
+2025-04-15 14:23:47,615 - paramiko.transport - DEBUG - [chan 44] Max packet out: 32768 bytes
+2025-04-15 14:23:47,615 - paramiko.transport - DEBUG - Secsh channel 44 opened.
+2025-04-15 14:23:47,618 - paramiko.transport - DEBUG - [chan 44] Sesch channel 44 request ok
+2025-04-15 14:23:47,628 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_3.json: 0.00%
+2025-04-15 14:23:47,631 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_3.json: 43.78%
+2025-04-15 14:23:47,631 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_3.json: 87.55%
+2025-04-15 14:23:47,631 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_3.json: 100.00%
+2025-04-15 14:23:47,642 - paramiko.transport - DEBUG - [chan 44] EOF received (44)
+2025-04-15 14:23:47,642 - paramiko.transport - DEBUG - [chan 44] EOF sent (44)
+2025-04-15 14:23:47,644 - paramiko.transport - DEBUG - [chan 45] Max packet in: 32768 bytes
+2025-04-15 14:23:47,687 - paramiko.transport - DEBUG - [chan 45] Max packet out: 32768 bytes
+2025-04-15 14:23:47,687 - paramiko.transport - DEBUG - Secsh channel 45 opened.
+2025-04-15 14:23:47,690 - paramiko.transport - DEBUG - [chan 45] Sesch channel 45 request ok
+2025-04-15 14:23:47,704 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_4.json: 0.00%
+2025-04-15 14:23:47,707 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_4.json: 43.77%
+2025-04-15 14:23:47,707 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_4.json: 87.55%
+2025-04-15 14:23:47,707 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_4.json: 100.00%
+2025-04-15 14:23:47,718 - paramiko.transport - DEBUG - [chan 45] EOF received (45)
+2025-04-15 14:23:47,718 - paramiko.transport - DEBUG - [chan 45] EOF sent (45)
+2025-04-15 14:23:47,719 - paramiko.transport - DEBUG - [chan 46] Max packet in: 32768 bytes
+2025-04-15 14:23:47,767 - paramiko.transport - DEBUG - [chan 46] Max packet out: 32768 bytes
+2025-04-15 14:23:47,767 - paramiko.transport - DEBUG - Secsh channel 46 opened.
+2025-04-15 14:23:47,770 - paramiko.transport - DEBUG - [chan 46] Sesch channel 46 request ok
+2025-04-15 14:23:47,781 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_5.json: 0.00%
+2025-04-15 14:23:47,783 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_5.json: 43.77%
+2025-04-15 14:23:47,784 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_5.json: 87.55%
+2025-04-15 14:23:47,784 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_5.json: 100.00%
+2025-04-15 14:23:47,794 - paramiko.transport - DEBUG - [chan 46] EOF received (46)
+2025-04-15 14:23:47,794 - paramiko.transport - DEBUG - [chan 46] EOF sent (46)
+2025-04-15 14:23:47,795 - paramiko.transport - DEBUG - [chan 47] Max packet in: 32768 bytes
+2025-04-15 14:23:47,839 - paramiko.transport - DEBUG - [chan 47] Max packet out: 32768 bytes
+2025-04-15 14:23:47,839 - paramiko.transport - DEBUG - Secsh channel 47 opened.
+2025-04-15 14:23:47,842 - paramiko.transport - DEBUG - [chan 47] Sesch channel 47 request ok
+2025-04-15 14:23:47,851 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_65.json: 0.00%
+2025-04-15 14:23:47,854 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_65.json: 43.85%
+2025-04-15 14:23:47,854 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_65.json: 87.69%
+2025-04-15 14:23:47,854 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_65.json: 100.00%
+2025-04-15 14:23:47,865 - paramiko.transport - DEBUG - [chan 47] EOF received (47)
+2025-04-15 14:23:47,865 - paramiko.transport - DEBUG - [chan 47] EOF sent (47)
+2025-04-15 14:23:47,866 - paramiko.transport - DEBUG - [chan 48] Max packet in: 32768 bytes
+2025-04-15 14:23:47,911 - paramiko.transport - DEBUG - [chan 48] Max packet out: 32768 bytes
+2025-04-15 14:23:47,912 - paramiko.transport - DEBUG - Secsh channel 48 opened.
+2025-04-15 14:23:47,915 - paramiko.transport - DEBUG - [chan 48] Sesch channel 48 request ok
+2025-04-15 14:23:47,924 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_66.json: 0.00%
+2025-04-15 14:23:47,927 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_66.json: 43.82%
+2025-04-15 14:23:47,927 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_66.json: 87.65%
+2025-04-15 14:23:47,927 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_66.json: 100.00%
+2025-04-15 14:23:47,937 - paramiko.transport - DEBUG - [chan 48] EOF received (48)
+2025-04-15 14:23:47,937 - paramiko.transport - DEBUG - [chan 48] EOF sent (48)
+2025-04-15 14:23:47,938 - paramiko.transport - DEBUG - [chan 49] Max packet in: 32768 bytes
+2025-04-15 14:23:47,983 - paramiko.transport - DEBUG - [chan 49] Max packet out: 32768 bytes
+2025-04-15 14:23:47,983 - paramiko.transport - DEBUG - Secsh channel 49 opened.
+2025-04-15 14:23:47,987 - paramiko.transport - DEBUG - [chan 49] Sesch channel 49 request ok
+2025-04-15 14:23:47,997 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_67.json: 0.00%
+2025-04-15 14:23:48,000 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_67.json: 43.84%
+2025-04-15 14:23:48,000 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_67.json: 87.69%
+2025-04-15 14:23:48,000 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_67.json: 100.00%
+2025-04-15 14:23:48,011 - paramiko.transport - DEBUG - [chan 49] EOF received (49)
+2025-04-15 14:23:48,012 - paramiko.transport - DEBUG - [chan 49] EOF sent (49)
+2025-04-15 14:23:48,013 - paramiko.transport - DEBUG - [chan 50] Max packet in: 32768 bytes
+2025-04-15 14:23:48,059 - paramiko.transport - DEBUG - [chan 50] Max packet out: 32768 bytes
+2025-04-15 14:23:48,059 - paramiko.transport - DEBUG - Secsh channel 50 opened.
+2025-04-15 14:23:48,062 - paramiko.transport - DEBUG - [chan 50] Sesch channel 50 request ok
+2025-04-15 14:23:48,072 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_68.json: 0.00%
+2025-04-15 14:23:48,075 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_68.json: 43.86%
+2025-04-15 14:23:48,075 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_68.json: 87.73%
+2025-04-15 14:23:48,075 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_68.json: 100.00%
+2025-04-15 14:23:48,085 - paramiko.transport - DEBUG - [chan 50] EOF received (50)
+2025-04-15 14:23:48,085 - paramiko.transport - DEBUG - [chan 50] EOF sent (50)
+2025-04-15 14:23:48,086 - paramiko.transport - DEBUG - [chan 51] Max packet in: 32768 bytes
+2025-04-15 14:23:48,131 - paramiko.transport - DEBUG - [chan 51] Max packet out: 32768 bytes
+2025-04-15 14:23:48,131 - paramiko.transport - DEBUG - Secsh channel 51 opened.
+2025-04-15 14:23:48,134 - paramiko.transport - DEBUG - [chan 51] Sesch channel 51 request ok
+2025-04-15 14:23:48,142 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_69.json: 0.00%
+2025-04-15 14:23:48,145 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_69.json: 43.86%
+2025-04-15 14:23:48,145 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_69.json: 87.73%
+2025-04-15 14:23:48,145 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_69.json: 100.00%
+2025-04-15 14:23:48,156 - paramiko.transport - DEBUG - [chan 51] EOF received (51)
+2025-04-15 14:23:48,156 - paramiko.transport - DEBUG - [chan 51] EOF sent (51)
+2025-04-15 14:23:48,157 - paramiko.transport - DEBUG - [chan 52] Max packet in: 32768 bytes
+2025-04-15 14:23:48,207 - paramiko.transport - DEBUG - [chan 52] Max packet out: 32768 bytes
+2025-04-15 14:23:48,207 - paramiko.transport - DEBUG - Secsh channel 52 opened.
+2025-04-15 14:23:48,212 - paramiko.transport - DEBUG - [chan 52] Sesch channel 52 request ok
+2025-04-15 14:23:48,221 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_6.json: 0.00%
+2025-04-15 14:23:48,224 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_6.json: 43.77%
+2025-04-15 14:23:48,224 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_6.json: 87.55%
+2025-04-15 14:23:48,224 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_6.json: 100.00%
+2025-04-15 14:23:48,235 - paramiko.transport - DEBUG - [chan 52] EOF received (52)
+2025-04-15 14:23:48,235 - paramiko.transport - DEBUG - [chan 52] EOF sent (52)
+2025-04-15 14:23:48,236 - paramiko.transport - DEBUG - [chan 53] Max packet in: 32768 bytes
+2025-04-15 14:23:48,279 - paramiko.transport - DEBUG - [chan 53] Max packet out: 32768 bytes
+2025-04-15 14:23:48,279 - paramiko.transport - DEBUG - Secsh channel 53 opened.
+2025-04-15 14:23:48,282 - paramiko.transport - DEBUG - [chan 53] Sesch channel 53 request ok
+2025-04-15 14:23:48,288 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_70.json: 0.00%
+2025-04-15 14:23:48,290 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_70.json: 43.86%
+2025-04-15 14:23:48,290 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_70.json: 87.73%
+2025-04-15 14:23:48,290 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_70.json: 100.00%
+2025-04-15 14:23:48,301 - paramiko.transport - DEBUG - [chan 53] EOF received (53)
+2025-04-15 14:23:48,301 - paramiko.transport - DEBUG - [chan 53] EOF sent (53)
+2025-04-15 14:23:48,302 - paramiko.transport - DEBUG - [chan 54] Max packet in: 32768 bytes
+2025-04-15 14:23:48,347 - paramiko.transport - DEBUG - [chan 54] Max packet out: 32768 bytes
+2025-04-15 14:23:48,347 - paramiko.transport - DEBUG - Secsh channel 54 opened.
+2025-04-15 14:23:48,350 - paramiko.transport - DEBUG - [chan 54] Sesch channel 54 request ok
+2025-04-15 14:23:48,360 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_71.json: 0.00%
+2025-04-15 14:23:48,363 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_71.json: 43.86%
+2025-04-15 14:23:48,363 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_71.json: 87.73%
+2025-04-15 14:23:48,363 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_71.json: 100.00%
+2025-04-15 14:23:48,373 - paramiko.transport - DEBUG - [chan 54] EOF received (54)
+2025-04-15 14:23:48,373 - paramiko.transport - DEBUG - [chan 54] EOF sent (54)
+2025-04-15 14:23:48,374 - paramiko.transport - DEBUG - [chan 55] Max packet in: 32768 bytes
+2025-04-15 14:23:48,419 - paramiko.transport - DEBUG - [chan 55] Max packet out: 32768 bytes
+2025-04-15 14:23:48,419 - paramiko.transport - DEBUG - Secsh channel 55 opened.
+2025-04-15 14:23:48,423 - paramiko.transport - DEBUG - [chan 55] Sesch channel 55 request ok
+2025-04-15 14:23:48,433 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_72.json: 0.00%
+2025-04-15 14:23:48,436 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_72.json: 43.86%
+2025-04-15 14:23:48,436 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_72.json: 87.73%
+2025-04-15 14:23:48,436 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_72.json: 100.00%
+2025-04-15 14:23:48,446 - paramiko.transport - DEBUG - [chan 55] EOF received (55)
+2025-04-15 14:23:48,446 - paramiko.transport - DEBUG - [chan 55] EOF sent (55)
+2025-04-15 14:23:48,447 - paramiko.transport - DEBUG - [chan 56] Max packet in: 32768 bytes
+2025-04-15 14:23:48,491 - paramiko.transport - DEBUG - [chan 56] Max packet out: 32768 bytes
+2025-04-15 14:23:48,491 - paramiko.transport - DEBUG - Secsh channel 56 opened.
+2025-04-15 14:23:48,494 - paramiko.transport - DEBUG - [chan 56] Sesch channel 56 request ok
+2025-04-15 14:23:48,503 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_73.json: 0.00%
+2025-04-15 14:23:48,506 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_73.json: 43.86%
+2025-04-15 14:23:48,506 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_73.json: 87.73%
+2025-04-15 14:23:48,506 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_73.json: 100.00%
+2025-04-15 14:23:48,517 - paramiko.transport - DEBUG - [chan 56] EOF received (56)
+2025-04-15 14:23:48,518 - paramiko.transport - DEBUG - [chan 56] EOF sent (56)
+2025-04-15 14:23:48,518 - paramiko.transport - DEBUG - [chan 57] Max packet in: 32768 bytes
+2025-04-15 14:23:48,567 - paramiko.transport - DEBUG - [chan 57] Max packet out: 32768 bytes
+2025-04-15 14:23:48,567 - paramiko.transport - DEBUG - Secsh channel 57 opened.
+2025-04-15 14:23:48,570 - paramiko.transport - DEBUG - [chan 57] Sesch channel 57 request ok
+2025-04-15 14:23:48,583 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_74.json: 0.00%
+2025-04-15 14:23:48,586 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_74.json: 43.85%
+2025-04-15 14:23:48,586 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_74.json: 87.70%
+2025-04-15 14:23:48,586 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_74.json: 100.00%
+2025-04-15 14:23:48,597 - paramiko.transport - DEBUG - [chan 57] EOF received (57)
+2025-04-15 14:23:48,597 - paramiko.transport - DEBUG - [chan 57] EOF sent (57)
+2025-04-15 14:23:48,598 - paramiko.transport - DEBUG - [chan 58] Max packet in: 32768 bytes
+2025-04-15 14:23:48,643 - paramiko.transport - DEBUG - [chan 58] Max packet out: 32768 bytes
+2025-04-15 14:23:48,643 - paramiko.transport - DEBUG - Secsh channel 58 opened.
+2025-04-15 14:23:48,647 - paramiko.transport - DEBUG - [chan 58] Sesch channel 58 request ok
+2025-04-15 14:23:48,660 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_75.json: 0.00%
+2025-04-15 14:23:48,663 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_75.json: 43.85%
+2025-04-15 14:23:48,663 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_75.json: 87.70%
+2025-04-15 14:23:48,663 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_75.json: 100.00%
+2025-04-15 14:23:48,674 - paramiko.transport - DEBUG - [chan 58] EOF received (58)
+2025-04-15 14:23:48,674 - paramiko.transport - DEBUG - [chan 58] EOF sent (58)
+2025-04-15 14:23:48,675 - paramiko.transport - DEBUG - [chan 59] Max packet in: 32768 bytes
+2025-04-15 14:23:48,723 - paramiko.transport - DEBUG - [chan 59] Max packet out: 32768 bytes
+2025-04-15 14:23:48,723 - paramiko.transport - DEBUG - Secsh channel 59 opened.
+2025-04-15 14:23:48,726 - paramiko.transport - DEBUG - [chan 59] Sesch channel 59 request ok
+2025-04-15 14:23:48,739 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_76.json: 0.00%
+2025-04-15 14:23:48,742 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_76.json: 43.85%
+2025-04-15 14:23:48,742 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_76.json: 87.69%
+2025-04-15 14:23:48,742 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_76.json: 100.00%
+2025-04-15 14:23:48,754 - paramiko.transport - DEBUG - [chan 59] EOF received (59)
+2025-04-15 14:23:48,754 - paramiko.transport - DEBUG - [chan 59] EOF sent (59)
+2025-04-15 14:23:48,755 - paramiko.transport - DEBUG - [chan 60] Max packet in: 32768 bytes
+2025-04-15 14:23:48,803 - paramiko.transport - DEBUG - [chan 60] Max packet out: 32768 bytes
+2025-04-15 14:23:48,803 - paramiko.transport - DEBUG - Secsh channel 60 opened.
+2025-04-15 14:23:48,806 - paramiko.transport - DEBUG - [chan 60] Sesch channel 60 request ok
+2025-04-15 14:23:48,818 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_77.json: 0.00%
+2025-04-15 14:23:48,821 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_77.json: 43.85%
+2025-04-15 14:23:48,821 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_77.json: 87.69%
+2025-04-15 14:23:48,821 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_77.json: 100.00%
+2025-04-15 14:23:48,831 - paramiko.transport - DEBUG - [chan 60] EOF received (60)
+2025-04-15 14:23:48,832 - paramiko.transport - DEBUG - [chan 60] EOF sent (60)
+2025-04-15 14:23:48,832 - paramiko.transport - DEBUG - [chan 61] Max packet in: 32768 bytes
+2025-04-15 14:23:48,875 - paramiko.transport - DEBUG - [chan 61] Max packet out: 32768 bytes
+2025-04-15 14:23:48,875 - paramiko.transport - DEBUG - Secsh channel 61 opened.
+2025-04-15 14:23:48,878 - paramiko.transport - DEBUG - [chan 61] Sesch channel 61 request ok
+2025-04-15 14:23:48,887 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_78.json: 0.00%
+2025-04-15 14:23:48,890 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_78.json: 43.85%
+2025-04-15 14:23:48,890 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_78.json: 87.69%
+2025-04-15 14:23:48,890 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_78.json: 100.00%
+2025-04-15 14:23:48,901 - paramiko.transport - DEBUG - [chan 61] EOF received (61)
+2025-04-15 14:23:48,901 - paramiko.transport - DEBUG - [chan 61] EOF sent (61)
+2025-04-15 14:23:48,902 - paramiko.transport - DEBUG - [chan 62] Max packet in: 32768 bytes
+2025-04-15 14:23:48,947 - paramiko.transport - DEBUG - [chan 62] Max packet out: 32768 bytes
+2025-04-15 14:23:48,947 - paramiko.transport - DEBUG - Secsh channel 62 opened.
+2025-04-15 14:23:48,951 - paramiko.transport - DEBUG - [chan 62] Sesch channel 62 request ok
+2025-04-15 14:23:48,963 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_79.json: 0.00%
+2025-04-15 14:23:48,965 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_79.json: 43.85%
+2025-04-15 14:23:48,965 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_79.json: 87.69%
+2025-04-15 14:23:48,965 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_79.json: 100.00%
+2025-04-15 14:23:48,975 - paramiko.transport - DEBUG - [chan 62] EOF received (62)
+2025-04-15 14:23:48,975 - paramiko.transport - DEBUG - [chan 62] EOF sent (62)
+2025-04-15 14:23:48,976 - paramiko.transport - DEBUG - [chan 63] Max packet in: 32768 bytes
+2025-04-15 14:23:49,019 - paramiko.transport - DEBUG - [chan 63] Max packet out: 32768 bytes
+2025-04-15 14:23:49,019 - paramiko.transport - DEBUG - Secsh channel 63 opened.
+2025-04-15 14:23:49,023 - paramiko.transport - DEBUG - [chan 63] Sesch channel 63 request ok
+2025-04-15 14:23:49,031 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_7.json: 0.00%
+2025-04-15 14:23:49,034 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_7.json: 43.77%
+2025-04-15 14:23:49,034 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_7.json: 87.54%
+2025-04-15 14:23:49,034 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_7.json: 100.00%
+2025-04-15 14:23:49,045 - paramiko.transport - DEBUG - [chan 63] EOF received (63)
+2025-04-15 14:23:49,045 - paramiko.transport - DEBUG - [chan 63] EOF sent (63)
+2025-04-15 14:23:49,046 - paramiko.transport - DEBUG - [chan 64] Max packet in: 32768 bytes
+2025-04-15 14:23:49,091 - paramiko.transport - DEBUG - [chan 64] Max packet out: 32768 bytes
+2025-04-15 14:23:49,091 - paramiko.transport - DEBUG - Secsh channel 64 opened.
+2025-04-15 14:23:49,095 - paramiko.transport - DEBUG - [chan 64] Sesch channel 64 request ok
+2025-04-15 14:23:49,104 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_80.json: 0.00%
+2025-04-15 14:23:49,107 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_80.json: 43.86%
+2025-04-15 14:23:49,108 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_80.json: 87.73%
+2025-04-15 14:23:49,108 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_80.json: 100.00%
+2025-04-15 14:23:49,118 - paramiko.transport - DEBUG - [chan 64] EOF received (64)
+2025-04-15 14:23:49,118 - paramiko.transport - DEBUG - [chan 64] EOF sent (64)
+2025-04-15 14:23:49,120 - paramiko.transport - DEBUG - [chan 65] Max packet in: 32768 bytes
+2025-04-15 14:23:49,163 - paramiko.transport - DEBUG - [chan 65] Max packet out: 32768 bytes
+2025-04-15 14:23:49,163 - paramiko.transport - DEBUG - Secsh channel 65 opened.
+2025-04-15 14:23:49,166 - paramiko.transport - DEBUG - [chan 65] Sesch channel 65 request ok
+2025-04-15 14:23:49,176 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_81.json: 0.00%
+2025-04-15 14:23:49,179 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_81.json: 43.86%
+2025-04-15 14:23:49,179 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_81.json: 87.73%
+2025-04-15 14:23:49,180 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_81.json: 100.00%
+2025-04-15 14:23:49,189 - paramiko.transport - DEBUG - [chan 65] EOF received (65)
+2025-04-15 14:23:49,189 - paramiko.transport - DEBUG - [chan 65] EOF sent (65)
+2025-04-15 14:23:49,190 - paramiko.transport - DEBUG - [chan 66] Max packet in: 32768 bytes
+2025-04-15 14:23:49,235 - paramiko.transport - DEBUG - [chan 66] Max packet out: 32768 bytes
+2025-04-15 14:23:49,235 - paramiko.transport - DEBUG - Secsh channel 66 opened.
+2025-04-15 14:23:49,238 - paramiko.transport - DEBUG - [chan 66] Sesch channel 66 request ok
+2025-04-15 14:23:49,248 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_82.json: 0.00%
+2025-04-15 14:23:49,251 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_82.json: 43.86%
+2025-04-15 14:23:49,251 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_82.json: 87.73%
+2025-04-15 14:23:49,251 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_82.json: 100.00%
+2025-04-15 14:23:49,261 - paramiko.transport - DEBUG - [chan 66] EOF received (66)
+2025-04-15 14:23:49,261 - paramiko.transport - DEBUG - [chan 66] EOF sent (66)
+2025-04-15 14:23:49,262 - paramiko.transport - DEBUG - [chan 67] Max packet in: 32768 bytes
+2025-04-15 14:23:49,307 - paramiko.transport - DEBUG - [chan 67] Max packet out: 32768 bytes
+2025-04-15 14:23:49,308 - paramiko.transport - DEBUG - Secsh channel 67 opened.
+2025-04-15 14:23:49,311 - paramiko.transport - DEBUG - [chan 67] Sesch channel 67 request ok
+2025-04-15 14:23:49,323 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_83.json: 0.00%
+2025-04-15 14:23:49,326 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_83.json: 43.86%
+2025-04-15 14:23:49,326 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_83.json: 87.73%
+2025-04-15 14:23:49,326 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_83.json: 100.00%
+2025-04-15 14:23:49,337 - paramiko.transport - DEBUG - [chan 67] EOF received (67)
+2025-04-15 14:23:49,337 - paramiko.transport - DEBUG - [chan 67] EOF sent (67)
+2025-04-15 14:23:49,338 - paramiko.transport - DEBUG - [chan 68] Max packet in: 32768 bytes
+2025-04-15 14:23:49,384 - paramiko.transport - DEBUG - [chan 68] Max packet out: 32768 bytes
+2025-04-15 14:23:49,384 - paramiko.transport - DEBUG - Secsh channel 68 opened.
+2025-04-15 14:23:49,387 - paramiko.transport - DEBUG - [chan 68] Sesch channel 68 request ok
+2025-04-15 14:23:49,401 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_84.json: 0.00%
+2025-04-15 14:23:49,404 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_84.json: 43.86%
+2025-04-15 14:23:49,404 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_84.json: 87.73%
+2025-04-15 14:23:49,404 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_84.json: 100.00%
+2025-04-15 14:23:49,415 - paramiko.transport - DEBUG - [chan 68] EOF received (68)
+2025-04-15 14:23:49,415 - paramiko.transport - DEBUG - [chan 68] EOF sent (68)
+2025-04-15 14:23:49,416 - paramiko.transport - DEBUG - [chan 69] Max packet in: 32768 bytes
+2025-04-15 14:23:49,464 - paramiko.transport - DEBUG - [chan 69] Max packet out: 32768 bytes
+2025-04-15 14:23:49,464 - paramiko.transport - DEBUG - Secsh channel 69 opened.
+2025-04-15 14:23:49,467 - paramiko.transport - DEBUG - [chan 69] Sesch channel 69 request ok
+2025-04-15 14:23:49,477 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_85.json: 0.00%
+2025-04-15 14:23:49,479 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_85.json: 43.86%
+2025-04-15 14:23:49,480 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_85.json: 87.73%
+2025-04-15 14:23:49,480 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_85.json: 100.00%
+2025-04-15 14:23:49,490 - paramiko.transport - DEBUG - [chan 69] EOF received (69)
+2025-04-15 14:23:49,490 - paramiko.transport - DEBUG - [chan 69] EOF sent (69)
+2025-04-15 14:23:49,491 - paramiko.transport - DEBUG - [chan 70] Max packet in: 32768 bytes
+2025-04-15 14:23:49,535 - paramiko.transport - DEBUG - [chan 70] Max packet out: 32768 bytes
+2025-04-15 14:23:49,535 - paramiko.transport - DEBUG - Secsh channel 70 opened.
+2025-04-15 14:23:49,538 - paramiko.transport - DEBUG - [chan 70] Sesch channel 70 request ok
+2025-04-15 14:23:49,544 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_86.json: 0.00%
+2025-04-15 14:23:49,546 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_86.json: 43.86%
+2025-04-15 14:23:49,547 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_86.json: 87.73%
+2025-04-15 14:23:49,547 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_86.json: 100.00%
+2025-04-15 14:23:49,556 - paramiko.transport - DEBUG - [chan 70] EOF received (70)
+2025-04-15 14:23:49,556 - paramiko.transport - DEBUG - [chan 70] EOF sent (70)
+2025-04-15 14:23:49,557 - paramiko.transport - DEBUG - [chan 71] Max packet in: 32768 bytes
+2025-04-15 14:23:49,603 - paramiko.transport - DEBUG - [chan 71] Max packet out: 32768 bytes
+2025-04-15 14:23:49,603 - paramiko.transport - DEBUG - Secsh channel 71 opened.
+2025-04-15 14:23:49,606 - paramiko.transport - DEBUG - [chan 71] Sesch channel 71 request ok
+2025-04-15 14:23:49,619 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_87.json: 0.00%
+2025-04-15 14:23:49,620 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_87.json: 43.86%
+2025-04-15 14:23:49,621 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_87.json: 87.73%
+2025-04-15 14:23:49,621 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_87.json: 100.00%
+2025-04-15 14:23:49,631 - paramiko.transport - DEBUG - [chan 71] EOF received (71)
+2025-04-15 14:23:49,631 - paramiko.transport - DEBUG - [chan 71] EOF sent (71)
+2025-04-15 14:23:49,632 - paramiko.transport - DEBUG - [chan 72] Max packet in: 32768 bytes
+2025-04-15 14:23:49,675 - paramiko.transport - DEBUG - [chan 72] Max packet out: 32768 bytes
+2025-04-15 14:23:49,676 - paramiko.transport - DEBUG - Secsh channel 72 opened.
+2025-04-15 14:23:49,678 - paramiko.transport - DEBUG - [chan 72] Sesch channel 72 request ok
+2025-04-15 14:23:49,688 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_88.json: 0.00%
+2025-04-15 14:23:49,689 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_88.json: 43.86%
+2025-04-15 14:23:49,691 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_88.json: 87.73%
+2025-04-15 14:23:49,691 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_88.json: 100.00%
+2025-04-15 14:23:49,702 - paramiko.transport - DEBUG - [chan 72] EOF received (72)
+2025-04-15 14:23:49,702 - paramiko.transport - DEBUG - [chan 72] EOF sent (72)
+2025-04-15 14:23:49,703 - paramiko.transport - DEBUG - [chan 73] Max packet in: 32768 bytes
+2025-04-15 14:23:49,751 - paramiko.transport - DEBUG - [chan 73] Max packet out: 32768 bytes
+2025-04-15 14:23:49,751 - paramiko.transport - DEBUG - Secsh channel 73 opened.
+2025-04-15 14:23:49,754 - paramiko.transport - DEBUG - [chan 73] Sesch channel 73 request ok
+2025-04-15 14:23:49,767 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_8.json: 0.00%
+2025-04-15 14:23:49,768 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_8.json: 43.78%
+2025-04-15 14:23:49,769 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_8.json: 87.57%
+2025-04-15 14:23:49,769 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_8.json: 100.00%
+2025-04-15 14:23:49,780 - paramiko.transport - DEBUG - [chan 73] EOF received (73)
+2025-04-15 14:23:49,780 - paramiko.transport - DEBUG - [chan 73] EOF sent (73)
+2025-04-15 14:23:49,781 - paramiko.transport - DEBUG - [chan 74] Max packet in: 32768 bytes
+2025-04-15 14:23:49,830 - paramiko.transport - DEBUG - [chan 74] Max packet out: 32768 bytes
+2025-04-15 14:23:49,830 - paramiko.transport - DEBUG - Secsh channel 74 opened.
+2025-04-15 14:23:49,833 - paramiko.transport - DEBUG - [chan 74] Sesch channel 74 request ok
+2025-04-15 14:23:49,843 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_9.json: 0.00%
+2025-04-15 14:23:49,847 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_9.json: 43.78%
+2025-04-15 14:23:49,847 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_9.json: 87.57%
+2025-04-15 14:23:49,847 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\input_9.json: 100.00%
+2025-04-15 14:23:49,861 - paramiko.transport - DEBUG - [chan 74] EOF received (74)
+2025-04-15 14:23:49,861 - paramiko.transport - DEBUG - [chan 74] EOF sent (74)
+2025-04-15 14:23:49,863 - paramiko.transport - DEBUG - [chan 75] Max packet in: 32768 bytes
+2025-04-15 14:23:49,907 - paramiko.transport - DEBUG - [chan 75] Max packet out: 32768 bytes
+2025-04-15 14:23:49,907 - paramiko.transport - DEBUG - Secsh channel 75 opened.
+2025-04-15 14:23:49,909 - paramiko.transport - DEBUG - [chan 75] Sesch channel 75 request ok
+2025-04-15 14:23:49,918 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\settings.json: 0.00%
+2025-04-15 14:23:49,920 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\settings.json: 64.10%
+2025-04-15 14:23:49,920 - Backend_Files.logger_config - INFO - Transferring C:/Users/sahir/Documents/bckup trial\vip-svr\mvdb\version_6\settings.json: 100.00%
+2025-04-15 14:23:49,932 - paramiko.transport - DEBUG - [chan 75] EOF received (75)
+2025-04-15 14:23:49,932 - paramiko.transport - DEBUG - [chan 75] EOF sent (75)
+2025-04-15 14:23:49,932 - Backend_Files.logger_config - INFO - 
+Successfully downloaded folder from /udata/etc/mvx to C:/Users/sahir/Documents/bckup trial
+2025-04-15 14:23:49,932 - Backend_Files.logger_config - INFO - Successfully downloaded folders to C:/Users/sahir/Documents/bckup trial
+2025-04-15 14:23:49,951 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-15 14:23:49,952 - Backend_Files.logger_config - INFO - Connection closed for backup.
+2025-04-15 14:24:09,106 - paramiko.transport - DEBUG - starting thread (client mode): 0x7042f810
+2025-04-15 14:24:09,107 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:24:09,121 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:24:09,121 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:24:09,124 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:24:09,125 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:24:09,125 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:24:09,125 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:24:09,125 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:24:09,125 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:24:09,125 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:24:09,125 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:24:09,125 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:24:09,125 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:24:09,134 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:09,134 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:24:09,135 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:24:09,135 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:09,135 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:24:09,184 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:24:09,233 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:24:09,238 - Backend_Files.logger_config - INFO - Connection established in enable_coredump.
+2025-04-15 14:24:09,293 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:24:09,294 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:24:11,988 - paramiko.transport - DEBUG - starting thread (client mode): 0x70441bd0
+2025-04-15 14:24:11,988 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:24:12,006 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:24:12,006 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:24:12,008 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:24:12,008 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:24:12,008 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:24:12,008 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:12,008 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:12,008 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:12,008 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:12,008 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:24:12,009 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:24:12,022 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:12,023 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:24:12,023 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:24:12,023 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:12,023 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:24:12,068 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:24:12,118 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:24:12,156 - paramiko.transport - DEBUG - starting thread (client mode): 0x70444710
+2025-04-15 14:24:12,157 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:24:12,175 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:24:12,175 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:24:12,177 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:24:12,177 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:24:12,180 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:24:12,181 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:24:12,181 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:24:12,181 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:24:12,181 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:24:12,181 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:24:12,195 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:12,195 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:24:12,196 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:24:12,196 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:12,196 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:24:12,244 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:24:12,293 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:24:12,301 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-15 14:24:12,301 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-15 14:24:12,352 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:24:12,352 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:24:12,393 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-15 14:24:12,393 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-15 14:24:12,395 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:12,399 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:12,601 - Backend_Files.logger_config - DEBUG - Last login: Tue Apr 15 14:12:24 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@sVIP-01-1D-A8:~$ cat /version
+[?2004l3.0.0-20250410-13f66a19e-191
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:12,803 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: sVIP
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:13,004 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:13,205 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 5c:ba:2c:01:1d:a8
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:13,306 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:13,306 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:13,507 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:13,507 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:13,709 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:13,709 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:13,911 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:14,112 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 14:24:22 up 23:22,  1 user,  load average: 6.60, 6.86, 6.83
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:14,112 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:14,312 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+lldpd-config.service
+logrotate.service
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:14,312 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+lldpd-config.service
+logrotate.service
+mvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:14,312 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-15 14:24:14,312 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-15 14:24:14,312 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-15 14:24:14,313 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-15 14:24:14,313 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-15 14:24:14,313 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-15 14:24:14,313 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:17,599 - paramiko.transport - DEBUG - starting thread (client mode): 0x70446390
+2025-04-15 14:24:17,600 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:24:17,614 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:24:17,614 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:24:17,618 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:24:17,619 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:24:17,619 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:24:17,629 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:17,629 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:24:17,629 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:24:17,630 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:17,630 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:24:17,680 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:24:17,730 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:24:17,782 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:24:17,782 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:24:17,791 - paramiko.transport - DEBUG - starting thread (client mode): 0x70447a90
+2025-04-15 14:24:17,791 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:24:17,801 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:24:17,801 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:24:17,804 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:24:17,805 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:24:17,821 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:17,822 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:24:17,822 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:24:17,822 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:17,822 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:24:17,871 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:24:17,921 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:24:17,929 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-15 14:24:17,929 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-15 14:24:17,979 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:24:17,980 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:24:18,020 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-15 14:24:18,020 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-15 14:24:18,022 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:18,026 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:18,227 - Backend_Files.logger_config - DEBUG - Last login: Tue Apr 15 14:24:20 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@sVIP-01-1D-A8:~$ cat /version
+[?2004l3.0.0-20250410-13f66a19e-191
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:18,429 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: sVIP
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:18,630 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:18,831 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 5c:ba:2c:01:1d:a8
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:18,932 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:18,932 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:19,133 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:19,133 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:19,334 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:19,334 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:19,535 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:19,736 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 14:24:27 up 23:22,  2 users,  load average: 7.35, 7.01, 6.87
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:19,736 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:19,937 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+lldpd-config.service
+logrotate.service
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:19,937 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+lldpd-config.service
+logrotate.service
+mvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:19,937 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-15 14:24:19,937 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-15 14:24:19,937 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-15 14:24:19,937 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-15 14:24:19,937 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-15 14:24:19,937 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-15 14:24:19,937 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:19,960 - paramiko.transport - DEBUG - starting thread (client mode): 0x70464dd0
+2025-04-15 14:24:19,961 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:24:19,977 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:24:19,977 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:24:19,979 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:24:19,979 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:24:19,979 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:24:19,979 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:19,979 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:19,979 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:19,979 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:24:19,980 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:24:19,992 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:19,992 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:24:19,992 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:24:19,992 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:19,993 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:24:20,038 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:24:20,088 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:24:20,094 - Backend_Files.logger_config - INFO - Connection established in detailed debug.
+2025-04-15 14:24:20,095 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-15 14:24:20,147 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:24:20,147 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:24:20,191 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-15 14:24:20,191 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-15 14:24:20,194 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:20,197 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Last login: Tue Apr 15 14:24:26 2025 from 10.40.1.33
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - vx@sVIP-01-1D-A8:~$ journalctl -u logrotate.service -n 50 --no-pager
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - d[1]: Starting Rotate log files...
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: /etc/logrotate.conf:23 duplicate log entry for /var/log/wtmp
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: /etc/logrotate.conf:30 duplicate log entry for /var/log/btmp
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ancillary-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/aud-dma-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-input-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-mon.log failed: No such file or directory
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-output-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,399 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ethernet-io-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/global-timer.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/http-capture.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/http-rest-svr.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/igmp-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/input-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/install.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ip-encap-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/json-rpc.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/layout-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/mv-ctrl.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/mvdb.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-decoder.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-encoder.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-finder.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/nielsen-mon.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ntp-ctrl.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/output-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/pcie-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/plura-timer.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ptp-sync.log failed: No such file or directory
+2025-04-15 14:24:20,400 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/qsfp-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ref-clk-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/resource-svr.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/set-cpu-latency.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/snmpobj.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/src-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/sw-io-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/system-monitor.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/umd-protocols.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/unic.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/vgpo-client.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/video-mon.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/video-win-mgr.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/webeasy-json.log failed: No such file or directory
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: logrotate.service: Main process exited, code=exited, status=1/FAILURE
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: logrotate.service: Failed with result 'exit-code'.
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: Failed to start Rotate log files.
+2025-04-15 14:24:20,401 - Backend_Files.logger_config - INFO - Detailed debug for logrotate.service: Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: /etc/logrotate.conf:23 duplicate log entry for /var/log/wtmp
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: /etc/logrotate.conf:30 duplicate log entry for /var/log/btmp
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ancillary-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/aud-dma-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-input-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-mon.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-output-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ethernet-io-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/global-timer.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/http-capture.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/http-rest-svr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/igmp-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/input-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/install.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ip-encap-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/json-rpc.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/layout-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/mv-ctrl.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/mvdb.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-decoder.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-encoder.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-finder.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/nielsen-mon.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ntp-ctrl.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/output-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/pcie-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/plura-timer.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ptp-sync.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/qsfp-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ref-clk-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/resource-svr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/set-cpu-latency.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/snmpobj.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/src-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/sw-io-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/system-monitor.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/umd-protocols.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/unic.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/vgpo-client.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/video-mon.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/video-win-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/webeasy-json.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: logrotate.service: Failed with result 'exit-code'.
+Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: Failed to start Rotate log files.
+2025-04-15 14:24:20,603 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - d[1]: Starting Renable insite probe after firmware upgrade...
+2025-04-15 14:24:20,603 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost insite-probe-enable[1269]: Failed to enable unit: Unit file /lib/systemd/system/insite-probe.service is masked.
+2025-04-15 14:24:20,603 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost insite-probe-enable[1279]: Failed to start insite-probe.service: Unit insite-probe.service is masked.
+2025-04-15 14:24:20,603 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost systemd[1]: insite-probe-enable.service: Main process exited, code=exited, status=1/FAILURE
+2025-04-15 14:24:20,604 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost systemd[1]: insite-probe-enable.service: Failed with result 'exit-code'.
+2025-04-15 14:24:20,604 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost systemd[1]: Failed to start Renable insite probe after firmware upgrade.
+2025-04-15 14:24:20,604 - Backend_Files.logger_config - INFO - Detailed debug for insite-probe-enable.service: Apr 14 15:01:49 localhost insite-probe-enable[1269]: Failed to enable unit: Unit file /lib/systemd/system/insite-probe.service is masked.
+Apr 14 15:01:49 localhost insite-probe-enable[1279]: Failed to start insite-probe.service: Unit insite-probe.service is masked.
+Apr 14 15:01:49 localhost systemd[1]: insite-probe-enable.service: Failed with result 'exit-code'.
+Apr 14 15:01:49 localhost systemd[1]: Failed to start Renable insite probe after firmware upgrade.
+2025-04-15 14:24:20,805 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - vx systemd[1]: Started "configure lldpd on startup".
+2025-04-15 14:24:20,805 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:52 mvx mvdb-get[2506]: Couldn't connect to mvdb, retrying (1)
+2025-04-15 14:24:20,805 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:54 mvx mvdb-get[2506]: Couldn't connect to mvdb, retrying (2)
+2025-04-15 14:24:20,805 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:56 mvx mvdb-get[2506]: Couldn't connect to mvdb, retrying (3)
+2025-04-15 14:24:20,806 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[2506]: Connected to mvdb
+2025-04-15 14:24:20,806 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[2506]: Quitting mvdb comm
+2025-04-15 14:24:20,806 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3322]: Connected to mvdb
+2025-04-15 14:24:20,806 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3322]: Quitting mvdb comm
+2025-04-15 14:24:20,806 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3323]: Connected to mvdb
+2025-04-15 14:24:20,806 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3323]: Quitting mvdb comm
+2025-04-15 14:24:20,806 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3324]: Connected to mvdb
+2025-04-15 14:24:20,806 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3324]: Quitting mvdb comm
+2025-04-15 14:24:20,806 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3325]: Connected to mvdb
+2025-04-15 14:24:20,807 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3325]: Quitting mvdb comm
+2025-04-15 14:24:20,807 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3327]: Connected to mvdb
+2025-04-15 14:24:20,807 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3327]: Quitting mvdb comm
+2025-04-15 14:24:20,807 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3329]: Connected to mvdb
+2025-04-15 14:24:20,807 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3329]: Quitting mvdb comm
+2025-04-15 14:24:20,807 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3332]: Connected to mvdb
+2025-04-15 14:24:20,807 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3332]: Quitting mvdb comm
+2025-04-15 14:24:20,807 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3334]: Connected to mvdb
+2025-04-15 14:24:20,808 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3334]: Quitting mvdb comm
+2025-04-15 14:24:20,808 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 systemd[1]: lldpd-config.service: Main process exited, code=exited, status=255/EXCEPTION
+2025-04-15 14:24:20,808 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 systemd[1]: lldpd-config.service: Failed with result 'exit-code'.
+2025-04-15 14:24:20,808 - Backend_Files.logger_config - INFO - Detailed debug for lldpd-config.service: Apr 14 15:01:58 sVIP-01-1D-A8 systemd[1]: lldpd-config.service: Failed with result 'exit-code'.
+2025-04-15 14:24:25,715 - paramiko.transport - DEBUG - starting thread (client mode): 0x70467450
+2025-04-15 14:24:25,715 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:24:25,731 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:24:25,731 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:24:25,734 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:24:25,734 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:24:25,735 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:24:25,751 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:25,751 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:24:25,751 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:24:25,751 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:25,751 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:24:25,794 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:24:25,844 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:24:25,851 - Backend_Files.logger_config - INFO - Connection established in detailed debug.
+2025-04-15 14:24:25,851 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-15 14:24:25,888 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:24:25,888 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:24:25,931 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-15 14:24:25,932 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-15 14:24:25,934 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:25,937 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:26,138 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Last login: Tue Apr 15 14:24:28 2025 from 10.40.1.33
+2025-04-15 14:24:26,138 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - vx@sVIP-01-1D-A8:~$ journalctl -u logrotate.service -n 50 --no-pager
+2025-04-15 14:24:26,138 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - d[1]: Starting Rotate log files...
+2025-04-15 14:24:26,138 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: /etc/logrotate.conf:23 duplicate log entry for /var/log/wtmp
+2025-04-15 14:24:26,138 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: /etc/logrotate.conf:30 duplicate log entry for /var/log/btmp
+2025-04-15 14:24:26,138 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ancillary-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,138 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/aud-dma-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,138 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-input-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,138 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-mon.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-output-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ethernet-io-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/global-timer.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/http-capture.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/http-rest-svr.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/igmp-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/input-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/install.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ip-encap-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/json-rpc.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/layout-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/mv-ctrl.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/mvdb.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-decoder.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-encoder.log failed: No such file or directory
+2025-04-15 14:24:26,139 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-finder.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/nielsen-mon.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ntp-ctrl.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/output-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/pcie-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/plura-timer.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ptp-sync.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/qsfp-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ref-clk-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/resource-svr.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/set-cpu-latency.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/snmpobj.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/src-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/sw-io-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,140 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/system-monitor.log failed: No such file or directory
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/umd-protocols.log failed: No such file or directory
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/unic.log failed: No such file or directory
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/vgpo-client.log failed: No such file or directory
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/video-mon.log failed: No such file or directory
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/video-win-mgr.log failed: No such file or directory
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/webeasy-json.log failed: No such file or directory
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: logrotate.service: Main process exited, code=exited, status=1/FAILURE
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: logrotate.service: Failed with result 'exit-code'.
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: Failed to start Rotate log files.
+2025-04-15 14:24:26,141 - Backend_Files.logger_config - INFO - Detailed debug for logrotate.service: Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: /etc/logrotate.conf:23 duplicate log entry for /var/log/wtmp
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: /etc/logrotate.conf:30 duplicate log entry for /var/log/btmp
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ancillary-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/aud-dma-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-input-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-mon.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/audio-output-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ethernet-io-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/global-timer.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/http-capture.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/http-rest-svr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/igmp-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/input-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/install.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ip-encap-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/json-rpc.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/layout-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/mv-ctrl.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/mvdb.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-decoder.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-encoder.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ndi-finder.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/nielsen-mon.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ntp-ctrl.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/output-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/pcie-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/plura-timer.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ptp-sync.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/qsfp-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/ref-clk-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/resource-svr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/set-cpu-latency.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/snmpobj.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/src-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/sw-io-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/system-monitor.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/umd-protocols.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/unic.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/vgpo-client.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/video-mon.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/video-win-mgr.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 logrotate[111741]: error: stat of /var/log/webeasy-json.log failed: No such file or directory
+Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: logrotate.service: Failed with result 'exit-code'.
+Apr 15 00:00:02 sVIP-01-1D-A8 systemd[1]: Failed to start Rotate log files.
+2025-04-15 14:24:26,342 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - d[1]: Starting Renable insite probe after firmware upgrade...
+2025-04-15 14:24:26,342 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost insite-probe-enable[1269]: Failed to enable unit: Unit file /lib/systemd/system/insite-probe.service is masked.
+2025-04-15 14:24:26,342 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost insite-probe-enable[1279]: Failed to start insite-probe.service: Unit insite-probe.service is masked.
+2025-04-15 14:24:26,342 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost systemd[1]: insite-probe-enable.service: Main process exited, code=exited, status=1/FAILURE
+2025-04-15 14:24:26,342 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost systemd[1]: insite-probe-enable.service: Failed with result 'exit-code'.
+2025-04-15 14:24:26,343 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:49 localhost systemd[1]: Failed to start Renable insite probe after firmware upgrade.
+2025-04-15 14:24:26,343 - Backend_Files.logger_config - INFO - Detailed debug for insite-probe-enable.service: Apr 14 15:01:49 localhost insite-probe-enable[1269]: Failed to enable unit: Unit file /lib/systemd/system/insite-probe.service is masked.
+Apr 14 15:01:49 localhost insite-probe-enable[1279]: Failed to start insite-probe.service: Unit insite-probe.service is masked.
+Apr 14 15:01:49 localhost systemd[1]: insite-probe-enable.service: Failed with result 'exit-code'.
+Apr 14 15:01:49 localhost systemd[1]: Failed to start Renable insite probe after firmware upgrade.
+2025-04-15 14:24:26,545 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - vx systemd[1]: Started "configure lldpd on startup".
+2025-04-15 14:24:26,545 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:52 mvx mvdb-get[2506]: Couldn't connect to mvdb, retrying (1)
+2025-04-15 14:24:26,545 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:54 mvx mvdb-get[2506]: Couldn't connect to mvdb, retrying (2)
+2025-04-15 14:24:26,545 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:56 mvx mvdb-get[2506]: Couldn't connect to mvdb, retrying (3)
+2025-04-15 14:24:26,546 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[2506]: Connected to mvdb
+2025-04-15 14:24:26,546 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[2506]: Quitting mvdb comm
+2025-04-15 14:24:26,546 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3322]: Connected to mvdb
+2025-04-15 14:24:26,546 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3322]: Quitting mvdb comm
+2025-04-15 14:24:26,546 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3323]: Connected to mvdb
+2025-04-15 14:24:26,546 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3323]: Quitting mvdb comm
+2025-04-15 14:24:26,546 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3324]: Connected to mvdb
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3324]: Quitting mvdb comm
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3325]: Connected to mvdb
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3325]: Quitting mvdb comm
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3327]: Connected to mvdb
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3327]: Quitting mvdb comm
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3329]: Connected to mvdb
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3329]: Quitting mvdb comm
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3332]: Connected to mvdb
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3332]: Quitting mvdb comm
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3334]: Connected to mvdb
+2025-04-15 14:24:26,547 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 mvdb-get[3334]: Quitting mvdb comm
+2025-04-15 14:24:26,548 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 systemd[1]: lldpd-config.service: Main process exited, code=exited, status=255/EXCEPTION
+2025-04-15 14:24:26,548 - Backend_Files.logger_config - INFO - This is inside download logs readMultiLines function - Apr 14 15:01:58 sVIP-01-1D-A8 systemd[1]: lldpd-config.service: Failed with result 'exit-code'.
+2025-04-15 14:24:26,548 - Backend_Files.logger_config - INFO - Detailed debug for lldpd-config.service: Apr 14 15:01:58 sVIP-01-1D-A8 systemd[1]: lldpd-config.service: Failed with result 'exit-code'.
+2025-04-15 14:24:26,548 - Backend_Files.logger_config - INFO - Attempting to download the logs captured on overview and detail debug
+2025-04-15 14:24:30,396 - Backend_Files.logger_config - INFO - Logs file has been saved to {file_path}
+2025-04-15 14:24:52,976 - paramiko.transport - DEBUG - starting thread (client mode): 0x70471250
+2025-04-15 14:24:52,977 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:24:52,991 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:24:52,991 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:24:52,994 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:24:52,994 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:24:52,994 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:24:52,994 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:52,994 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:52,994 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:24:52,995 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:24:53,006 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:53,006 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:24:53,006 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:24:53,006 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:53,006 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:24:53,051 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:24:53,101 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:24:53,134 - paramiko.transport - DEBUG - starting thread (client mode): 0x70471e90
+2025-04-15 14:24:53,134 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-04-15 14:24:53,149 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+2025-04-15 14:24:53,149 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - client lang: <none>
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - server lang: <none>
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - kex follows: False
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-04-15 14:24:53,152 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-04-15 14:24:53,153 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-04-15 14:24:53,153 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-04-15 14:24:53,153 - paramiko.transport - DEBUG - Compression: none
+2025-04-15 14:24:53,153 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-04-15 14:24:53,163 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:24:53,163 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:24:53,166 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:53,167 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-15 14:24:53,167 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-04-15 14:24:53,167 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-15 14:24:53,167 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2025-04-15 14:24:53,212 - paramiko.transport - DEBUG - userauth is OK
+2025-04-15 14:24:53,261 - paramiko.transport - INFO - Authentication (password) successful!
+2025-04-15 14:24:53,265 - Backend_Files.logger_config - INFO - Connection established for overview.
+2025-04-15 14:24:53,266 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-04-15 14:24:53,311 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-04-15 14:24:53,311 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-15 14:24:53,352 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-04-15 14:24:53,352 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-04-15 14:24:53,354 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:53,357 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-04-15 14:24:53,559 - Backend_Files.logger_config - DEBUG - Last login: Tue Apr 15 14:24:34 2025 from 10.40.1.33
+cat /version
+[?2004hmvx@sVIP-01-1D-A8:~$ cat /version
+[?2004l3.0.0-20250410-13f66a19e-191
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:53,760 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.app.name
+[?2004lResult: sVIP
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:53,961 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.serial_num
+[?2004lResult: 0000000000000001
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:54,162 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.license.mac_addr
+[?2004lResult: 5c:ba:2c:01:1d:a8
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:54,263 - Backend_Files.logger_config - DEBUG - license-decode /etc/mvx/vip-svr/license.key sVIP 0000000000000001 5c:ba:2c:01:1d:a8
+[?2004l+IN24+OUT8+MCR+DDP|+IN32+OUT8|+IN32
+vx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:54,263 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:54,464 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.platform
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:54,464 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:54,665 - Backend_Files.logger_config - DEBUG - mvdb-get cardinfo.prod
+[?2004lResult: SERVER
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:54,665 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:54,867 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:55,068 - Backend_Files.logger_config - DEBUG - uptime
+[?2004l 14:25:03 up 23:23,  5 users,  load average: 6.37, 6.81, 6.81
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:55,068 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:24:55,270 - Backend_Files.logger_config - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+[?2004linsite-probe-enable.service
+lldpd-config.service
+logrotate.service
+[?2004hmvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:55,270 - Backend_Files.logger_config - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {print $1}'
+insite-probe-enable.service
+lldpd-config.service
+logrotate.service
+mvx@sVIP-01-1D-A8:~$ 
+2025-04-15 14:24:55,270 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-15 14:24:55,270 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-15 14:24:55,270 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-15 14:24:55,270 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - insite-probe-enable.service
+2025-04-15 14:24:55,270 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - lldpd-config.service
+2025-04-15 14:24:55,270 - Backend_Files.logger_config - INFO - This is inside readMultiLines function - logrotate.service
+2025-04-15 14:24:55,270 - Backend_Files.logger_config - INFO - Fomatted results in overview
+2025-04-15 14:25:04,508 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-15 14:25:04,508 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-15 14:25:04,509 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-15 14:25:04,509 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-15 14:25:04,509 - paramiko.transport - DEBUG - EOF in transport thread
+2025-04-15 14:25:04,509 - paramiko.transport - DEBUG - EOF in transport thread

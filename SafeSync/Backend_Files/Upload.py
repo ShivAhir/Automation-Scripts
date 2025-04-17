@@ -7,7 +7,7 @@ from Backend_Files.logger_config import logger
 def uploadFiles(deviceIP, deviceUsername, devicePassword, remotePaths, localPath, loadingLabel, root):
     try:
         print("Establishing connection...")
-        establishConnection(deviceIP, deviceUsername, devicePassword)
+        establishConnection(deviceIP, deviceUsername, devicePassword, root)
         print("Connection established.")
         flag = True
         for remotePath in remotePaths:
