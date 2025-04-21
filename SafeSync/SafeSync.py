@@ -9,14 +9,17 @@ from Backend_Files.Overview import failedServices
 from Backend_Files.DetailDebug import detail_debug
 from Backend_Files.Upload import uploadFiles
 from Backend_Files.UILoadingWindow import show_loading_ui
+from Backend_Files.Styles import apply_button_style
+
+# After `root = tk.Tk()` and before creating buttons:
 
 
-def on_enter(event):
-    event.widget.config(bg="#2A68A2", fg='black')
+# def on_enter(event):
+#     event.widget.config(bg="#2A68A2", fg='black')
 
 
-def on_leave(event):
-    event.widget.config(bg="#1A5082", fg="white")
+# def on_leave(event):
+#     event.widget.config(bg="#1A5082", fg="white")
 
 
 def create_ui(remotePaths):
@@ -154,13 +157,14 @@ def create_ui(remotePaths):
 
         # detail_debug_res = detail_debug_output.get("1.0", "end-1c")
         download_logs(root, overview, detail_debug_res)
-
     root = tk.Tk()
+    apply_button_style()
+    
+
     root.title("SafeSync")
     root.configure(bg="#3E3E3E")
     root.iconbitmap("assets\Icon\SafeSync.ico")
     root.option_add("*Frame.background", "#3E3E3E")  # Dark gray for frames
-
     root.option_add("*Title.background", "#3E3E3E")  # Match frame background
     root.option_add("*Title.foreground", "#FFFFFF")
     root.option_add("*Label.background", "#3E3E3E")  # Match frame background
@@ -253,63 +257,51 @@ def create_ui(remotePaths):
 
     tk.Label(auth_info_frame, text="Device IP Address:", font=(
         'Lucida Sans', 10, 'bold')).grid(row=1, column=0, padx=10, pady=10, sticky='nse')
-    deviceIPEntry = tk.Entry(auth_info_frame, width=50)
+    deviceIPEntry = ttk.Entry(auth_info_frame, width=50)
     deviceIPEntry.grid(row=1, column=1, padx=5, pady=10, sticky='nsew')
     tk.Label(auth_info_frame, text="Device Username:", font=(
         'Lucida Sans', 10, 'bold')).grid(row=2, column=0, padx=10, pady=10, sticky='nse')
-    deviceUsernameEntry = tk.Entry(auth_info_frame, width=50)
+    deviceUsernameEntry = ttk.Entry(auth_info_frame, width=50)
     deviceUsernameEntry.grid(row=2, column=1, padx=5, pady=10, sticky='nsew')
     tk.Label(auth_info_frame, text="Device Password:", font=(
         'Lucida Sans', 10, 'bold')).grid(row=3, column=0, padx=10, pady=10, sticky='nse')
-    devicePasswordEntry = tk.Entry(auth_info_frame, width=50, show='*')
+    devicePasswordEntry = ttk.Entry(auth_info_frame, width=50, show='*')
     devicePasswordEntry.grid(row=3, column=1, padx=5, pady=10, sticky='nsew')
 
     # UI for backup/upload Section
-    backupBtn = tk.Button(actn_button_frame, text="Start Backup", font=(
-        'Lucida Sans', 10, 'bold'), cursor="hand2", command=startBackup, width=25, height=2)
+    # backupBtn = tk.Button(actn_button_frame, text="Start Backup", font=(
+    #     'Lucida Sans', 10, 'bold'), cursor="hand2", command=startBackup, width=25, height=2)
+    backupBtn = ttk.Button(actn_button_frame, text="Start Backup", command=startBackup, style="Modern.TButton")
+    backupBtn.config(width=25)
     backupBtn.grid(row=0, column=0, padx=(5, 11), pady=(9, 11))
-    uploadBtn = tk.Button(actn_button_frame, text="Start Upload", font=(
-        'Lucida Sans', 10, 'bold'), cursor="hand2", command=startUpload, width=25, height=2)
+
+    uploadBtn = ttk.Button(actn_button_frame, text="Start Upload", command=startUpload, style="Modern.TButton")
+    uploadBtn.config(width=25)
     uploadBtn.config(state="disabled")
     uploadBtn.grid(row=0, column=1, padx=(5, 10), pady=(9, 11))
+
     # UI for coredump section
-    enable_coredumps_btn = tk.Button(coredump_button_frame, text="Enable Coredumps", font=(
-        'Lucida Sans', 10, 'bold'), cursor="hand2",  command=enable_coredumps, width=25, height=2)
+    enable_coredumps_btn = ttk.Button(coredump_button_frame, text="Enable Coredumps",  command=enable_coredumps, style="Modern.TButton")
+    enable_coredumps_btn.config(width=25)
     enable_coredumps_btn.grid(row=0, column=0, padx=(5, 11), pady=5)
-    extract_coredumps_btn = tk.Button(coredump_button_frame, text="Extract Coredumps", font=(
-        'Lucida Sans', 10, 'bold'), cursor="hand2",  command=enable_coredumps, width=25, height=2)
+
+    extract_coredumps_btn = ttk.Button(coredump_button_frame, text="Extract Coredumps", command=enable_coredumps, style="Modern.TButton")
+    extract_coredumps_btn.config(width=25)
     extract_coredumps_btn.grid(row=0, column=1, padx=(5, 10), pady=5)
     extract_coredumps_btn.config(state="disabled")
     # UI for debugging Section
-    overview_btn = tk.Button(debug_button_frame, text="Overview", font=(
-        'Lucida Sans', 10, 'bold'), cursor="hand2",  command=startOverview, height=2)
+    overview_btn = ttk.Button(debug_button_frame, text="Overview", command=startOverview, style="Modern.TButton")
     overview_btn.grid(row=0, column=0, columnspan=2,
                       padx=40, pady=15, sticky='nsew')
-    detailed_debug_btn = tk.Button(debug_button_frame, text="Detailed Debug", font=(
-        'Lucida Sans', 10, 'bold'), cursor="hand2",  command=startDetailDebug, height=2)
+    
+    detailed_debug_btn = ttk.Button(debug_button_frame, text="Detailed Debug",  command=startDetailDebug, style="Modern.TButton")
     detailed_debug_btn.grid(
         row=0, column=2, columnspan=2, padx=40, pady=15, sticky='nsew')
 
     separator_dw_btn = ttk.Separator(
         detail_debug_frame, orient="horizontal")
-    dw_logs_button = tk.Button(
-        detail_debug_frame, text="Download Logs", font=(
-            'Lucida Sans', 10, 'bold'), cursor="hand2",  command=start_downloading_logs, height=2)
-    backupBtn.bind("<Enter>", on_enter)
-    backupBtn.bind("<Leave>", on_leave)
-    uploadBtn.bind("<Enter>", on_enter)
-    uploadBtn.bind("<Leave>", on_leave)
-
-    enable_coredumps_btn.bind("<Enter>", on_enter)
-    enable_coredumps_btn.bind("<Leave>", on_leave)
-    extract_coredumps_btn.bind("<Enter>", on_enter)
-    extract_coredumps_btn.bind("<Leave>", on_leave)
-    overview_btn.bind("<Enter>", on_enter)
-    overview_btn.bind("<Leave>", on_leave)
-    detailed_debug_btn.bind("<Enter>", on_enter)
-    detailed_debug_btn.bind("<Leave>", on_leave)
-    dw_logs_button.bind("<Enter>", on_enter)
-    dw_logs_button.bind("<Leave>", on_leave)
+    dw_logs_button = ttk.Button(
+        detail_debug_frame, text="Download Logs",  command=start_downloading_logs, style="Modern.TButton")
     overview_output = tk.Text(
         overview_frame, height=16, width=100, wrap='word')
     overview_output.tag_configure('bold', font=('Helvetica', 10, 'bold'))
