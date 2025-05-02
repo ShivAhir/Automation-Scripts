@@ -1,0 +1,1 @@
+Added a feature that downloads journal logs when user presses download logs button

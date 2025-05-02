@@ -3,7 +3,7 @@ import time
 from Backend_Files.Connection import establishConnection, sshClient
 from Backend_Files.Overview import ansiEscape, failedServices
 from Backend_Files.UILoadingWindow import show_loading_ui
-from Backend_Files.logger_config import logger
+from Backend_Files.LoggerConfig import logger
 
 results = {}
 raw_results = ''

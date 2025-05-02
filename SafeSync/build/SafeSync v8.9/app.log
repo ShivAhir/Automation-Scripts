@@ -1,0 +1,248 @@
+2025-05-01 15:46:12,132 - paramiko.transport - DEBUG - starting thread (client mode): 0x27d86b90
+2025-05-01 15:46:12,132 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-05-01 15:46:12,160 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_7.6
+2025-05-01 15:46:12,160 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.6)
+2025-05-01 15:46:12,164 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-05-01 15:46:12,164 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - client lang: <none>
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - server lang: <none>
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - kex follows: False
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - Compression: none
+2025-05-01 15:46:12,166 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-05-01 15:46:12,205 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-05-01 15:46:12,205 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-05-01 15:46:12,206 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+2025-05-01 15:46:12,206 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for 172.16.176.33: b'2285ad109a1a0421c366b6d030f1d153'
+2025-05-01 15:46:12,248 - paramiko.transport - DEBUG - userauth is OK
+2025-05-01 15:46:12,255 - paramiko.transport - INFO - Authentication (password) failed.
+2025-05-01 15:46:12,255 - Backend_Files.LoggerConfig - INFO - Failed to establish SSH connection: Authentication failed.
+2025-05-01 15:47:17,790 - paramiko.transport - DEBUG - starting thread (client mode): 0x27df0c10
+2025-05-01 15:47:17,790 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-05-01 15:47:17,819 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_7.6
+2025-05-01 15:47:17,819 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.6)
+2025-05-01 15:47:17,821 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-05-01 15:47:17,821 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+2025-05-01 15:47:17,821 - paramiko.transport - DEBUG - server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - client lang: <none>
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - server lang: <none>
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - kex follows: False
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - Compression: none
+2025-05-01 15:47:17,822 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-05-01 15:47:17,860 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-05-01 15:47:17,861 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-05-01 15:47:17,861 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+2025-05-01 15:47:17,903 - paramiko.transport - DEBUG - userauth is OK
+2025-05-01 15:47:17,908 - paramiko.transport - INFO - Authentication (password) successful!
+2025-05-01 15:47:17,957 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-05-01 15:47:17,958 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-05-01 15:47:17,962 - paramiko.transport - DEBUG - starting thread (client mode): 0x27df2110
+2025-05-01 15:47:17,963 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-05-01 15:47:17,993 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_7.6
+2025-05-01 15:47:17,994 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.6)
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - client lang: <none>
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - server lang: <none>
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - kex follows: False
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-05-01 15:47:18,000 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-05-01 15:47:18,001 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-05-01 15:47:18,001 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-05-01 15:47:18,001 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-05-01 15:47:18,001 - paramiko.transport - DEBUG - Compression: none
+2025-05-01 15:47:18,001 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-05-01 15:47:18,038 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-05-01 15:47:18,039 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-05-01 15:47:18,039 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+2025-05-01 15:47:18,081 - paramiko.transport - DEBUG - userauth is OK
+2025-05-01 15:47:18,086 - paramiko.transport - INFO - Authentication (password) successful!
+2025-05-01 15:47:18,092 - Backend_Files.LoggerConfig - INFO - Connection established for overview.
+2025-05-01 15:47:18,092 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-05-01 15:47:18,094 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-05-01 15:47:18,094 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-05-01 15:47:18,136 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-05-01 15:47:18,136 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-05-01 15:47:18,138 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-05-01 15:47:18,142 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-05-01 15:47:18,343 - Backend_Files.LoggerConfig - DEBUG - Last login: Thu May  1 15:43:23 2025 from 10.44.21.132
+cat /version
+~ # cat /version
+cat: /version: No such file or directory
+~ # 
+2025-05-01 15:47:18,343 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: cat /version
+2025-05-01 15:47:18,545 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.app.name
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:18,545 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.app.name
+2025-05-01 15:47:18,747 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.license.serial_num
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:18,747 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.license.serial_num
+2025-05-01 15:47:18,948 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.license.mac_addr
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:18,948 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.license.mac_addr
+2025-05-01 15:47:19,149 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.platform
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:19,149 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.platform
+2025-05-01 15:47:19,351 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.prod
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:19,351 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.prod
+2025-05-01 15:47:19,452 - Backend_Files.LoggerConfig - INFO - Overview: Manufacturer pattern not found in output
+2025-05-01 15:47:19,452 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: sudo dmidecode -t 0x0002
+2025-05-01 15:47:19,654 - Backend_Files.LoggerConfig - DEBUG - uptime
+ 15:47:13 up 8 days,  5:25, load average: 0.10, 0.05, 0.00
+~ # 
+2025-05-01 15:47:19,854 - Backend_Files.LoggerConfig - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {p rint $1}'
+-sh: systemctl: not found
+~ # 
+2025-05-01 15:47:19,854 - Backend_Files.LoggerConfig - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {p rint $1}'
+-sh: systemctl: not found
+~ # 
+2025-05-01 15:47:19,854 - Backend_Files.LoggerConfig - INFO - This is inside readMultiLines function - -sh: systemctl: not found
+2025-05-01 15:47:19,854 - Backend_Files.LoggerConfig - INFO - This is inside readMultiLines function - ~ #
+2025-05-01 15:47:19,854 - Backend_Files.LoggerConfig - INFO - This is inside readMultiLines function - -sh: systemctl: not found
+2025-05-01 15:47:19,854 - Backend_Files.LoggerConfig - INFO - This is inside readMultiLines function - ~ #
+2025-05-01 15:47:36,833 - paramiko.transport - DEBUG - starting thread (client mode): 0x27df3410
+2025-05-01 15:47:36,833 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-05-01 15:47:36,861 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_7.6
+2025-05-01 15:47:36,861 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.6)
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - client lang: <none>
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - server lang: <none>
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - kex follows: False
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-05-01 15:47:36,864 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-05-01 15:47:36,865 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-05-01 15:47:36,865 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-05-01 15:47:36,865 - paramiko.transport - DEBUG - Compression: none
+2025-05-01 15:47:36,865 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-05-01 15:47:36,903 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-05-01 15:47:36,903 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-05-01 15:47:36,903 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+2025-05-01 15:47:36,945 - paramiko.transport - DEBUG - userauth is OK
+2025-05-01 15:47:36,951 - paramiko.transport - INFO - Authentication (password) successful!
+2025-05-01 15:47:36,993 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-05-01 15:47:36,993 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-05-01 15:47:37,008 - paramiko.transport - DEBUG - starting thread (client mode): 0x27e00bd0
+2025-05-01 15:47:37,008 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.4.0
+2025-05-01 15:47:37,036 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_7.6
+2025-05-01 15:47:37,036 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.6)
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - client lang: <none>
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - server lang: <none>
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - kex follows: False
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-05-01 15:47:37,039 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-05-01 15:47:37,040 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-05-01 15:47:37,040 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-05-01 15:47:37,040 - paramiko.transport - DEBUG - Compression: none
+2025-05-01 15:47:37,040 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-05-01 15:47:37,077 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-05-01 15:47:37,078 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-05-01 15:47:37,078 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+2025-05-01 15:47:37,120 - paramiko.transport - DEBUG - userauth is OK
+2025-05-01 15:47:37,124 - paramiko.transport - INFO - Authentication (password) successful!
+2025-05-01 15:47:37,131 - Backend_Files.LoggerConfig - INFO - Connection established for overview.
+2025-05-01 15:47:37,132 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-05-01 15:47:37,134 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-05-01 15:47:37,134 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-05-01 15:47:37,176 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-05-01 15:47:37,176 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-05-01 15:47:37,178 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-05-01 15:47:37,181 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-05-01 15:47:37,382 - Backend_Files.LoggerConfig - DEBUG - Last login: Thu May  1 15:47:12 2025 from 10.40.1.33
+cat /version
+~ # cat /version
+cat: /version: No such file or directory
+~ # 
+2025-05-01 15:47:37,382 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: cat /version
+2025-05-01 15:47:37,583 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.app.name
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:37,583 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.app.name
+2025-05-01 15:47:37,784 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.license.serial_num
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:37,784 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.license.serial_num
+2025-05-01 15:47:37,986 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.license.mac_addr
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:37,986 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.license.mac_addr
+2025-05-01 15:47:38,187 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.platform
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:38,187 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.platform
+2025-05-01 15:47:38,389 - Backend_Files.LoggerConfig - DEBUG - mvdb-get cardinfo.prod
+-sh: mvdb-get: not found
+~ # 
+2025-05-01 15:47:38,389 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: mvdb-get cardinfo.prod
+2025-05-01 15:47:38,490 - Backend_Files.LoggerConfig - INFO - Overview: Manufacturer pattern not found in output
+2025-05-01 15:47:38,490 - Backend_Files.LoggerConfig - ERROR - Desired output not found for command: sudo dmidecode -t 0x0002
+2025-05-01 15:47:38,692 - Backend_Files.LoggerConfig - DEBUG - uptime
+ 15:47:32 up 8 days,  5:26, load average: 0.07, 0.05, 0.00
+~ # 
+2025-05-01 15:47:38,893 - Backend_Files.LoggerConfig - DEBUG - systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {p rint $1}'
+-sh: systemctl: not found
+~ # 
+2025-05-01 15:47:38,893 - Backend_Files.LoggerConfig - INFO - This is the output of systemctl systemctl list-units --state=failed --no-legend --plain | awk '/.service/ {p rint $1}'
+-sh: systemctl: not found
+~ # 
+2025-05-01 15:47:38,893 - Backend_Files.LoggerConfig - INFO - This is inside readMultiLines function - -sh: systemctl: not found
+2025-05-01 15:47:38,893 - Backend_Files.LoggerConfig - INFO - This is inside readMultiLines function - ~ #
+2025-05-01 15:47:38,893 - Backend_Files.LoggerConfig - INFO - This is inside readMultiLines function - -sh: systemctl: not found
+2025-05-01 15:47:38,893 - Backend_Files.LoggerConfig - INFO - This is inside readMultiLines function - ~ #
+2025-05-01 15:48:12,164 - paramiko.transport - DEBUG - EOF in transport thread
+2025-05-01 16:11:55,382 - paramiko.transport - DEBUG - EOF in transport thread
+2025-05-01 16:11:55,383 - paramiko.transport - DEBUG - EOF in transport thread
+2025-05-01 16:11:55,383 - paramiko.transport - DEBUG - EOF in transport thread

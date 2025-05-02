@@ -3,7 +3,7 @@ from tkinter import filedialog
 from Backend_Files.Connection import sshClient, establishConnection, closeSSHConnection
 from Backend_Files.UILoadingWindow import show_loading_ui
 from scp import SCPClient  # type: ignore
-from Backend_Files.logger_config import logger
+from Backend_Files.LoggerConfig import logger
 
 
 # to show the progression of how much a file has been downloaded on the logs

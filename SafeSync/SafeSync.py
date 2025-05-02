@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+import re
 import threading
 from Backend_Files.Backup import download, closeSSHConnection
 from Backend_Files.Coredump import enable_coredump
@@ -9,17 +10,8 @@ from Backend_Files.Overview import failedServices
 from Backend_Files.DetailDebug import detail_debug
 from Backend_Files.Upload import uploadFiles
 from Backend_Files.UILoadingWindow import show_loading_ui
-from Backend_Files.Styles import apply_button_style
-
-# After `root = tk.Tk()` and before creating buttons:
-
-
-# def on_enter(event):
-#     event.widget.config(bg="#2A68A2", fg='black')
-
-
-# def on_leave(event):
-#     event.widget.config(bg="#1A5082", fg="white")
+from Backend_Files.Styles import apply_styles
+from Backend_Files.ToolTip import Tooltip
 
 
 def create_ui(remotePaths):
@@ -72,45 +64,58 @@ def create_ui(remotePaths):
 
             debug_info = cardInfoD(getInfo(), root)
             if debug_info:
-                separator = ttk.Separator(overview_frame, orient="horizontal")
-                separator.grid(row=0, column=0, padx=30, sticky='nsew')
-                tk.Label(overview_frame, text="Debugging Section",  font=('Lucida Sans', 10, 'bold')).grid(
-                    row=0, column=0, padx=10, pady=(18, 3), sticky='nsew')
+                separator.grid(row=1, column=0, columnspan=4,
+                               padx=50, pady=(0, 10), sticky='nsew')
+                tk.Label(overview_frame, text="Debugging Section",  font=('Lucida Sans', 11, 'bold')).grid(
+                    row=0, column=0, padx=10, pady=3, sticky='nsew')
                 overview_output.grid(row=1, column=0, padx=10,
-                                     pady=10, sticky='nsew')
+                                     pady=(10), sticky='nsew')
                 formatDebugInfo(debug_info=debug_info)
                 overview_output.config(state='disabled')
                 separator_dw_btn.grid(
                     row=2, column=0, padx=30, sticky='nsew')
-                dw_logs_button.grid(row=3, column=0, padx=30,
-                                    pady=10, sticky='nsew')
+                dw_logs_button.grid(row=3, column=0, padx=100,
+                                    pady=(15, 10), sticky='nsew')
         threading.Thread(target=process_overview).start()
 
     def formatDebugInfo(debug_info=None, res=None):
         # Debug - general information section
-        separator = ttk.Separator(
-            overview_frame, orient="horizontal")
+        overview_output.tag_config('center', justify='center')
+        overview_output.tag_config(
+            'highlight', background='yellow', foreground='black', font=('Chalkboard', 10, 'bold'))
+
+        detail_debug_output.tag_config('center', justify='center')
+        detail_debug_output.tag_config(
+            'highlight', background='yellow', foreground='black', font=('Chalkboard', 10, 'bold'))
+
         if debug_info:
             overview_output.insert(
                 tk.END, "\n Card's General Information", ('bold', 'center'))
             overview_output.insert(
-                tk.END, "\n-------------------------------------------------------------------- \n\n", ('bold', 'center'))
+                tk.END, "\n---------------------------------------------------------------------------------------------------------------------------------------- \n\n", ('bold', 'center'))
             for key, value in debug_info.items():
-                overview_output.insert(tk.END, f"  {key}: ", 'bold')
-                overview_output.insert(tk.END, f" {value}\n")
+                if key == "Failed Services" and value:
+                    overview_output.insert(tk.END, f"  {key}: ", 'bold')
+                    overview_output.insert(tk.END, f" {value}", 'highlight')
+                    overview_output.insert(tk.END, '\n')
+                else:
+                    overview_output.insert(tk.END, f"  {key}: ", 'bold')
+                    overview_output.insert(tk.END, f" {value}\n")
         if res:
+            separator.grid(row=1, column=0, columnspan=4,
+                           padx=50, pady=(0, 10), sticky='nsew')
             detail_debug_output.insert(
                 tk.END, "\n Detailed Debug Information ", ('bold', 'center'))
             detail_debug_output.insert(
-                tk.END, "\n-------------------------------------------------------------------- \n\n", ('bold', 'center'))
+                tk.END, "\n---------------------------------------------------------------------------------------------------------------------------------------- \n\n", ('bold', 'center'))
             if overview_output.get("1.0", "end-1c").strip() == "":
-                tk.Label(overview_frame, text="Debugging Section",  font=('Chalkboard', 10, 'bold')).grid(
-                    row=0, column=0, padx=10, pady=(18, 3), sticky='nsew')
-                separator.grid(row=0, column=0, padx=30, sticky='nsew')
+                tk.Label(overview_frame, text="Debugging Section",  font=('Chalkboard', 11, 'bold')).grid(
+                    row=0, column=0, padx=10, pady=3, sticky='nsew')
                 detail_debug_output.insert(
                     tk.END, f" Failed Services: ", 'bold')
                 detail_debug_output.insert(
-                    tk.END, f"{', '.join(failedServices)} \n\n")
+                    tk.END, f"{', '.join(failedServices)}", 'highlight')
+                detail_debug_output.insert(tk.END, '\n\n')
             for service, output in res.items():
                 detail_debug_output.insert(tk.END, f"  {service}: \n", 'bold')
                 detail_debug_output.insert(tk.END, f"{output}\n")
@@ -133,15 +138,16 @@ def create_ui(remotePaths):
                 if detail_debug_info:
                     detail_debug_output.grid(
                         row=1, column=0, padx=(10, 0), pady=10, sticky='nsew')
-                    scrollbar.grid(row=1, column=1, pady=10, sticky="ns")
+                    scrollbar.grid(row=1, column=1, pady=10,
+                                   padx=(0, 10), sticky="ns")
                     detail_debug_output.config(yscrollcommand=scrollbar.set)
                     formatDebugInfo(res=detail_debug_info)
                     detail_debug_info = ''
                     detail_debug_output.config(state='disabled')
                     separator_dw_btn.grid(
-                        row=2, column=0, padx=30, sticky='nsew')
-                    dw_logs_button.grid(row=3, column=0, padx=30,
-                                        pady=10, sticky='nsew')
+                        row=2, column=0, padx=50, sticky='nsew')
+                    dw_logs_button.grid(row=3, column=0, padx=100,
+                                        pady=(15, 10), sticky='nsew')
             threading.Thread(target=process_detail_debug).start()
 
     def enable_coredumps():
@@ -152,36 +158,34 @@ def create_ui(remotePaths):
             enable_coredump(deviceIP, deviceUsername, devicePassword, root)
 
     def start_downloading_logs():
-        overview = overview_output.get("1.0", "end-1c")
-        detail_debug_res = detail_debug(getInfo(), root)[1]
+        overview_res = overview_output.get("1.0", "end-1c")
+        detail_debug_res = detail_debug_output.get("1.0", "end-1c")
+        info = getInfo()
+        deviceIP, deviceUsername, devicePassword = info if info is not None else (
+            None, None, None)
+        download_logs(root, deviceIP, deviceUsername,
+                      devicePassword, overview_res, detail_debug_res)
 
-        # detail_debug_res = detail_debug_output.get("1.0", "end-1c")
-        download_logs(root, overview, detail_debug_res)
     root = tk.Tk()
-    apply_button_style()
-    
-
+    apply_styles()
+    validate_ip = root.register(lambda v: re.match(
+        r"^(\d{1,3}\.){0,3}\d{0,3}$", v) is not None or v == "")
     root.title("SafeSync")
     root.configure(bg="#3E3E3E")
     root.iconbitmap("assets\Icon\SafeSync.ico")
     root.option_add("*Frame.background", "#3E3E3E")  # Dark gray for frames
+    root.option_add("*Frame.foreground", "#3E3E3E")  # Dark gray for frames
     root.option_add("*Title.background", "#3E3E3E")  # Match frame background
     root.option_add("*Title.foreground", "#FFFFFF")
     root.option_add("*Label.background", "#3E3E3E")  # Match frame background
     root.option_add("*Label.foreground", "#FFFFFF")  # White text for labels
-    root.option_add("*Button.background", "#1A5082")  # Blue for buttons
-    root.option_add("*Button.foreground", "#FFFFFF")  # White text for buttons
     root.option_add("*Separator.background", "#3E3E3E")
-    root.option_add("*Separator.foreground", "#FFFFFF")
-    # # Darker blue when hovered
-    root.option_add("*Button.activebackground", "#357ABD")
-    # # White text when hovered
-    root.option_add("*Button.activeforeground", "#FFFFFF")
+    root.option_add("*Separator.foreground", "#3E3E3E")
 
     container = tk.Frame(root)
     container.grid(row=0, column=0, sticky='nsew')
 
-    contact_info_frame = tk.Frame(container)
+    contact_info_frame = tk.Frame(container, bg='#3E3E3E')
     contact_info_frame.grid(row=0, column=0, columnspan=2, sticky='nsew')
 
     auth_info_frame = tk.Frame(container)
@@ -196,7 +200,7 @@ def create_ui(remotePaths):
     debug_button_frame = tk.Frame(container)
     debug_button_frame.grid(row=4, column=0, columnspan=2, sticky='nsew')
 
-    overview_frame = tk.Frame(container)
+    overview_frame = tk.Frame(container, bg="#3E3E3E")
     overview_frame.grid(row=5, rowspan=4, column=0,
                         columnspan=2, sticky='nsew')
 
@@ -243,6 +247,7 @@ def create_ui(remotePaths):
     actn_button_frame.grid_columnconfigure(2, weight=1)
 
     debug_button_frame.grid_rowconfigure(0, weight=1)
+    debug_button_frame.grid_rowconfigure(1, weight=1)
     debug_button_frame.grid_columnconfigure(0, weight=1)
     debug_button_frame.grid_columnconfigure(1, weight=1)
     debug_button_frame.grid_columnconfigure(2, weight=1)
@@ -252,51 +257,72 @@ def create_ui(remotePaths):
     coredump_button_frame.grid_columnconfigure(0, weight=1)
     coredump_button_frame.grid_columnconfigure(1, weight=1)
 
-    tk.Label(contact_info_frame, text="                  Contact Shiv Ahir if you have any questions or concerns                  ", font=(
-        'Lucida Console', 9)).grid(row=0, column=0, pady=10, sticky='nsew')
+    # this is the section that handles the contact info
+    contact_info_text = tk.Text(contact_info_frame, font=(
+        'Lucida Console', 9), height=1, width=80, wrap="word", borderwidth=0, bg='#3E3E3E', fg='#FFFFFF')
+    contact_info_text.insert(
+        tk.END, "Contact Shiv Ahir if you have any questions or concerns")
+    contact_info_text.tag_config("center", justify="center")
+    contact_info_text.tag_add("center", "1.0", "end")
+    contact_info_text.grid(row=0, column=0, pady=(15, 20), sticky='nsew')
+    start_index = contact_info_text.search("Shiv Ahir", "1.0", tk.END)
+    end_index = f"{start_index} + {len('Shiv Ahir')} chars"
+    contact_info_text.tag_add("clickable", start_index, end_index)
+    contact_info_text.tag_config(
+        "clickable", foreground="#357ABD", underline=True)
+    Tooltip(contact_info_text, "   sahir@evertz.com   ")
+
+    contact_info_text.config(state="disabled")
 
     tk.Label(auth_info_frame, text="Device IP Address:", font=(
         'Lucida Sans', 10, 'bold')).grid(row=1, column=0, padx=10, pady=10, sticky='nse')
-    deviceIPEntry = ttk.Entry(auth_info_frame, width=50)
+    deviceIPEntry = ttk.Entry(auth_info_frame, width=50, font=(
+        "Helvetica", 10, "bold"), style="TEntry", validate="key", validatecommand=(validate_ip, "%P"))
     deviceIPEntry.grid(row=1, column=1, padx=5, pady=10, sticky='nsew')
     tk.Label(auth_info_frame, text="Device Username:", font=(
         'Lucida Sans', 10, 'bold')).grid(row=2, column=0, padx=10, pady=10, sticky='nse')
-    deviceUsernameEntry = ttk.Entry(auth_info_frame, width=50)
+    deviceUsernameEntry = ttk.Entry(auth_info_frame, width=50, font=(
+        "Helvetica", 10, "bold"), style="TEntry")
     deviceUsernameEntry.grid(row=2, column=1, padx=5, pady=10, sticky='nsew')
     tk.Label(auth_info_frame, text="Device Password:", font=(
         'Lucida Sans', 10, 'bold')).grid(row=3, column=0, padx=10, pady=10, sticky='nse')
-    devicePasswordEntry = ttk.Entry(auth_info_frame, width=50, show='*')
+    devicePasswordEntry = ttk.Entry(auth_info_frame, width=50, show='*', font=(
+        "Helvetica", 10, "bold"), style="TEntry")
     devicePasswordEntry.grid(row=3, column=1, padx=5, pady=10, sticky='nsew')
 
-    # UI for backup/upload Section
-    # backupBtn = tk.Button(actn_button_frame, text="Start Backup", font=(
-    #     'Lucida Sans', 10, 'bold'), cursor="hand2", command=startBackup, width=25, height=2)
-    backupBtn = ttk.Button(actn_button_frame, text="Start Backup", command=startBackup, style="Modern.TButton")
+    backupBtn = ttk.Button(actn_button_frame, text="Start Backup",
+                           command=startBackup, style="Modern.TButton")
     backupBtn.config(width=25)
     backupBtn.grid(row=0, column=0, padx=(5, 11), pady=(9, 11))
 
-    uploadBtn = ttk.Button(actn_button_frame, text="Start Upload", command=startUpload, style="Modern.TButton")
+    uploadBtn = ttk.Button(actn_button_frame, text="Start Upload",
+                           command=startUpload, style="Modern.TButton")
     uploadBtn.config(width=25)
     uploadBtn.config(state="disabled")
     uploadBtn.grid(row=0, column=1, padx=(5, 10), pady=(9, 11))
 
     # UI for coredump section
-    enable_coredumps_btn = ttk.Button(coredump_button_frame, text="Enable Coredumps",  command=enable_coredumps, style="Modern.TButton")
+    enable_coredumps_btn = ttk.Button(
+        coredump_button_frame, text="Enable Coredumps",  command=enable_coredumps, style="Modern.TButton")
     enable_coredumps_btn.config(width=25)
     enable_coredumps_btn.grid(row=0, column=0, padx=(5, 11), pady=5)
 
-    extract_coredumps_btn = ttk.Button(coredump_button_frame, text="Extract Coredumps", command=enable_coredumps, style="Modern.TButton")
+    extract_coredumps_btn = ttk.Button(
+        coredump_button_frame, text="Extract Coredumps", command=enable_coredumps, style="Modern.TButton")
     extract_coredumps_btn.config(width=25)
     extract_coredumps_btn.grid(row=0, column=1, padx=(5, 10), pady=5)
     extract_coredumps_btn.config(state="disabled")
     # UI for debugging Section
-    overview_btn = ttk.Button(debug_button_frame, text="Overview", command=startOverview, style="Modern.TButton")
+    overview_btn = ttk.Button(
+        debug_button_frame, text="Overview", command=startOverview, style="Modern.TButton")
     overview_btn.grid(row=0, column=0, columnspan=2,
                       padx=40, pady=15, sticky='nsew')
-    
-    detailed_debug_btn = ttk.Button(debug_button_frame, text="Detailed Debug",  command=startDetailDebug, style="Modern.TButton")
+
+    detailed_debug_btn = ttk.Button(
+        debug_button_frame, text="Detailed Debug",  command=startDetailDebug, style="Modern.TButton")
     detailed_debug_btn.grid(
         row=0, column=2, columnspan=2, padx=40, pady=15, sticky='nsew')
+    separator = ttk.Separator(debug_button_frame, orient="horizontal")
 
     separator_dw_btn = ttk.Separator(
         detail_debug_frame, orient="horizontal")

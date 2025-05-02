@@ -1,6 +1,6 @@
 import paramiko  # type: ignore
 from Backend_Files.UILoadingWindow import show_loading_ui
-from Backend_Files.logger_config import logger
+from Backend_Files.LoggerConfig import logger
 
 sshClient = paramiko.SSHClient()
 sshClient.set_missing_host_key_policy(paramiko.AutoAddPolicy())

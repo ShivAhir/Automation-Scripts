@@ -2,12 +2,10 @@ import time
 from tkinter import messagebox
 from Backend_Files.Connection import closeSSHConnection, establishConnection, sshClient
 from Backend_Files.UILoadingWindow import show_loading_ui
-from Backend_Files.logger_config import logger
+from Backend_Files.LoggerConfig import logger
 
 
 def enable_coredump(deviceIP, deviceUsername, devicePassword, root):
-    # deviceIP, deviceUsername, devicePassword = info if info is not None else (
-    #     None, None, None)
     try:
         if establishConnection(deviceIP, deviceUsername, devicePassword, root):
             establishConnection(deviceIP, deviceUsername, devicePassword, root)

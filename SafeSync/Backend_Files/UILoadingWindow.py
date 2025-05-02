@@ -3,6 +3,10 @@ from tkinter import ttk
 
 
 def show_loading_ui(root, title=None, msg=None, type=None):
+    style = ttk.Style()
+    style.theme_use("clam")
+    style.configure("White.Horizontal.TProgressbar",
+                    troughcolor="#FFFFFF", background="#1A5082", thickness=20)
     loading_window = tk.Toplevel(root)
     loading_window.configure(bg="#3E3E3E")
     loading_window.withdraw()
@@ -40,8 +44,8 @@ def show_loading_ui(root, title=None, msg=None, type=None):
 
     if type == None:
         progress_bar = ttk.Progressbar(
-            loading_window, mode="indeterminate", length=250)
-        progress_bar.pack(pady=10)
+            loading_window, mode="indeterminate", length=250, style="White.Horizontal.TProgressbar")
+        progress_bar.pack(pady=5)
         progress_bar.start(10)
         return loading_window, progress_bar
     else:

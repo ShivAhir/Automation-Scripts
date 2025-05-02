@@ -3,7 +3,7 @@ import time
 from tkinter import messagebox
 from Backend_Files.Connection import establishConnection, sshClient
 from Backend_Files.UILoadingWindow import show_loading_ui
-from Backend_Files.logger_config import logger
+from Backend_Files.LoggerConfig import logger
 
 failedServices = set()
 ansiEscape = re.compile(r'\x1b\[.*?m')
@@ -44,7 +44,7 @@ def readMultiLines(out):  # Function to read multiline outputs and send them as 
             if service_name not in services:
                 services.append(service_name)
                 failedServices.add(service_name)
-    return ','.join(services)
+    return ', '.join(services)
 
 
 def remove_escape_sequences(output):
@@ -112,10 +112,10 @@ def cardInfoD(info, root):
     deviceIP, deviceUsername, devicePassword = info if info is not None else (
         None, None, None)
     try:
-        if establishConnection(deviceIP, deviceUsername, devicePassword,root):
+        if establishConnection(deviceIP, deviceUsername, devicePassword, root):
             loading_window, progress_bar = show_loading_ui(
                 root=root, title='Loading', msg="Loading results, please wait...")
-            establishConnection(deviceIP, deviceUsername, devicePassword,root)
+            establishConnection(deviceIP, deviceUsername, devicePassword, root)
             logger.info("Connection established for overview.")
             print("Connection established for overview.")
             if not sshClient.get_transport() or not sshClient.get_transport().is_active():
